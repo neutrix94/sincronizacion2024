@@ -109,7 +109,6 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         limpiar_log_boton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         synchronization_transfer_label = new javax.swing.JLabel();
         synchronization_transfer_info = new javax.swing.JLabel();
         synchronization_transfer_bar = new javax.swing.JProgressBar();
@@ -125,7 +124,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         depuracion_registros_btn = new javax.swing.JButton();
         depuracion_registros_todos_btn = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         last_sync.addActionListener(new java.awt.event.ActionListener() {
@@ -133,378 +132,382 @@ public class infoSinccronizacion extends javax.swing.JFrame {
                 last_syncActionPerformed(evt);
             }
         });
-        getContentPane().add(last_sync, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, 230, 30));
-        getContentPane().add(synchronization_depuration_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, 230, 30));
-        getContentPane().add(synchronization_rows_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 230, 30));
-        getContentPane().add(synchronization_sales_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 110, 30));
-        getContentPane().add(synchronization_returns_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 230, 30));
-        getContentPane().add(synchronization_sales_validation_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 230, 30));
-        getContentPane().add(synchronization_sales_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 110, 30));
+        getContentPane().add(last_sync, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, 230, 30));
+        getContentPane().add(synchronization_depuration_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 230, 30));
+        getContentPane().add(synchronization_rows_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, 230, 30));
+        getContentPane().add(synchronization_sales_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, 110, 30));
+        getContentPane().add(synchronization_returns_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 230, 30));
+        getContentPane().add(synchronization_sales_validation_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 230, 30));
+        getContentPane().add(synchronization_sales_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 110, 30));
 
         url_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 url_fieldActionPerformed(evt);
             }
         });
-        getContentPane().add(url_field, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 400, 30));
+        getContentPane().add(url_field, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 400, 30));
 
         synchronization_rows_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_rows_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_rows_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 160, 30));
+        getContentPane().add(synchronization_rows_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 160, 30));
 
         synchronization_sales_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 140, 160, 30));
+        getContentPane().add(synchronization_sales_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 160, 30));
 
         synchronization_returns_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_returns_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_returns_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 160, 30));
+        getContentPane().add(synchronization_returns_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, 160, 30));
 
         synchronization_movements_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_movements_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_movements_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 160, 30));
+        getContentPane().add(synchronization_movements_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 160, 30));
 
         synchronization_sales_validation_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_validation_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_validation_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 160, 30));
+        getContentPane().add(synchronization_sales_validation_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 160, 30));
 
         synchronization_product_provider_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_product_provider_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_product_provider_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, 160, 30));
+        getContentPane().add(synchronization_product_provider_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 160, 30));
 
         synchronization_rows_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_rows_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_rows_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 100, 160, 30));
+        getContentPane().add(synchronization_rows_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 50, 160, 30));
 
         synchronization_sales_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 160, 30));
+        getContentPane().add(synchronization_sales_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, 160, 30));
 
         synchronization_returns_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_returns_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_returns_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 180, 160, 30));
+        getContentPane().add(synchronization_returns_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 160, 30));
 
         synchronization_movements_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_movements_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_movements_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 220, 160, 30));
+        getContentPane().add(synchronization_movements_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 210, 160, 30));
 
         synchronization_sales_validation_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_validation_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_validation_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, 160, 30));
+        getContentPane().add(synchronization_sales_validation_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 250, 160, 30));
 
         synchronization_product_provider_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_product_provider_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_product_provider_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 300, 160, 30));
+        getContentPane().add(synchronization_product_provider_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 290, 160, 30));
 
         synchronization_depuration_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_depuration_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_depuration_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 390, 160, 30));
-        getContentPane().add(synchronization_movements_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 110, 30));
-        getContentPane().add(synchronization_movements_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 110, 30));
-        getContentPane().add(synchronization_product_provider_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 110, 30));
-        getContentPane().add(synchronization_product_provider_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 300, 110, 30));
+        getContentPane().add(synchronization_depuration_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, 160, 30));
+        getContentPane().add(synchronization_movements_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 110, 30));
+        getContentPane().add(synchronization_movements_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 110, 30));
+        getContentPane().add(synchronization_product_provider_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 110, 30));
+        getContentPane().add(synchronization_product_provider_bar_update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 290, 110, 30));
 
         synchronization_rows_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_rows_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_rows_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 100, 80, 30));
+        getContentPane().add(synchronization_rows_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 50, 80, 30));
 
         synchronization_sales_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 140, 80, 30));
+        getContentPane().add(synchronization_sales_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 130, 80, 30));
 
         synchronization_returns_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_returns_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_returns_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 180, 80, 30));
+        getContentPane().add(synchronization_returns_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, 80, 30));
 
         synchronization_movements_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_movements_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_movements_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 220, 80, 30));
+        getContentPane().add(synchronization_movements_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 210, 80, 30));
 
         synchronization_sales_validation_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_validation_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_validation_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 260, 80, 30));
+        getContentPane().add(synchronization_sales_validation_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 250, 80, 30));
 
         synchronization_product_provider_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_product_provider_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_product_provider_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 80, 30));
+        getContentPane().add(synchronization_product_provider_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 290, 80, 30));
 
         synchronization_transfer_number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_transfer_numberActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_transfer_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 340, 80, 30));
+        getContentPane().add(synchronization_transfer_number, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, 80, 30));
 
         synchronization_movements_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_movements_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_movements_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 220, 80, 30));
+        getContentPane().add(synchronization_movements_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 210, 80, 30));
 
         synchronization_transfer_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_transfer_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_transfer_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 340, 80, 30));
+        getContentPane().add(synchronization_transfer_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 80, 30));
 
         synchronization_sales_validation_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_validation_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_validation_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 260, 80, 30));
+        getContentPane().add(synchronization_sales_validation_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 250, 80, 30));
 
         synchronization_product_provider_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_product_provider_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_product_provider_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 300, 80, 30));
+        getContentPane().add(synchronization_product_provider_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 290, 80, 30));
 
         synchronization_rows_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_rows_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_rows_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 100, 80, 30));
+        getContentPane().add(synchronization_rows_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 80, 30));
 
         synchronization_sales_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 140, 80, 30));
+        getContentPane().add(synchronization_sales_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 130, 80, 30));
 
         synchronization_returns_upload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_returns_uploadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_returns_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 180, 80, 30));
+        getContentPane().add(synchronization_returns_upload, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 80, 30));
 
         synchronization_movements_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_movements_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_movements_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 220, 80, 30));
+        getContentPane().add(synchronization_movements_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 210, 80, 30));
 
         synchronization_transfer_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_transfer_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_transfer_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 340, 80, 30));
+        getContentPane().add(synchronization_transfer_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 90, 80, 30));
 
         synchronization_sales_validation_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_validation_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_validation_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 260, 80, 30));
+        getContentPane().add(synchronization_sales_validation_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 250, 80, 30));
 
         synchronization_product_provider_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_product_provider_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_product_provider_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 300, 80, 30));
+        getContentPane().add(synchronization_product_provider_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 290, 80, 30));
 
         synchronization_rows_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_rows_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_rows_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 100, 80, 30));
+        getContentPane().add(synchronization_rows_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 50, 80, 30));
 
         synchronization_sales_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_sales_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_sales_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 140, 80, 30));
+        getContentPane().add(synchronization_sales_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 130, 80, 30));
 
         synchronization_returns_download.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_returns_downloadActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_returns_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 180, 80, 30));
+        getContentPane().add(synchronization_returns_download, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 170, 80, 30));
 
         logArea.setColumns(20);
         logArea.setRows(5);
         jScrollPane1.setViewportView(logArea);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, 1130, 200));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 1130, 200));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Por Bajar");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 70, 80, 30));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 20, 80, 30));
 
         url_api_label.setText("URL API :");
-        getContentPane().add(url_api_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 70, 30));
+        getContentPane().add(url_api_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 70, 30));
 
         synchronization_depuration_info.setText("...");
-        getContentPane().add(synchronization_depuration_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, 30, 30));
+        getContentPane().add(synchronization_depuration_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 30, 30));
 
         synchronization_returns_label.setText("Devoluciones");
-        getContentPane().add(synchronization_returns_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 150, 30));
+        getContentPane().add(synchronization_returns_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 150, 30));
 
         synchronization_movements_label.setText("Movimientos de Almacén");
-        getContentPane().add(synchronization_movements_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 150, 30));
+        getContentPane().add(synchronization_movements_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 150, 30));
 
         synchronization_sales_validation_label.setText("Validación de ventas");
-        getContentPane().add(synchronization_sales_validation_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 150, 30));
+        getContentPane().add(synchronization_sales_validation_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 150, 30));
 
         synchronization_product__provider_label.setText("Movimientos Prov. Prod.");
-        getContentPane().add(synchronization_product__provider_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 150, 30));
+        getContentPane().add(synchronization_product__provider_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 150, 30));
 
         synchronization_sales_label.setText("Ventas");
-        getContentPane().add(synchronization_sales_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 150, 30));
+        getContentPane().add(synchronization_sales_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 150, 30));
 
         synchronization_rows_info.setText("...");
-        getContentPane().add(synchronization_rows_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 30, 30));
+        getContentPane().add(synchronization_rows_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 30, 30));
 
         synchronization_sales_info.setText("...");
-        getContentPane().add(synchronization_sales_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 30, 30));
+        getContentPane().add(synchronization_sales_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 30, 30));
 
         synchronization_returns_info.setText("...");
-        getContentPane().add(synchronization_returns_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 30, 30));
+        getContentPane().add(synchronization_returns_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 30, 30));
 
         synchronization_movements_info.setText("...");
-        getContentPane().add(synchronization_movements_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 30, 30));
+        getContentPane().add(synchronization_movements_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 30, 30));
 
         synchronization_sales_validation_info.setText("...");
-        getContentPane().add(synchronization_sales_validation_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 30, 30));
+        getContentPane().add(synchronization_sales_validation_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 30, 30));
 
         synchronization_product_provider_info.setText("...");
-        getContentPane().add(synchronization_product_provider_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 30, 30));
+        getContentPane().add(synchronization_product_provider_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 30, 30));
 
         synchronization_rows_label.setText("Registros Sincronizacion");
-        getContentPane().add(synchronization_rows_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 150, 30));
+        getContentPane().add(synchronization_rows_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 150, 30));
 
         sinchronization_depuration_label.setText("Depuración Sinc.");
-        getContentPane().add(sinchronization_depuration_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 150, 30));
+        getContentPane().add(sinchronization_depuration_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 150, 30));
 
         synchronization_depuration_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_depuration_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_depuration_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 390, 160, 30));
+        getContentPane().add(synchronization_depuration_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, 160, 30));
 
         intervalo_sincronizacion_label.setText("Intervalo de sincronización : ");
-        getContentPane().add(intervalo_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 490, 170, 30));
+        getContentPane().add(intervalo_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 430, 170, 30));
 
         time_interval_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 time_interval_fieldActionPerformed(evt);
             }
         });
-        getContentPane().add(time_interval_field, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 490, 160, 30));
+        getContentPane().add(time_interval_field, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 430, 160, 30));
 
         ultima_sincronizacion_label.setText("Última sincronización exitosa : ");
-        getContentPane().add(ultima_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 220, 30));
+        getContentPane().add(ultima_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 220, 30));
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Hora inicio");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 160, 30));
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 160, 30));
 
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setText("Hora fin");
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 70, 160, 30));
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 160, 30));
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText("Reg x vuelta :");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 70, 80, 30));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, 80, 30));
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText("Por Subir");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 70, 80, 30));
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 20, 80, 30));
 
         limpiar_log_boton.setText("Limpiar Log");
-        getContentPane().add(limpiar_log_boton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 750, 1130, 30));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 790));
+        limpiar_log_boton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpiar_log_botonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(limpiar_log_boton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 690, 1130, 30));
 
         synchronization_transfer_label.setText("Transferencias");
-        getContentPane().add(synchronization_transfer_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 150, 30));
+        getContentPane().add(synchronization_transfer_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 150, 30));
 
         synchronization_transfer_info.setText("...");
-        getContentPane().add(synchronization_transfer_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, 30, 30));
-        getContentPane().add(synchronization_transfer_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 230, 30));
+        getContentPane().add(synchronization_transfer_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 30, 30));
+        getContentPane().add(synchronization_transfer_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, 230, 30));
 
         synchronization_transfer_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_transfer_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_transfer_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 340, 160, 30));
+        getContentPane().add(synchronization_transfer_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 160, 30));
 
         synchronization_transfer_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_transfer_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_transfer_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 340, 160, 30));
+        getContentPane().add(synchronization_transfer_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 90, 160, 30));
 
         depuracion_registros_log_btn.setText("Ejecutar Depuracion LOGS");
         depuracion_registros_log_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -512,7 +515,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
                 depuracion_registros_log_btnActionPerformed(evt);
             }
         });
-        getContentPane().add(depuracion_registros_log_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 180, 30));
+        getContentPane().add(depuracion_registros_log_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 380, 180, 30));
 
         depuracion_registros_todos_logs_btn.setText("Borrar todo");
         depuracion_registros_todos_logs_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -520,28 +523,28 @@ public class infoSinccronizacion extends javax.swing.JFrame {
                 depuracion_registros_todos_logs_btnActionPerformed(evt);
             }
         });
-        getContentPane().add(depuracion_registros_todos_logs_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 440, 100, 30));
-        getContentPane().add(synchronization_depuration_log_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 230, 30));
+        getContentPane().add(depuracion_registros_todos_logs_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 380, 100, 30));
+        getContentPane().add(synchronization_depuration_log_bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 230, 30));
 
         synchronization_depuration_log_end.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_depuration_log_endActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_depuration_log_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 440, 160, 30));
+        getContentPane().add(synchronization_depuration_log_end, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 380, 160, 30));
 
         synchronization_depuration_log_info.setText("...");
-        getContentPane().add(synchronization_depuration_log_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 30, 30));
+        getContentPane().add(synchronization_depuration_log_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 30, 30));
 
         sinchronization_depuration_log_label.setText("Depuración LOGS");
-        getContentPane().add(sinchronization_depuration_log_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 150, 30));
+        getContentPane().add(sinchronization_depuration_log_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 150, 30));
 
         synchronization_depuration_log_start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 synchronization_depuration_log_startActionPerformed(evt);
             }
         });
-        getContentPane().add(synchronization_depuration_log_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 160, 30));
+        getContentPane().add(synchronization_depuration_log_start, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 160, 30));
 
         depuracion_registros_btn.setText("Ejecutar Depuracion Reg");
         depuracion_registros_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -549,7 +552,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
                 depuracion_registros_btnActionPerformed(evt);
             }
         });
-        getContentPane().add(depuracion_registros_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 390, 180, 30));
+        getContentPane().add(depuracion_registros_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 330, 180, 30));
 
         depuracion_registros_todos_btn.setText("Borrar todo");
         depuracion_registros_todos_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -557,7 +560,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
                 depuracion_registros_todos_btnActionPerformed(evt);
             }
         });
-        getContentPane().add(depuracion_registros_todos_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 390, 100, 30));
+        getContentPane().add(depuracion_registros_todos_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 330, 100, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -812,6 +815,10 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_depuracion_registros_todos_btnActionPerformed
 
+    private void limpiar_log_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiar_log_botonActionPerformed
+        logArea.setText( "" );
+    }//GEN-LAST:event_limpiar_log_botonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -928,7 +935,6 @@ public class infoSinccronizacion extends javax.swing.JFrame {
     public static javax.swing.JButton depuracion_registros_todos_btn;
     public static javax.swing.JButton depuracion_registros_todos_logs_btn;
     public static javax.swing.JLabel intervalo_sincronizacion_label;
-    private javax.swing.JLabel jLabel1;
     public static javax.swing.JLabel jLabel2;
     public static javax.swing.JLabel jLabel20;
     public static javax.swing.JLabel jLabel21;

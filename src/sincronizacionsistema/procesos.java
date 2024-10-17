@@ -17,6 +17,8 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Timer;
@@ -73,7 +75,7 @@ public class procesos {
 
    public String ejecutaIntervalo(long tiempo_retardo_inicio) throws InterruptedException, Exception {
       this.info.setVisible(true);
-      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
       while(true) {
          if (this.sincronizando == 0) {
@@ -88,7 +90,7 @@ public class procesos {
             System.out.println("pasa");
 
             try {
-               this.info.synchronization_rows_start.setText("" + dtf.format(LocalDateTime.now()));
+               this.info.synchronization_rows_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_rows_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_registros();
                if (!"ok".equals(resp_temp)) {
@@ -109,310 +111,21 @@ public class procesos {
                   this.info.synchronization_rows_bar.setValue(100);
                   this.info.synchronization_rows_bar.setBackground(Color.red);
                   this.info.synchronization_rows_bar.setForeground(Color.red);
-                  this.info.synchronization_rows_end.setText("" + dtf.format(LocalDateTime.now()));
+                  this.info.synchronization_rows_end.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
                } else {
                   this.info.synchronization_rows_info.setText(resp_temp);
                   this.info.synchronization_rows_bar.setValue(100);
                   this.info.synchronization_rows_bar.setBackground(Color.green);
                   this.info.synchronization_rows_bar.setForeground(Color.green);
-                  this.info.synchronization_rows_end.setText("" + dtf.format(LocalDateTime.now()));
+                  this.info.synchronization_rows_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
             } catch (Exception var35) {
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var35);
             }
 
             this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_sales_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_sales_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_registros_ventas();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var9) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var9);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var8) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var8);
-                  }
-
-                  this.info.synchronization_sales_info.setText(resp_temp);
-                  this.info.synchronization_sales_bar.setValue(100);
-                  this.info.synchronization_sales_bar.setBackground(Color.red);
-                  this.info.synchronization_sales_bar.setForeground(Color.red);
-                  this.info.synchronization_sales_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_sales_info.setText(resp_temp);
-                  this.info.synchronization_sales_bar.setValue(100);
-                  this.info.synchronization_sales_bar.setBackground(Color.green);
-                  this.info.synchronization_sales_bar.setForeground(Color.green);
-                  this.info.synchronization_sales_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var34) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var34);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_sales_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_sales_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_ventas();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var11) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var11);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var10) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var10);
-                  }
-
-                  this.info.synchronization_sales_info.setText(resp_temp);
-                  this.info.synchronization_sales_bar_update.setValue(100);
-                  this.info.synchronization_sales_bar_update.setBackground(Color.red);
-                  this.info.synchronization_sales_bar_update.setForeground(Color.red);
-                  this.info.synchronization_sales_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_sales_info.setText(resp_temp);
-                  this.info.synchronization_sales_bar_update.setValue(100);
-                  this.info.synchronization_sales_bar_update.setBackground(Color.green);
-                  this.info.synchronization_sales_bar_update.setForeground(Color.green);
-                  this.info.synchronization_sales_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var33) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var33);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_returns_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_returns_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_devoluciones();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var13) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var13);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var12) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var12);
-                  }
-
-                  this.info.synchronization_returns_info.setText(resp_temp);
-                  this.info.synchronization_returns_bar.setValue(100);
-                  this.info.synchronization_returns_bar.setBackground(Color.red);
-                  this.info.synchronization_returns_bar.setForeground(Color.red);
-                  this.info.synchronization_returns_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_returns_info.setText(resp_temp);
-                  this.info.synchronization_returns_bar.setValue(100);
-                  this.info.synchronization_returns_bar.setBackground(Color.green);
-                  this.info.synchronization_returns_bar.setForeground(Color.green);
-                  this.info.synchronization_returns_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var32) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var32);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_movements_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_movements_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_m_a();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var15) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var15);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var14) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var14);
-                  }
-
-                  this.info.synchronization_movements_info.setText(resp_temp);
-                  this.info.synchronization_movements_bar.setValue(100);
-                  this.info.synchronization_movements_bar.setBackground(Color.red);
-                  this.info.synchronization_movements_bar.setForeground(Color.red);
-                  this.info.synchronization_movements_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_movements_info.setText(resp_temp);
-                  this.info.synchronization_movements_bar.setValue(100);
-                  this.info.synchronization_movements_bar.setBackground(Color.green);
-                  this.info.synchronization_movements_bar.setForeground(Color.green);
-                  this.info.synchronization_movements_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var31) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var31);
-            }
-
-            this.obtener_registros_restantes();
-            
-            try {
-               this.info.synchronization_movements_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_movements_info.setText("Sincronizando...<->");
-               resp_temp = this.sys_sincronizacion_registros_movimientos_almacen();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var17) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var17);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var16) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var16);
-                  }
-
-                  this.info.synchronization_movements_info.setText(resp_temp);
-                  this.info.synchronization_movements_end.setText("" + dtf.format(LocalDateTime.now()));
-                  this.info.synchronization_movements_bar_update.setValue(100);
-                  this.info.synchronization_movements_bar_update.setBackground(Color.red);
-                  this.info.synchronization_movements_bar_update.setForeground(Color.red);
-               } else {
-                  this.info.synchronization_movements_info.setText(resp_temp);
-                  this.info.synchronization_movements_bar_update.setValue(100);
-                  this.info.synchronization_movements_bar_update.setBackground(Color.green);
-                  this.info.synchronization_movements_bar_update.setForeground(Color.green);
-                  this.info.synchronization_movements_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var30) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var30);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_sales_validation_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_sales_validation_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_validaciones_ventas();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var19) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var19);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var18) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var18);
-                  }
-
-                  this.info.synchronization_sales_validation_info.setText(resp_temp);
-                  this.info.synchronization_sales_validation_bar.setValue(100);
-                  this.info.synchronization_sales_validation_bar.setBackground(Color.red);
-                  this.info.synchronization_sales_validation_bar.setForeground(Color.red);
-                  this.info.synchronization_sales_validation_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_sales_validation_info.setText(resp_temp);
-                  this.info.synchronization_sales_validation_bar.setValue(100);
-                  this.info.synchronization_sales_validation_bar.setBackground(Color.green);
-                  this.info.synchronization_sales_validation_bar.setForeground(Color.green);
-                  this.info.synchronization_sales_validation_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var29) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var29);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_product_provider_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
-               resp_temp = this.sincroniza_movimientos_proveedor_producto();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var21) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var21);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var20) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var20);
-                  }
-
-                  this.info.synchronization_product_provider_info.setText(resp_temp);
-                  this.info.synchronization_product_provider_bar.setValue(100);
-                  this.info.synchronization_product_provider_bar.setBackground(Color.red);
-                  this.info.synchronization_product_provider_bar.setForeground(Color.red);
-                  this.info.synchronization_product_provider_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_product_provider_info.setText(resp_temp);
-                  this.info.synchronization_product_provider_bar.setValue(100);
-                  this.info.synchronization_product_provider_bar.setBackground(Color.green);
-                  this.info.synchronization_product_provider_bar.setForeground(Color.green);
-                  this.info.synchronization_product_provider_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var28) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var28);
-            }
-
-            this.obtener_registros_restantes();
-            
-            try {
-               this.info.synchronization_product_provider_start.setText("" + dtf.format(LocalDateTime.now()));
-               this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
-               resp_temp = this.sys_sincronizacion_registros_movimientos_proveedor_producto();
-               if (!"ok".equals(resp_temp)) {
-                  try {
-                     this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var23) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var23);
-                  }
-
-                  try {
-                     this.InfoLog(resp_temp);
-                  } catch (IOException var22) {
-                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var22);
-                  }
-
-                  this.info.synchronization_product_provider_info.setText(resp_temp);
-                  this.info.synchronization_product_provider_bar_update.setValue(100);
-                  this.info.synchronization_product_provider_bar_update.setBackground(Color.red);
-                  this.info.synchronization_product_provider_bar_update.setForeground(Color.red);
-                  this.info.synchronization_product_provider_end.setText("" + dtf.format(LocalDateTime.now()));
-               } else {
-                  this.info.synchronization_product_provider_info.setText(resp_temp);
-                  this.info.synchronization_product_provider_bar_update.setValue(100);
-                  this.info.synchronization_product_provider_bar_update.setBackground(Color.green);
-                  this.info.synchronization_product_provider_bar_update.setForeground(Color.green);
-                  this.info.synchronization_product_provider_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-            } catch (Exception var27) {
-               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var27);
-            }
-
-            this.obtener_registros_restantes();
-
-            try {
-               this.info.synchronization_transfer_start.setText("" + dtf.format(LocalDateTime.now()));
+             try {
+               this.info.synchronization_transfer_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_transfer_info.setText("Sincronizando...<->");
                resp_temp = this.sys_sincronizacion_registros_transferencias();
                if (!"ok".equals(resp_temp)) {
@@ -438,7 +151,7 @@ public class procesos {
                   this.info.synchronization_transfer_bar.setValue(100);
                   this.info.synchronization_transfer_bar.setBackground(Color.green);
                   this.info.synchronization_transfer_bar.setForeground(Color.green);
-                  this.info.synchronization_transfer_end.setText("" + dtf.format(LocalDateTime.now()));
+                  this.info.synchronization_transfer_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
             } catch (Exception var26) {
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var26);
@@ -447,7 +160,295 @@ public class procesos {
             this.obtener_registros_restantes();
             
             try {
-               this.info.synchronization_depuration_start.setText("" + dtf.format(LocalDateTime.now()));
+               this.info.synchronization_sales_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
+               this.info.synchronization_sales_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_registros_ventas();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var9) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var9);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var8) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var8);
+                  }
+
+                  this.info.synchronization_sales_info.setText(resp_temp);
+                  this.info.synchronization_sales_bar.setValue(100);
+                  this.info.synchronization_sales_bar.setBackground(Color.red);
+                  this.info.synchronization_sales_bar.setForeground(Color.red);
+                  this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_sales_info.setText(resp_temp);
+                  this.info.synchronization_sales_bar.setValue(100);
+                  this.info.synchronization_sales_bar.setBackground(Color.green);
+                  this.info.synchronization_sales_bar.setForeground(Color.green);
+                  this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var34) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var34);
+            }
+
+            this.obtener_registros_restantes();
+
+            try {
+               this.info.synchronization_sales_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_sales_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_ventas();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var11) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var11);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var10) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var10);
+                  }
+
+                  this.info.synchronization_sales_info.setText(resp_temp);
+                  this.info.synchronization_sales_bar_update.setValue(100);
+                  this.info.synchronization_sales_bar_update.setBackground(Color.red);
+                  this.info.synchronization_sales_bar_update.setForeground(Color.red);
+                  this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_sales_info.setText(resp_temp);
+                  this.info.synchronization_sales_bar_update.setValue(100);
+                  this.info.synchronization_sales_bar_update.setBackground(Color.green);
+                  this.info.synchronization_sales_bar_update.setForeground(Color.green);
+                  this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var33) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var33);
+            }
+
+            this.obtener_registros_restantes();
+
+            try {
+               this.info.synchronization_returns_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_returns_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_devoluciones();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var13) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var13);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var12) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var12);
+                  }
+
+                  this.info.synchronization_returns_info.setText(resp_temp);
+                  this.info.synchronization_returns_bar.setValue(100);
+                  this.info.synchronization_returns_bar.setBackground(Color.red);
+                  this.info.synchronization_returns_bar.setForeground(Color.red);
+                  this.info.synchronization_returns_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_returns_info.setText(resp_temp);
+                  this.info.synchronization_returns_bar.setValue(100);
+                  this.info.synchronization_returns_bar.setBackground(Color.green);
+                  this.info.synchronization_returns_bar.setForeground(Color.green);
+                  this.info.synchronization_returns_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var32) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var32);
+            }
+
+            this.obtener_registros_restantes();
+
+            try {
+               this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_movements_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_m_a();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var15) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var15);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var14) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var14);
+                  }
+
+                  this.info.synchronization_movements_info.setText(resp_temp);
+                  this.info.synchronization_movements_bar.setValue(100);
+                  this.info.synchronization_movements_bar.setBackground(Color.red);
+                  this.info.synchronization_movements_bar.setForeground(Color.red);
+                  this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_movements_info.setText(resp_temp);
+                  this.info.synchronization_movements_bar.setValue(100);
+                  this.info.synchronization_movements_bar.setBackground(Color.green);
+                  this.info.synchronization_movements_bar.setForeground(Color.green);
+                  this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var31) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var31);
+            }
+
+            this.obtener_registros_restantes();
+            
+            try {
+               this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_movements_info.setText("Sincronizando...<->");
+               resp_temp = this.sys_sincronizacion_registros_movimientos_almacen();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var17) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var17);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var16) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var16);
+                  }
+
+                  this.info.synchronization_movements_info.setText(resp_temp);
+                  this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+                  this.info.synchronization_movements_bar_update.setValue(100);
+                  this.info.synchronization_movements_bar_update.setBackground(Color.red);
+                  this.info.synchronization_movements_bar_update.setForeground(Color.red);
+               } else {
+                  this.info.synchronization_movements_info.setText(resp_temp);
+                  this.info.synchronization_movements_bar_update.setValue(100);
+                  this.info.synchronization_movements_bar_update.setBackground(Color.green);
+                  this.info.synchronization_movements_bar_update.setForeground(Color.green);
+                  this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var30) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var30);
+            }
+
+            this.obtener_registros_restantes();
+
+            try {
+               this.info.synchronization_sales_validation_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_sales_validation_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_validaciones_ventas();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var19) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var19);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var18) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var18);
+                  }
+
+                  this.info.synchronization_sales_validation_info.setText(resp_temp);
+                  this.info.synchronization_sales_validation_bar.setValue(100);
+                  this.info.synchronization_sales_validation_bar.setBackground(Color.red);
+                  this.info.synchronization_sales_validation_bar.setForeground(Color.red);
+                  this.info.synchronization_sales_validation_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_sales_validation_info.setText(resp_temp);
+                  this.info.synchronization_sales_validation_bar.setValue(100);
+                  this.info.synchronization_sales_validation_bar.setBackground(Color.green);
+                  this.info.synchronization_sales_validation_bar.setForeground(Color.green);
+                  this.info.synchronization_sales_validation_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var29) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var29);
+            }
+
+            this.obtener_registros_restantes();
+
+            try {
+               this.info.synchronization_product_provider_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
+               resp_temp = this.sincroniza_movimientos_proveedor_producto();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var21) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var21);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var20) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var20);
+                  }
+
+                  this.info.synchronization_product_provider_info.setText(resp_temp);
+                  this.info.synchronization_product_provider_bar.setValue(100);
+                  this.info.synchronization_product_provider_bar.setBackground(Color.red);
+                  this.info.synchronization_product_provider_bar.setForeground(Color.red);
+                  this.info.synchronization_product_provider_end.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_product_provider_info.setText(resp_temp);
+                  this.info.synchronization_product_provider_bar.setValue(100);
+                  this.info.synchronization_product_provider_bar.setBackground(Color.green);
+                  this.info.synchronization_product_provider_bar.setForeground(Color.green);
+                  this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var28) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var28);
+            }
+
+            this.obtener_registros_restantes();
+            
+            try {
+               this.info.synchronization_product_provider_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
+               this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
+               resp_temp = this.sys_sincronizacion_registros_movimientos_proveedor_producto();
+               if (!"ok".equals(resp_temp)) {
+                  try {
+                     this.InfoLog(resp_temp);
+                     this.info.logArea.append(resp_temp + "\n");
+                  } catch (IOException var23) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var23);
+                  }
+
+                  try {
+                     this.InfoLog(resp_temp);
+                  } catch (IOException var22) {
+                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var22);
+                  }
+
+                  this.info.synchronization_product_provider_info.setText(resp_temp);
+                  this.info.synchronization_product_provider_bar_update.setValue(100);
+                  this.info.synchronization_product_provider_bar_update.setBackground(Color.red);
+                  this.info.synchronization_product_provider_bar_update.setForeground(Color.red);
+                  this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               } else {
+                  this.info.synchronization_product_provider_info.setText(resp_temp);
+                  this.info.synchronization_product_provider_bar_update.setValue(100);
+                  this.info.synchronization_product_provider_bar_update.setBackground(Color.green);
+                  this.info.synchronization_product_provider_bar_update.setForeground(Color.green);
+                  this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+               }
+            } catch (Exception var27) {
+               Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var27);
+            }
+
+            this.obtener_registros_restantes();
+           
+            try {
+               this.info.synchronization_depuration_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_depuration_info.setText("Depurando...");
                resp_temp = this.depurationProcess( false );
                if (!"ok".equals(resp_temp)) {
@@ -473,14 +474,16 @@ public class procesos {
                   this.info.synchronization_depuration_bar.setValue(100);
                   this.info.synchronization_depuration_bar.setBackground(Color.green);
                   this.info.synchronization_depuration_bar.setForeground(Color.green);
-                  this.info.synchronization_depuration_end.setText("" + dtf.format(LocalDateTime.now()));
+                  this.info.synchronization_depuration_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
             } catch (Exception e) {
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
             }
+
+            this.obtener_registros_restantes();
             
             try {
-               this.info.synchronization_depuration_log_start.setText("" + dtf.format(LocalDateTime.now()));
+               this.info.synchronization_depuration_log_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_depuration_log_info.setText("Depurando...");
                resp_temp = this.depurationLogProcess( false );
                 if (!"ok".equals(resp_temp)) {
@@ -506,14 +509,14 @@ public class procesos {
                     this.info.synchronization_depuration_log_bar.setValue(100);
                     this.info.synchronization_depuration_log_bar.setBackground(Color.green);
                     this.info.synchronization_depuration_log_bar.setForeground(Color.green);
-                    this.info.synchronization_depuration_log_end.setText("" + dtf.format(LocalDateTime.now()));
+                    this.info.synchronization_depuration_log_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                 }
             } catch (Exception e) {
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
             }
             
             this.sincronizando = 0;
-            this.info.last_sync.setText("" + dtf.format(LocalDateTime.now()));
+            this.info.last_sync.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
             //this.info.notification_sync.setVisible(false);
          } else {
             JOptionPane.showMessageDialog((Component)null, "Aun esta sincronizando!!!");
@@ -890,4 +893,16 @@ public class procesos {
         rd.close();
         return resultado.toString();
    }
+    
+    public String getCurrentTime(){
+        LocalDateTime localDateTime = LocalDateTime.now();
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    // Definir la zona horaria
+        ZoneId zoneId = ZoneId.of("America/Mexico_City");
+    // Convertir LocalDateTime a ZonedDateTime
+        ZonedDateTime zonedDateTime = localDateTime.atZone(zoneId);
+    // Mostrar la fecha y hora con la zona horaria
+        return dtf.format(zonedDateTime );
+        //System.out.println("Fecha y hora en la zona horaria especificada: " + dtf.format(zonedDateTime ));
+    }
 }

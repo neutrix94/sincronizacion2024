@@ -368,3 +368,33 @@
 [8/8/2024 23:32:36][INFO] {"response":"Respuesta Erronea : Posiblemente no hay conexion con el servidor de Linea"}
 [9/8/2024 1:19:4][INFO] 
 [9/8/2024 1:19:4][INFO] 
+[30/8/2024 10:57:9][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:57:9][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:57:37][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:57:37][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:57:53][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:57:53][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:58:20][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:58:20][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:58:33][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:58:33][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:59:0][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:59:0][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:59:29][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 10:59:29][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:0][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:0][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:28][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:28][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:56][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:0:56][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:1:24][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:1:24][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:1:53][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:1:53][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:2:20][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:2:20][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:2:48][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[30/8/2024 11:2:48][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
+[17/10/2024 11:59:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 11:59:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
