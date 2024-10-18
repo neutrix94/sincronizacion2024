@@ -398,3 +398,413 @@
 [30/8/2024 11:2:48][INFO] Error : UPDATE sys_sucursales SET sincronizar = 0 WHERE id_sucursal = '13' : Unknown column 'id_sucursal' in 'field list'
 [17/10/2024 11:59:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
 [17/10/2024 11:59:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:18:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:18:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:19:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:19:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:19:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:19:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:20:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:20:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:20:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:20:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:21:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:21:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:21:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:21:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:22:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:22:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:22:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:22:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:23:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:23:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:23:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:23:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:24:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:24:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:24:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:24:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:25:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:25:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:25:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:25:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:26:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:26:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:26:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:26:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:27:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:27:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:27:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:27:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:28:24][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:28:24][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:28:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:28:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:29:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:29:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:30:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:30:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:30:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:30:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:31:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:31:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:31:33][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:31:33][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:32:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:32:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:32:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:32:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:33:5][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:33:5][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:33:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:33:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:34:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:34:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:34:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:34:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:35:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:35:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:35:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:35:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:36:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:36:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:36:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:36:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:37:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:37:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:37:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:37:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:38:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:38:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:38:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:38:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:39:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:39:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:39:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:39:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:40:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:40:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:40:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:40:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:41:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:41:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:41:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:41:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:42:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:42:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:42:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:42:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:43:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:43:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:43:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:43:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:44:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:44:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:44:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:44:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:45:22][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:45:22][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:45:53][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:45:53][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:46:23][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:46:23][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:46:54][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:46:54][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:47:25][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:47:25][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:47:55][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:47:55][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:48:26][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:48:26][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:48:58][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:48:58][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:49:28][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:49:28][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:49:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:49:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:50:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:50:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:51:1][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:51:1][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:51:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:51:32][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:52:3][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:52:3][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:52:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:52:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:53:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:53:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:53:35][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:53:35][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:54:5][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:54:5][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:54:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:54:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:55:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:55:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:55:37][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:55:37][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:56:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:56:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:56:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:56:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:57:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:57:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:57:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:57:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:58:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:58:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:58:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:58:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:59:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:59:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:59:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 19:59:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:0:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:0:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:0:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:0:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:1:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:1:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:1:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:1:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:2:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:2:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:2:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:2:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:3:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:3:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_cajero_cobros SET sincronizar = 0 WHERE folio_unico = '24MAT_COBRO_38' : Column 'id_sesion_caja' cannot be null"}
+[17/10/2024 20:3:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:3:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:4:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:4:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:4:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:4:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:5:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:5:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:5:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:5:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:6:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:6:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:6:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:6:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:7:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:7:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:7:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:7:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:8:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:8:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:8:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:8:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:9:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:9:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:9:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:9:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:10:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:10:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:10:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:10:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:11:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:11:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:11:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:11:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:12:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:12:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:12:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:12:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:13:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:13:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:13:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:13:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:14:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:14:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:14:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:14:41][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:15:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:15:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:15:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:15:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:16:10][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:16:10][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:16:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:16:39][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:17:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:17:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:17:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:17:38][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:18:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:18:8][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:18:37][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:18:37][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:19:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:19:7][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:19:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:19:36][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:20:6][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:20:6][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:20:35][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:20:35][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:21:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:21:4][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:21:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:21:34][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:22:3][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:22:3][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:22:33][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:22:33][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:23:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:23:2][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:23:31][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:23:31][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:24:1][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:24:1][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:24:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:24:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:25:0][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:25:0][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:25:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:25:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:0][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:0][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:30][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:26:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:27:29][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:27:29][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:27:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:27:59][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:28:29][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:28:29][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:28:58][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:28:58][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:29:27][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:29:27][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:29:57][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:29:57][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:30:26][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:30:26][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:30:55][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:30:55][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:31:25][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:31:25][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:31:54][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:31:54][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:32:23][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:32:23][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:32:53][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:32:53][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:33:22][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:33:22][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:33:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:33:51][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:34:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:34:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:34:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:34:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:35:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:35:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:35:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:35:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:36:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:36:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:36:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:36:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:37:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:37:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:37:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:37:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:38:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:38:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:38:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:38:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:39:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:39:14][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:39:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:39:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:40:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:40:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:40:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:40:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:41:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:41:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:41:52][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:41:52][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:42:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:42:21][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:42:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:42:50][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:43:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:43:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:43:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:43:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:44:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:44:18][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:44:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:44:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:45:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:45:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:45:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:45:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:46:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:46:20][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:46:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:46:49][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:47:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:47:19][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:47:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:47:48][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:48:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:48:17][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:48:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:48:47][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:49:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:49:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:49:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:49:46][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:50:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:50:15][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:50:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:50:44][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:51:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:51:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:51:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:51:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:52:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:52:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:52:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:52:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:53:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:53:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:53:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:53:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:54:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:54:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:54:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:54:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:55:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:55:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:55:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:55:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:56:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:56:13][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:56:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:56:43][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:57:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:57:12][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:57:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:57:42][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:58:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:58:11][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:58:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:58:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:59:10][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:59:10][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:59:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 20:59:40][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 21:0:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[17/10/2024 21:0:9][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[18/10/2024 12:51:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[18/10/2024 12:51:45][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[18/10/2024 12:52:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+[18/10/2024 12:52:16][INFO] {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
