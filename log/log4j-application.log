@@ -1,0 +1,67 @@
+2024-10-23 22:21:19 ERROR main:44 - java.net.BindException: Address already in use
+2024-10-23 22:56:24 INFO  procesos:213 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 22:56:56 INFO  procesos:213 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 22:57:28 INFO  procesos:213 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:06:39 INFO  procesos:111 - Iteracion  : 0  respuesta :  ok
+2024-10-23 23:06:43 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:07:11 INFO  procesos:111 - Iteracion  : 1  respuesta :  ok
+2024-10-23 23:07:14 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:07:43 INFO  procesos:111 - Iteracion  : 2  respuesta :  ok
+2024-10-23 23:07:46 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:08:15 INFO  procesos:111 - Iteracion  : 3  respuesta :  ok
+2024-10-23 23:08:18 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:08:47 INFO  procesos:111 - Iteracion  : 4  respuesta :  ok
+2024-10-23 23:08:50 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:09:18 INFO  procesos:111 - Iteracion  : 5  respuesta :  ok
+2024-10-23 23:09:21 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:09:49 INFO  procesos:111 - Iteracion  : 6  respuesta :  ok
+2024-10-23 23:09:53 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:10:21 INFO  procesos:111 - Iteracion  : 7  respuesta :  ok
+2024-10-23 23:10:24 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:10:52 INFO  procesos:111 - Iteracion  : 8  respuesta :  ok
+2024-10-23 23:10:55 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:11:24 INFO  procesos:111 - Iteracion  : 9  respuesta :  ok
+2024-10-23 23:11:27 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:11:55 INFO  procesos:111 - Iteracion  : 10  respuesta :  ok
+2024-10-23 23:11:59 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:12:27 INFO  procesos:111 - Iteracion  : 11  respuesta :  ok
+2024-10-23 23:12:30 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:12:58 INFO  procesos:111 - Iteracion  : 12  respuesta :  ok
+2024-10-23 23:13:02 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:13:30 INFO  procesos:111 - Iteracion  : 13  respuesta :  ok
+2024-10-23 23:13:33 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:14:02 INFO  procesos:111 - Iteracion  : 14  respuesta :  ok
+2024-10-23 23:14:05 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:14:33 INFO  procesos:111 - Iteracion  : 15  respuesta :  ok
+2024-10-23 23:14:37 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:15:05 INFO  procesos:111 - Iteracion  : 16  respuesta :  ok
+2024-10-23 23:15:08 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:15:37 INFO  procesos:111 - Iteracion  : 17  respuesta :  ok
+2024-10-23 23:15:40 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:16:09 INFO  procesos:111 - Iteracion  : 18  respuesta :  ok
+2024-10-23 23:16:12 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:16:40 INFO  procesos:111 - Iteracion  : 19  respuesta :  ok
+2024-10-23 23:16:43 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:17:12 INFO  procesos:111 - Iteracion  : 20  respuesta :  ok
+2024-10-23 23:17:15 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:17:44 INFO  procesos:111 - Iteracion  : 21  respuesta :  ok
+2024-10-23 23:17:47 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:18:15 INFO  procesos:111 - Iteracion  : 22  respuesta :  ok
+2024-10-23 23:18:18 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:18:47 INFO  procesos:111 - Iteracion  : 23  respuesta :  ok
+2024-10-23 23:18:50 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:19:18 INFO  procesos:111 - Iteracion  : 24  respuesta :  ok
+2024-10-23 23:19:21 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:19:50 INFO  procesos:111 - Iteracion  : 25  respuesta :  ok
+2024-10-23 23:19:53 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:20:22 INFO  procesos:111 - Iteracion  : 26  respuesta :  ok
+2024-10-23 23:20:25 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:20:54 INFO  procesos:111 - Iteracion  : 27  respuesta :  ok
+2024-10-23 23:20:57 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:21:25 INFO  procesos:111 - Iteracion  : 28  respuesta :  ok
+2024-10-23 23:21:29 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:21:57 INFO  procesos:111 - Iteracion  : 29  respuesta :  ok
+2024-10-23 23:22:01 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:22:29 INFO  procesos:111 - Iteracion  : 30  respuesta :  ok
+2024-10-23 23:22:33 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
+2024-10-23 23:23:02 INFO  procesos:111 - Iteracion  : 31  respuesta :  ok

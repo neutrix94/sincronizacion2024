@@ -25,8 +25,12 @@ import java.util.Timer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import org.apache.log4j.LogManager;
+
+
 
 public class procesos {
+   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implemenatcion 
    conexion_doble conecta;
    infoSinccronizacion info = new infoSinccronizacion();
    private Connection conexion_local;
@@ -87,7 +91,7 @@ public class procesos {
    public String ejecutaIntervalo(long tiempo_retardo_inicio) throws InterruptedException, Exception {
       this.info.setVisible(true);
     //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-
+    int count_resp = 0;
       while(true) {
          if (this.sincronizando == 0) {
             this.sincronizando = 1;
@@ -104,11 +108,13 @@ public class procesos {
                this.info.synchronization_rows_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_rows_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_registros();
+               logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
                   } catch (IOException var7) {
+                    logger4j.error(var7.toString());
                     this.errorLog( var7.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var7);
                   }
@@ -116,10 +122,12 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                   } catch (IOException var6) {
+                    logger4j.error(var6.toString());
                     this.errorLog( var6.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var6);
                   }
 
+                  logger4j.info(resp_temp.toString());
                   this.info.synchronization_rows_info.setText(resp_temp);
                   this.info.synchronization_rows_bar.setValue(100);
                   this.info.synchronization_rows_bar.setBackground(Color.red);
@@ -133,6 +141,7 @@ public class procesos {
                   this.info.synchronization_rows_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
             } catch (Exception var35) {
+                logger4j.error(var35.toString());
                 this.errorLog( var35.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var35);
             }
@@ -147,6 +156,7 @@ public class procesos {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
                   } catch (IOException var25) {
+                    logger4j.error(var25.toString());
                     this.errorLog( var25.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var25);
                   }
@@ -154,10 +164,12 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                   } catch (IOException var24) {
+                    logger4j.error(var24.toString());
                     this.errorLog( var24.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var24);
                   }
 
+                  logger4j.info(resp_temp.toString());
                   this.info.synchronization_transfer_info.setText(resp_temp);
                   this.info.synchronization_transfer_bar.setValue(100);
                   this.info.synchronization_transfer_bar.setBackground(Color.red);
@@ -170,6 +182,7 @@ public class procesos {
                   this.info.synchronization_transfer_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
             } catch (Exception var26) {
+                logger4j.error(var26.toString());
                 this.errorLog( var26.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var26);
             }
@@ -184,18 +197,21 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var9) {                    
+                  } catch (IOException var9) {   
+                    logger4j.error(var9.toString());                 
                     this.errorLog( var9.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var9);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var8) {                 
+                  } catch (IOException var8) {   
+                    logger4j.error(var8.toString());              
                     this.errorLog( var8.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var8);
                   }
 
+                  logger4j.info(resp_temp.toString());
                   this.info.synchronization_sales_info.setText(resp_temp);
                   this.info.synchronization_sales_bar.setValue(100);
                   this.info.synchronization_sales_bar.setBackground(Color.red);
@@ -208,7 +224,8 @@ public class procesos {
                   this.info.synchronization_sales_bar.setForeground(Color.green);
                   this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var34) {                 
+            } catch (Exception var34) {  
+                logger4j.error(var34.toString());               
                 this.errorLog( var34.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var34);
             }
@@ -223,18 +240,21 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var11) {                 
+                  } catch (IOException var11) {    
+                    logger4j.error(var11.toString());             
                     this.errorLog( var11.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var11);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var10) {                 
+                  } catch (IOException var10) {      
+                    logger4j.error(var10.toString());           
                     this.errorLog( var10.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var10);
                   }
 
+                  logger4j.info(resp_temp.toString());
                   this.info.synchronization_sales_info.setText(resp_temp);
                   this.info.synchronization_sales_bar_update.setValue(100);
                   this.info.synchronization_sales_bar_update.setBackground(Color.red);
@@ -247,7 +267,8 @@ public class procesos {
                   this.info.synchronization_sales_bar_update.setForeground(Color.green);
                   this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var33) {                 
+            } catch (Exception var33) {     
+                logger4j.error(var33.toString());            
                 this.errorLog( var33.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var33);
             }
@@ -262,14 +283,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var13) {                 
+                  } catch (IOException var13) {   
+                    logger4j.error(var13.toString());              
                     this.errorLog( var13.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var13);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var12) {                 
+                  } catch (IOException var12) { 
+                    logger4j.error(var12.toString());                
                     this.errorLog( var12.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var12);
                   }
@@ -286,7 +309,8 @@ public class procesos {
                   this.info.synchronization_returns_bar.setForeground(Color.green);
                   this.info.synchronization_returns_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var32) {                 
+            } catch (Exception var32) {
+                logger4j.error(var32.toString());                 
                 this.errorLog( var32.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var32);
             }
@@ -301,14 +325,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var15) {                 
+                  } catch (IOException var15) {   
+                    logger4j.error(var15.toString());              
                     this.errorLog( var15.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var15);
                   }
 
                   try {
                     this.InfoLog(resp_temp);
-                  } catch (IOException var14) {                 
+                  } catch (IOException var14) {   
+                    logger4j.error(var14.toString());              
                     this.errorLog( var14.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var14);
                   }
@@ -325,7 +351,8 @@ public class procesos {
                   this.info.synchronization_movements_bar.setForeground(Color.green);
                   this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var31) {                 
+            } catch (Exception var31) {  
+                logger4j.error(var31.toString());               
                 this.errorLog( var31.toString() );
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var31);
             }
@@ -340,14 +367,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var17) {                 
+                  } catch (IOException var17) {   
+                    logger4j.error(var17.toString());              
                     this.errorLog( var17.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var17);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var16) {                 
+                  } catch (IOException var16) {  
+                    logger4j.error(var16.toString());               
                     this.errorLog( var16.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var16);
                   }
@@ -364,7 +393,8 @@ public class procesos {
                   this.info.synchronization_movements_bar_update.setForeground(Color.green);
                   this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var30) {                 
+            } catch (Exception var30) {            
+                logger4j.error(var30.toString());     
                 this.errorLog( var30.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var30);
             }
@@ -379,14 +409,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var19) {                 
+                  } catch (IOException var19) { 
+                    logger4j.error(var19.toString());                
                     this.errorLog( var19.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var19);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var18) {                 
+                  } catch (IOException var18) {   
+                    logger4j.error(var18.toString());              
                     this.errorLog( var18.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var18);
                   }
@@ -403,7 +435,8 @@ public class procesos {
                   this.info.synchronization_sales_validation_bar.setForeground(Color.green);
                   this.info.synchronization_sales_validation_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var29) {                 
+            } catch (Exception var29) {         
+                logger4j.error(var29.toString());        
                 this.errorLog( var29.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var29);
             }
@@ -418,14 +451,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var21) {                 
+                  } catch (IOException var21) {  
+                    logger4j.error(var21.toString());               
                     this.errorLog( var21.toString() );
                      Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var21);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var20) {                 
+                  } catch (IOException var20) { 
+                    logger4j.error(var20.toString());                
                     this.errorLog( var20.toString() );
                      Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var20);
                   }
@@ -442,7 +477,8 @@ public class procesos {
                   this.info.synchronization_product_provider_bar.setForeground(Color.green);
                   this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var28) {                 
+            } catch (Exception var28) {             
+                logger4j.error(var28.toString());    
                 this.errorLog( var28.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var28);
             }
@@ -457,14 +493,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var23) {                 
+                  } catch (IOException var23) {  
+                    logger4j.error(var23.toString());               
                     this.errorLog( var23.toString() );
                      Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var23);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var22) {                 
+                  } catch (IOException var22) { 
+                    logger4j.error(var22.toString());                
                     this.errorLog( var22.toString() );
                      Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var22);
                   }
@@ -481,7 +519,8 @@ public class procesos {
                   this.info.synchronization_product_provider_bar_update.setForeground(Color.green);
                   this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception var27) {                 
+            } catch (Exception var27) {   
+                logger4j.error(var27.toString());              
                 this.errorLog( var27.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var27);
             }
@@ -496,14 +535,16 @@ public class procesos {
                   try {
                      this.InfoLog(resp_temp);
                      this.info.logArea.append(resp_temp + "\n");
-                  } catch (IOException var25) {                 
+                  } catch (IOException var25) { 
+                    logger4j.error(var25.toString());                
                     this.errorLog( var25.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var25);
                   }
 
                   try {
                      this.InfoLog(resp_temp);
-                  } catch (IOException var24) {                 
+                  } catch (IOException var24) { 
+                    logger4j.error(var24.toString());                
                     this.errorLog( var24.toString() );
                     Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var24);
                   }
@@ -519,7 +560,8 @@ public class procesos {
                   this.info.synchronization_depuration_bar.setForeground(Color.green);
                   this.info.synchronization_depuration_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                }
-            } catch (Exception e) {                 
+            } catch (Exception e) {          
+                logger4j.error(e.toString());       
                 this.errorLog( e.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
             }
@@ -534,15 +576,17 @@ public class procesos {
                     try {
                        this.InfoLog(resp_temp);
                        this.info.logArea.append(resp_temp + "\n");
-                    } catch (IOException var25) {                 
-                    this.errorLog( var25.toString() );
+                    } catch (IOException var25) { 
+                        logger4j.error(var25.toString());                
+                        this.errorLog( var25.toString() );
                        Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var25);
                     }
 
                     try {
                        this.InfoLog(resp_temp);
-                    } catch (IOException var24) {                 
-                    this.errorLog( var24.toString() );
+                    } catch (IOException var24) {
+                        logger4j.error(var24.toString());                 
+                        this.errorLog( var24.toString() );
                        Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var24);
                     }
 
@@ -557,7 +601,8 @@ public class procesos {
                     this.info.synchronization_depuration_log_bar.setForeground(Color.green);
                     this.info.synchronization_depuration_log_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                 }
-            } catch (Exception e) {                 
+            } catch (Exception e) { 
+                logger4j.error(e.toString());                
                 this.errorLog( e.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
             }
@@ -568,7 +613,7 @@ public class procesos {
          } else {
             JOptionPane.showMessageDialog((Component)null, "Aun esta sincronizando!!!");
          }
-
+         count_resp ++;
          Thread.sleep((long)this.tiempo_buscar);
       }
    }

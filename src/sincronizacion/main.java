@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import sincronizacionsistema.carga_inicial;
 import sincronizacionsistema.ventanaInicio;
+import org.apache.log4j.LogManager;
 
 /**
  *
@@ -24,6 +25,7 @@ public class main {
    public static long retardo_inicial;
    public static String local_system_path;
    private static ServerSocket SERVER_SOCKET;
+   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(main.class);//implemenatcion 
 
    public static void main(String[] args) throws SQLException, IOException, FileNotFoundException, InterruptedException {
       carga_inicial carga = new carga_inicial();
@@ -39,6 +41,7 @@ public class main {
       try {
          SERVER_SOCKET = new ServerSocket(carga_inicial.puerto_sinc);
       } catch (IOException var4) {
+        logger4j.error(var4.toString());
          JOptionPane.showMessageDialog((Component)null, "El sistema de sincronizacion ya se encuentra en ejecucion");
          System.exit(0);
       }
