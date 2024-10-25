@@ -29,8 +29,10 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.UIManager.LookAndFeelInfo;
+import org.apache.log4j.LogManager;
 import org.netbeans.lib.awtextra.AbsoluteConstraints;
 import org.netbeans.lib.awtextra.AbsoluteLayout;
+import org.apache.log4j.LogManager;
 
 public class ventanaInicio extends JFrame {
    conexion_doble conecta;
@@ -47,6 +49,7 @@ public class ventanaInicio extends JFrame {
    private JLabel jLabel3;
    private JScrollPane jScrollPane1;
    public JTextArea status_sinc;
+   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(ventanaInicio.class);//implementacion de logger4j 2024-10-23
 
    public ventanaInicio(String ruta_conect, long retardo, String system_path) throws SQLException, IOException, InterruptedException {
       this.initComponents();
@@ -77,6 +80,8 @@ public class ventanaInicio extends JFrame {
       try {
          this.status_sinc.setText(this.proc.ejecutaIntervalo(retardo));
       } catch (Exception var9) {
+        logger4j.info( var9.toString() );//aqui no se controlaba anteriormente el error
+       // this.dispose();//qctualmente revisar
       }
 
    }

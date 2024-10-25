@@ -30,7 +30,7 @@ import org.apache.log4j.LogManager;
 
 
 public class procesos {
-   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implemenatcion 
+   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implementacion de logger4j 2024-10-23 
    conexion_doble conecta;
    infoSinccronizacion info = new infoSinccronizacion();
    private Connection conexion_local;
@@ -101,10 +101,9 @@ public class procesos {
             this.info.time_interval_field.setText("" + this.tiempo_buscar / 1000);
             this.reset_progress_bar();
             String resp_temp = "";
-            this.obtener_registros_restantes();
-            System.out.println("pasa");
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_rows_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_rows_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_registros();
@@ -146,8 +145,8 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var35);
             }
 
-            this.obtener_registros_restantes();
              try {
+                this.obtener_registros_restantes();
                this.info.synchronization_transfer_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_transfer_info.setText("Sincronizando...<->");
                resp_temp = this.sys_sincronizacion_registros_transferencias();
@@ -187,9 +186,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var26);
             }
 
-            this.obtener_registros_restantes();
             
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_sales_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
                this.info.synchronization_sales_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_registros_ventas();
@@ -230,9 +229,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var34);
             }
 
-            this.obtener_registros_restantes();
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_sales_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_sales_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_ventas();
@@ -273,9 +272,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var33);
             }
 
-            this.obtener_registros_restantes();
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_returns_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_returns_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_devoluciones();
@@ -315,9 +314,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var32);
             }
 
-            this.obtener_registros_restantes();
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_movements_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_m_a();
@@ -357,9 +356,9 @@ public class procesos {
                Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var31);
             }
 
-            this.obtener_registros_restantes();
             
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_movements_info.setText("Sincronizando...<->");
                resp_temp = this.sys_sincronizacion_registros_movimientos_almacen();
@@ -399,9 +398,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var30);
             }
 
-            this.obtener_registros_restantes();
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_sales_validation_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_sales_validation_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_validaciones_ventas();
@@ -441,9 +440,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var29);
             }
 
-            this.obtener_registros_restantes();
 
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_product_provider_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
                resp_temp = this.sincroniza_movimientos_proveedor_producto();
@@ -483,9 +482,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var28);
             }
 
-            this.obtener_registros_restantes();
             
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_product_provider_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
                this.info.synchronization_product_provider_info.setText("Sincronizando...<->");
                resp_temp = this.sys_sincronizacion_registros_movimientos_proveedor_producto();
@@ -525,9 +524,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var27);
             }
 
-            this.obtener_registros_restantes();
            
             try {
+                this.obtener_registros_restantes();
                this.info.synchronization_depuration_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_depuration_info.setText("Depurando...");
                resp_temp = this.depurationProcess( false );
@@ -566,9 +565,9 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
             }
 
-            this.obtener_registros_restantes();
             
             try {
+              this.obtener_registros_restantes();
                this.info.synchronization_depuration_log_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                this.info.synchronization_depuration_log_info.setText("Depurando...");
                resp_temp = this.depurationLogProcess( false );
@@ -897,29 +896,34 @@ public class procesos {
        rd.close();
        String tmp = resultado.toString();
        String[] registrosPendientes = tmp.split(",");
-       System.out.println("Reg pendientes : " + registrosPendientes[0]);
-       this.info.synchronization_rows_upload.setText("" + registrosPendientes[0]);
-       this.info.synchronization_rows_download.setText("" + registrosPendientes[7]);
-       this.info.synchronization_sales_upload.setText("" + registrosPendientes[1]);
-       this.info.synchronization_sales_download.setText("" + registrosPendientes[8]);
-       this.info.synchronization_returns_upload.setText("" + registrosPendientes[2]);
-       this.info.synchronization_returns_download.setText("" + registrosPendientes[9]);
-       this.info.synchronization_movements_upload.setText("" + registrosPendientes[3]);
-       this.info.synchronization_movements_download.setText("" + registrosPendientes[10]);
-       this.info.synchronization_sales_validation_upload.setText("" + registrosPendientes[4]);
-       this.info.synchronization_sales_validation_download.setText("" + registrosPendientes[11]);
-       this.info.synchronization_product_provider_upload.setText("" + registrosPendientes[5]);
-       this.info.synchronization_product_provider_download.setText("" + registrosPendientes[12]);
-       this.info.synchronization_transfer_upload.setText("" + registrosPendientes[6]);
-       this.info.synchronization_transfer_download.setText("" + registrosPendientes[13]);
-       this.info.url_field.setText("" + registrosPendientes[14]);
-       this.info.synchronization_rows_number.setText("" + registrosPendientes[15]);
-       this.info.synchronization_sales_number.setText("" + registrosPendientes[16]);
-       this.info.synchronization_returns_number.setText("" + registrosPendientes[17]);
-       this.info.synchronization_movements_number.setText("" + registrosPendientes[18]);
-       this.info.synchronization_sales_validation_number.setText("" + registrosPendientes[19]);
-       this.info.synchronization_product_provider_number.setText("" + registrosPendientes[20]);
-       this.info.synchronization_transfer_number.setText("" + registrosPendientes[21]);
+       if( registrosPendientes.length < 22 ){
+           throw new Exception("El API no regreso una respuesta correcta.");
+           //return resultado.toString();
+       }else{
+//System.out.println("Reg pendientes : " + registrosPendientes[0]);
+        this.info.synchronization_rows_upload.setText("" + registrosPendientes[0]);
+        this.info.synchronization_rows_download.setText("" + registrosPendientes[7]);
+        this.info.synchronization_sales_upload.setText("" + registrosPendientes[1]);
+        this.info.synchronization_sales_download.setText("" + registrosPendientes[8]);
+        this.info.synchronization_returns_upload.setText("" + registrosPendientes[2]);
+        this.info.synchronization_returns_download.setText("" + registrosPendientes[9]);
+        this.info.synchronization_movements_upload.setText("" + registrosPendientes[3]);
+        this.info.synchronization_movements_download.setText("" + registrosPendientes[10]);
+        this.info.synchronization_sales_validation_upload.setText("" + registrosPendientes[4]);
+        this.info.synchronization_sales_validation_download.setText("" + registrosPendientes[11]);
+        this.info.synchronization_product_provider_upload.setText("" + registrosPendientes[5]);
+        this.info.synchronization_product_provider_download.setText("" + registrosPendientes[12]);
+        this.info.synchronization_transfer_upload.setText("" + registrosPendientes[6]);
+        this.info.synchronization_transfer_download.setText("" + registrosPendientes[13]);
+        this.info.url_field.setText("" + registrosPendientes[14]);
+        this.info.synchronization_rows_number.setText("" + registrosPendientes[15]);
+        this.info.synchronization_sales_number.setText("" + registrosPendientes[16]);
+        this.info.synchronization_returns_number.setText("" + registrosPendientes[17]);
+        this.info.synchronization_movements_number.setText("" + registrosPendientes[18]);
+        this.info.synchronization_sales_validation_number.setText("" + registrosPendientes[19]);
+        this.info.synchronization_product_provider_number.setText("" + registrosPendientes[20]);
+        this.info.synchronization_transfer_number.setText("" + registrosPendientes[21]);
+       }
        return resultado.toString();
     }
    
