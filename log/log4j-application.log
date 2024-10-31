@@ -65,3 +65,1828 @@
 2024-10-23 23:22:29 INFO  procesos:111 - Iteracion  : 30  respuesta :  ok
 2024-10-23 23:22:33 INFO  procesos:214 - {"response":"Respuesta Erronea : Error : UPDATE ec_pedido_pagos SET sincronizar = 0 WHERE folio_unico = '24MAT_VTAPAG_542402' : Subquery returns more than 1 row"}
 2024-10-23 23:23:02 INFO  procesos:111 - Iteracion  : 31  respuesta :  ok
+2024-10-25 11:37:06 INFO  procesos:111 - Iteracion  : 0  respuesta :  ok
+2024-10-25 11:37:37 INFO  procesos:111 - Iteracion  : 1  respuesta :  ok
+2024-10-25 11:38:08 INFO  procesos:111 - Iteracion  : 2  respuesta :  ok
+2024-10-25 11:38:39 INFO  procesos:111 - Iteracion  : 3  respuesta :  ok
+2024-10-25 11:39:10 INFO  procesos:111 - Iteracion  : 4  respuesta :  ok
+2024-10-25 11:39:40 INFO  procesos:111 - Iteracion  : 5  respuesta :  ok
+2024-10-25 11:40:11 INFO  procesos:111 - Iteracion  : 6  respuesta :  ok
+2024-10-25 11:40:42 INFO  procesos:111 - Iteracion  : 7  respuesta :  ok
+2024-10-25 11:41:12 INFO  procesos:111 - Iteracion  : 8  respuesta :  ok
+2024-10-25 11:41:42 INFO  procesos:111 - Iteracion  : 9  respuesta :  ok
+2024-10-25 11:42:13 INFO  procesos:111 - Iteracion  : 10  respuesta :  ok
+2024-10-25 11:42:43 INFO  procesos:111 - Iteracion  : 11  respuesta :  ok
+2024-10-25 11:42:47 ERROR main:44 - java.net.BindException: Address already in use
+2024-10-25 11:43:02 INFO  procesos:111 - Iteracion  : 0  respuesta :  ok
+2024-10-25 11:44:22 INFO  procesos:257 - {"response":"Respuesta Erronea : Posiblemente no hay conexion con el servidor de Linea"}
+2024-10-25 11:44:22 INFO  ventanaInicio:83 - java.lang.ArrayIndexOutOfBoundsException: Index 16 out of bounds for length 16
+2024-10-25 11:56:31 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-25 12:45:10 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-25 12:47:58 INFO  procesos:110 - Iteracion  : 1  respuesta :  ok
+2024-10-25 12:47:58 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:47:58 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:09 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:19 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:29 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:40 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:48:50 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:00 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:01 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:01 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:01 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:11 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-25 12:49:23 INFO  procesos:110 - Iteracion  : 9  respuesta :  ok
+2024-10-25 12:49:57 INFO  procesos:110 - Iteracion  : 10  respuesta :  ok
+2024-10-25 12:50:27 INFO  procesos:110 - Iteracion  : 11  respuesta :  ok
+2024-10-25 12:51:00 INFO  procesos:110 - Iteracion  : 12  respuesta :  ok
+2024-10-25 12:51:33 INFO  procesos:110 - Iteracion  : 13  respuesta :  ok
+2024-10-25 12:52:07 INFO  procesos:110 - Iteracion  : 14  respuesta :  ok
+2024-10-25 12:52:40 INFO  procesos:110 - Iteracion  : 15  respuesta :  ok
+2024-10-25 12:53:13 INFO  procesos:110 - Iteracion  : 16  respuesta :  ok
+2024-10-25 12:53:46 INFO  procesos:110 - Iteracion  : 17  respuesta :  ok
+2024-10-25 12:54:19 INFO  procesos:110 - Iteracion  : 18  respuesta :  ok
+2024-10-25 12:54:52 INFO  procesos:110 - Iteracion  : 19  respuesta :  ok
+2024-10-25 12:55:25 INFO  procesos:110 - Iteracion  : 20  respuesta :  ok
+2024-10-25 12:55:58 INFO  procesos:110 - Iteracion  : 21  respuesta :  ok
+2024-10-25 12:56:31 INFO  procesos:110 - Iteracion  : 22  respuesta :  ok
+2024-10-25 12:57:01 INFO  procesos:110 - Iteracion  : 23  respuesta :  ok
+2024-10-25 12:57:33 INFO  procesos:110 - Iteracion  : 24  respuesta :  ok
+2024-10-25 12:58:04 INFO  procesos:110 - Iteracion  : 25  respuesta :  ok
+2024-10-25 12:58:34 INFO  procesos:110 - Iteracion  : 26  respuesta :  ok
+2024-10-25 12:59:06 INFO  procesos:110 - Iteracion  : 27  respuesta :  ok
+2024-10-25 12:59:36 INFO  procesos:110 - Iteracion  : 28  respuesta :  ok
+2024-10-25 13:00:08 INFO  procesos:110 - Iteracion  : 29  respuesta :  ok
+2024-10-25 13:00:38 INFO  procesos:110 - Iteracion  : 30  respuesta :  ok
+2024-10-25 13:01:08 INFO  procesos:110 - Iteracion  : 31  respuesta :  ok
+2024-10-25 13:01:39 INFO  procesos:110 - Iteracion  : 32  respuesta :  ok
+2024-10-25 13:02:11 INFO  procesos:110 - Iteracion  : 33  respuesta :  ok
+2024-10-25 13:02:42 INFO  procesos:110 - Iteracion  : 34  respuesta :  ok
+2024-10-25 13:03:13 INFO  procesos:110 - Iteracion  : 35  respuesta :  ok
+2024-10-25 13:03:44 INFO  procesos:110 - Iteracion  : 36  respuesta :  ok
+2024-10-25 13:04:15 INFO  procesos:110 - Iteracion  : 37  respuesta :  ok
+2024-10-25 13:04:49 INFO  procesos:110 - Iteracion  : 38  respuesta :  ok
+2024-10-25 13:05:22 INFO  procesos:110 - Iteracion  : 39  respuesta :  ok
+2024-10-25 13:05:55 INFO  procesos:110 - Iteracion  : 40  respuesta :  ok
+2024-10-25 13:06:26 INFO  procesos:110 - Iteracion  : 41  respuesta :  ok
+2024-10-25 13:06:58 INFO  procesos:110 - Iteracion  : 42  respuesta :  ok
+2024-10-25 13:07:29 INFO  procesos:110 - Iteracion  : 43  respuesta :  ok
+2024-10-25 13:07:59 INFO  procesos:110 - Iteracion  : 44  respuesta :  ok
+2024-10-25 13:08:30 INFO  procesos:110 - Iteracion  : 45  respuesta :  ok
+2024-10-25 13:09:01 INFO  procesos:110 - Iteracion  : 46  respuesta :  ok
+2024-10-25 13:09:32 INFO  procesos:110 - Iteracion  : 47  respuesta :  ok
+2024-10-25 13:10:03 INFO  procesos:110 - Iteracion  : 48  respuesta :  ok
+2024-10-25 13:10:33 INFO  procesos:110 - Iteracion  : 49  respuesta :  ok
+2024-10-25 13:11:04 INFO  procesos:110 - Iteracion  : 50  respuesta :  ok
+2024-10-25 13:11:35 INFO  procesos:110 - Iteracion  : 51  respuesta :  ok
+2024-10-25 13:12:05 INFO  procesos:110 - Iteracion  : 52  respuesta :  ok
+2024-10-25 13:12:36 INFO  procesos:110 - Iteracion  : 53  respuesta :  ok
+2024-10-25 13:13:06 INFO  procesos:110 - Iteracion  : 54  respuesta :  ok
+2024-10-25 13:13:37 INFO  procesos:110 - Iteracion  : 55  respuesta :  ok
+2024-10-25 13:14:08 INFO  procesos:110 - Iteracion  : 56  respuesta :  ok
+2024-10-25 13:14:39 INFO  procesos:110 - Iteracion  : 57  respuesta :  ok
+2024-10-25 13:15:10 INFO  procesos:110 - Iteracion  : 58  respuesta :  ok
+2024-10-25 13:15:40 INFO  procesos:110 - Iteracion  : 59  respuesta :  ok
+2024-10-25 13:16:11 INFO  procesos:110 - Iteracion  : 60  respuesta :  ok
+2024-10-25 13:16:42 INFO  procesos:110 - Iteracion  : 61  respuesta :  ok
+2024-10-25 13:17:13 INFO  procesos:110 - Iteracion  : 62  respuesta :  ok
+2024-10-25 13:17:44 INFO  procesos:110 - Iteracion  : 63  respuesta :  ok
+2024-10-25 13:18:15 INFO  procesos:110 - Iteracion  : 64  respuesta :  ok
+2024-10-25 13:18:45 INFO  procesos:110 - Iteracion  : 65  respuesta :  ok
+2024-10-25 13:19:16 INFO  procesos:110 - Iteracion  : 66  respuesta :  ok
+2024-10-25 13:19:47 INFO  procesos:110 - Iteracion  : 67  respuesta :  ok
+2024-10-25 13:20:18 INFO  procesos:110 - Iteracion  : 68  respuesta :  ok
+2024-10-25 13:20:48 INFO  procesos:110 - Iteracion  : 69  respuesta :  ok
+2024-10-25 13:21:19 INFO  procesos:110 - Iteracion  : 70  respuesta :  ok
+2024-10-25 13:21:49 INFO  procesos:110 - Iteracion  : 71  respuesta :  ok
+2024-10-25 13:22:20 INFO  procesos:110 - Iteracion  : 72  respuesta :  ok
+2024-10-25 13:22:50 INFO  procesos:110 - Iteracion  : 73  respuesta :  ok
+2024-10-25 13:23:21 INFO  procesos:110 - Iteracion  : 74  respuesta :  ok
+2024-10-25 13:23:52 INFO  procesos:110 - Iteracion  : 75  respuesta :  ok
+2024-10-25 13:24:23 INFO  procesos:110 - Iteracion  : 76  respuesta :  ok
+2024-10-25 13:24:53 INFO  procesos:110 - Iteracion  : 77  respuesta :  ok
+2024-10-25 13:25:24 INFO  procesos:110 - Iteracion  : 78  respuesta :  ok
+2024-10-25 13:25:55 INFO  procesos:110 - Iteracion  : 79  respuesta :  ok
+2024-10-25 13:26:25 INFO  procesos:110 - Iteracion  : 80  respuesta :  ok
+2024-10-25 13:26:56 INFO  procesos:110 - Iteracion  : 81  respuesta :  ok
+2024-10-25 13:27:26 INFO  procesos:110 - Iteracion  : 82  respuesta :  ok
+2024-10-25 13:27:57 INFO  procesos:110 - Iteracion  : 83  respuesta :  ok
+2024-10-25 13:28:28 INFO  procesos:110 - Iteracion  : 84  respuesta :  ok
+2024-10-25 13:28:59 INFO  procesos:110 - Iteracion  : 85  respuesta :  ok
+2024-10-25 13:29:30 INFO  procesos:110 - Iteracion  : 86  respuesta :  ok
+2024-10-25 13:30:01 INFO  procesos:110 - Iteracion  : 87  respuesta :  ok
+2024-10-25 13:30:32 INFO  procesos:110 - Iteracion  : 88  respuesta :  ok
+2024-10-25 13:31:03 INFO  procesos:110 - Iteracion  : 89  respuesta :  ok
+2024-10-25 13:31:34 INFO  procesos:110 - Iteracion  : 90  respuesta :  ok
+2024-10-25 13:32:05 INFO  procesos:110 - Iteracion  : 91  respuesta :  ok
+2024-10-25 13:32:35 INFO  procesos:110 - Iteracion  : 92  respuesta :  ok
+2024-10-25 13:33:06 INFO  procesos:110 - Iteracion  : 93  respuesta :  ok
+2024-10-25 13:33:37 INFO  procesos:110 - Iteracion  : 94  respuesta :  ok
+2024-10-25 13:34:07 INFO  procesos:110 - Iteracion  : 95  respuesta :  ok
+2024-10-25 13:34:37 INFO  procesos:110 - Iteracion  : 96  respuesta :  ok
+2024-10-25 13:35:09 INFO  procesos:110 - Iteracion  : 97  respuesta :  ok
+2024-10-25 13:35:40 INFO  procesos:110 - Iteracion  : 98  respuesta :  ok
+2024-10-25 13:36:10 INFO  procesos:110 - Iteracion  : 99  respuesta :  ok
+2024-10-25 13:36:41 INFO  procesos:110 - Iteracion  : 100  respuesta :  ok
+2024-10-25 13:37:11 INFO  procesos:110 - Iteracion  : 101  respuesta :  ok
+2024-10-25 13:37:42 INFO  procesos:110 - Iteracion  : 102  respuesta :  ok
+2024-10-25 13:38:13 INFO  procesos:110 - Iteracion  : 103  respuesta :  ok
+2024-10-25 13:38:44 INFO  procesos:110 - Iteracion  : 104  respuesta :  ok
+2024-10-25 13:39:14 INFO  procesos:110 - Iteracion  : 105  respuesta :  ok
+2024-10-25 13:39:45 INFO  procesos:110 - Iteracion  : 106  respuesta :  ok
+2024-10-25 13:40:16 INFO  procesos:110 - Iteracion  : 107  respuesta :  ok
+2024-10-25 13:40:47 INFO  procesos:110 - Iteracion  : 108  respuesta :  ok
+2024-10-25 13:41:18 INFO  procesos:110 - Iteracion  : 109  respuesta :  ok
+2024-10-25 13:41:49 INFO  procesos:110 - Iteracion  : 110  respuesta :  ok
+2024-10-25 13:42:20 INFO  procesos:110 - Iteracion  : 111  respuesta :  ok
+2024-10-25 13:42:51 INFO  procesos:110 - Iteracion  : 112  respuesta :  ok
+2024-10-25 13:43:23 INFO  procesos:110 - Iteracion  : 113  respuesta :  ok
+2024-10-25 13:43:54 INFO  procesos:110 - Iteracion  : 114  respuesta :  ok
+2024-10-25 13:44:25 INFO  procesos:110 - Iteracion  : 115  respuesta :  ok
+2024-10-25 13:44:56 INFO  procesos:110 - Iteracion  : 116  respuesta :  ok
+2024-10-25 13:45:27 INFO  procesos:110 - Iteracion  : 117  respuesta :  ok
+2024-10-25 13:45:58 INFO  procesos:110 - Iteracion  : 118  respuesta :  ok
+2024-10-25 13:46:29 INFO  procesos:110 - Iteracion  : 119  respuesta :  ok
+2024-10-25 13:47:00 INFO  procesos:110 - Iteracion  : 120  respuesta :  ok
+2024-10-25 13:47:31 INFO  procesos:110 - Iteracion  : 121  respuesta :  ok
+2024-10-25 13:48:02 INFO  procesos:110 - Iteracion  : 122  respuesta :  ok
+2024-10-25 13:48:33 INFO  procesos:110 - Iteracion  : 123  respuesta :  ok
+2024-10-25 13:49:04 INFO  procesos:110 - Iteracion  : 124  respuesta :  ok
+2024-10-25 13:49:35 INFO  procesos:110 - Iteracion  : 125  respuesta :  ok
+2024-10-25 13:50:05 INFO  procesos:110 - Iteracion  : 126  respuesta :  ok
+2024-10-25 13:50:36 INFO  procesos:110 - Iteracion  : 127  respuesta :  ok
+2024-10-25 13:51:06 INFO  procesos:110 - Iteracion  : 128  respuesta :  ok
+2024-10-25 13:51:37 INFO  procesos:110 - Iteracion  : 129  respuesta :  ok
+2024-10-25 13:52:08 INFO  procesos:110 - Iteracion  : 130  respuesta :  ok
+2024-10-25 13:52:39 INFO  procesos:110 - Iteracion  : 131  respuesta :  ok
+2024-10-25 13:53:09 INFO  procesos:110 - Iteracion  : 132  respuesta :  ok
+2024-10-25 13:53:40 INFO  procesos:110 - Iteracion  : 133  respuesta :  ok
+2024-10-25 13:54:11 INFO  procesos:110 - Iteracion  : 134  respuesta :  ok
+2024-10-25 13:54:41 INFO  procesos:110 - Iteracion  : 135  respuesta :  ok
+2024-10-25 13:55:12 INFO  procesos:110 - Iteracion  : 136  respuesta :  ok
+2024-10-25 13:55:42 INFO  procesos:110 - Iteracion  : 137  respuesta :  ok
+2024-10-25 13:56:13 INFO  procesos:110 - Iteracion  : 138  respuesta :  ok
+2024-10-25 13:56:44 INFO  procesos:110 - Iteracion  : 139  respuesta :  ok
+2024-10-25 13:57:14 INFO  procesos:110 - Iteracion  : 140  respuesta :  ok
+2024-10-25 13:57:45 INFO  procesos:110 - Iteracion  : 141  respuesta :  ok
+2024-10-25 13:58:16 INFO  procesos:110 - Iteracion  : 142  respuesta :  ok
+2024-10-25 13:58:47 INFO  procesos:110 - Iteracion  : 143  respuesta :  ok
+2024-10-25 13:59:17 INFO  procesos:110 - Iteracion  : 144  respuesta :  ok
+2024-10-25 13:59:48 INFO  procesos:110 - Iteracion  : 145  respuesta :  ok
+2024-10-25 14:00:19 INFO  procesos:110 - Iteracion  : 146  respuesta :  ok
+2024-10-25 14:00:50 INFO  procesos:110 - Iteracion  : 147  respuesta :  ok
+2024-10-25 14:01:20 INFO  procesos:110 - Iteracion  : 148  respuesta :  ok
+2024-10-25 14:01:51 INFO  procesos:110 - Iteracion  : 149  respuesta :  ok
+2024-10-25 14:02:21 INFO  procesos:110 - Iteracion  : 150  respuesta :  ok
+2024-10-25 14:02:52 INFO  procesos:110 - Iteracion  : 151  respuesta :  ok
+2024-10-25 14:03:22 INFO  procesos:110 - Iteracion  : 152  respuesta :  ok
+2024-10-25 14:03:53 INFO  procesos:110 - Iteracion  : 153  respuesta :  ok
+2024-10-25 14:04:26 INFO  procesos:110 - Iteracion  : 154  respuesta :  ok
+2024-10-25 14:04:59 INFO  procesos:110 - Iteracion  : 155  respuesta :  ok
+2024-10-25 14:05:33 INFO  procesos:110 - Iteracion  : 156  respuesta :  ok
+2024-10-25 14:06:07 INFO  procesos:110 - Iteracion  : 157  respuesta :  ok
+2024-10-25 14:06:43 INFO  procesos:110 - Iteracion  : 158  respuesta :  ok
+2024-10-25 14:07:14 INFO  procesos:110 - Iteracion  : 159  respuesta :  ok
+2024-10-25 14:07:45 INFO  procesos:110 - Iteracion  : 160  respuesta :  ok
+2024-10-25 14:08:15 INFO  procesos:110 - Iteracion  : 161  respuesta :  ok
+2024-10-25 14:08:47 INFO  procesos:110 - Iteracion  : 162  respuesta :  ok
+2024-10-25 14:09:17 INFO  procesos:110 - Iteracion  : 163  respuesta :  ok
+2024-10-25 14:09:47 INFO  procesos:110 - Iteracion  : 164  respuesta :  ok
+2024-10-25 14:10:18 INFO  procesos:110 - Iteracion  : 165  respuesta :  ok
+2024-10-25 14:10:48 INFO  procesos:110 - Iteracion  : 166  respuesta :  ok
+2024-10-25 14:11:19 INFO  procesos:110 - Iteracion  : 167  respuesta :  ok
+2024-10-25 14:11:51 INFO  procesos:110 - Iteracion  : 168  respuesta :  ok
+2024-10-25 14:12:21 INFO  procesos:110 - Iteracion  : 169  respuesta :  ok
+2024-10-25 14:12:52 INFO  procesos:110 - Iteracion  : 170  respuesta :  ok
+2024-10-25 14:13:23 INFO  procesos:110 - Iteracion  : 171  respuesta :  ok
+2024-10-25 14:13:54 INFO  procesos:110 - Iteracion  : 172  respuesta :  ok
+2024-10-25 14:14:26 INFO  procesos:110 - Iteracion  : 173  respuesta :  ok
+2024-10-25 14:14:56 INFO  procesos:110 - Iteracion  : 174  respuesta :  ok
+2024-10-25 14:15:27 INFO  procesos:110 - Iteracion  : 175  respuesta :  ok
+2024-10-25 14:15:58 INFO  procesos:110 - Iteracion  : 176  respuesta :  ok
+2024-10-25 14:16:29 INFO  procesos:110 - Iteracion  : 177  respuesta :  ok
+2024-10-25 14:16:59 INFO  procesos:110 - Iteracion  : 178  respuesta :  ok
+2024-10-25 14:17:31 INFO  procesos:110 - Iteracion  : 179  respuesta :  ok
+2024-10-25 14:18:03 INFO  procesos:110 - Iteracion  : 180  respuesta :  ok
+2024-10-25 14:18:34 INFO  procesos:110 - Iteracion  : 181  respuesta :  ok
+2024-10-25 14:19:04 INFO  procesos:110 - Iteracion  : 182  respuesta :  ok
+2024-10-25 14:19:35 INFO  procesos:110 - Iteracion  : 183  respuesta :  ok
+2024-10-25 14:20:05 INFO  procesos:110 - Iteracion  : 184  respuesta :  ok
+2024-10-25 14:20:36 INFO  procesos:110 - Iteracion  : 185  respuesta :  ok
+2024-10-25 14:21:07 INFO  procesos:110 - Iteracion  : 186  respuesta :  ok
+2024-10-25 14:21:37 INFO  procesos:110 - Iteracion  : 187  respuesta :  ok
+2024-10-25 14:22:08 INFO  procesos:110 - Iteracion  : 188  respuesta :  ok
+2024-10-25 14:22:38 INFO  procesos:110 - Iteracion  : 189  respuesta :  ok
+2024-10-25 14:23:12 INFO  procesos:110 - Iteracion  : 190  respuesta :  ok
+2024-10-25 14:23:42 INFO  procesos:110 - Iteracion  : 191  respuesta :  ok
+2024-10-25 14:24:13 INFO  procesos:110 - Iteracion  : 192  respuesta :  ok
+2024-10-25 14:24:44 INFO  procesos:110 - Iteracion  : 193  respuesta :  ok
+2024-10-25 14:25:14 INFO  procesos:110 - Iteracion  : 194  respuesta :  ok
+2024-10-25 14:25:45 INFO  procesos:110 - Iteracion  : 195  respuesta :  ok
+2024-10-25 14:26:15 INFO  procesos:110 - Iteracion  : 196  respuesta :  ok
+2024-10-25 14:26:49 INFO  procesos:110 - Iteracion  : 197  respuesta :  ok
+2024-10-25 14:27:20 INFO  procesos:110 - Iteracion  : 198  respuesta :  ok
+2024-10-25 14:27:51 INFO  procesos:110 - Iteracion  : 199  respuesta :  ok
+2024-10-25 14:28:21 INFO  procesos:110 - Iteracion  : 200  respuesta :  ok
+2024-10-25 14:28:52 INFO  procesos:110 - Iteracion  : 201  respuesta :  ok
+2024-10-25 14:29:25 INFO  procesos:110 - Iteracion  : 202  respuesta :  ok
+2024-10-25 14:29:57 INFO  procesos:110 - Iteracion  : 203  respuesta :  ok
+2024-10-25 14:30:31 INFO  procesos:110 - Iteracion  : 204  respuesta :  ok
+2024-10-25 14:31:03 INFO  procesos:110 - Iteracion  : 205  respuesta :  ok
+2024-10-25 14:31:36 INFO  procesos:110 - Iteracion  : 206  respuesta :  ok
+2024-10-25 14:32:09 INFO  procesos:110 - Iteracion  : 207  respuesta :  ok
+2024-10-25 14:32:42 INFO  procesos:110 - Iteracion  : 208  respuesta :  ok
+2024-10-25 14:33:15 INFO  procesos:110 - Iteracion  : 209  respuesta :  ok
+2024-10-25 14:33:47 INFO  procesos:110 - Iteracion  : 210  respuesta :  ok
+2024-10-25 14:34:20 INFO  procesos:110 - Iteracion  : 211  respuesta :  ok
+2024-10-25 14:34:53 INFO  procesos:110 - Iteracion  : 212  respuesta :  ok
+2024-10-25 14:35:26 INFO  procesos:110 - Iteracion  : 213  respuesta :  ok
+2024-10-25 14:35:58 INFO  procesos:110 - Iteracion  : 214  respuesta :  ok
+2024-10-25 14:36:31 INFO  procesos:110 - Iteracion  : 215  respuesta :  ok
+2024-10-25 14:37:06 INFO  procesos:110 - Iteracion  : 216  respuesta :  ok
+2024-10-25 14:37:45 INFO  procesos:110 - Iteracion  : 217  respuesta :  ok
+2024-10-25 14:38:18 INFO  procesos:110 - Iteracion  : 218  respuesta :  ok
+2024-10-25 14:38:50 INFO  procesos:110 - Iteracion  : 219  respuesta :  ok
+2024-10-25 14:39:23 INFO  procesos:110 - Iteracion  : 220  respuesta :  ok
+2024-10-25 14:39:54 INFO  procesos:110 - Iteracion  : 221  respuesta :  ok
+2024-10-25 14:40:25 INFO  procesos:110 - Iteracion  : 222  respuesta :  ok
+2024-10-25 14:40:56 INFO  procesos:110 - Iteracion  : 223  respuesta :  ok
+2024-10-25 14:41:26 INFO  procesos:110 - Iteracion  : 224  respuesta :  ok
+2024-10-25 14:41:57 INFO  procesos:110 - Iteracion  : 225  respuesta :  ok
+2024-10-25 14:42:29 INFO  procesos:110 - Iteracion  : 226  respuesta :  ok
+2024-10-25 14:42:59 INFO  procesos:110 - Iteracion  : 227  respuesta :  ok
+2024-10-25 14:43:30 INFO  procesos:110 - Iteracion  : 228  respuesta :  ok
+2024-10-25 14:44:01 INFO  procesos:110 - Iteracion  : 229  respuesta :  ok
+2024-10-25 14:44:31 INFO  procesos:110 - Iteracion  : 230  respuesta :  ok
+2024-10-25 14:45:02 INFO  procesos:110 - Iteracion  : 231  respuesta :  ok
+2024-10-25 14:45:32 INFO  procesos:110 - Iteracion  : 232  respuesta :  ok
+2024-10-25 14:46:03 INFO  procesos:110 - Iteracion  : 233  respuesta :  ok
+2024-10-25 14:46:33 INFO  procesos:110 - Iteracion  : 234  respuesta :  ok
+2024-10-25 14:47:04 INFO  procesos:110 - Iteracion  : 235  respuesta :  ok
+2024-10-25 14:47:35 INFO  procesos:110 - Iteracion  : 236  respuesta :  ok
+2024-10-25 14:48:05 INFO  procesos:110 - Iteracion  : 237  respuesta :  ok
+2024-10-25 14:48:36 INFO  procesos:110 - Iteracion  : 238  respuesta :  ok
+2024-10-25 14:49:07 INFO  procesos:110 - Iteracion  : 239  respuesta :  ok
+2024-10-25 14:49:37 INFO  procesos:110 - Iteracion  : 240  respuesta :  ok
+2024-10-25 14:50:08 INFO  procesos:110 - Iteracion  : 241  respuesta :  ok
+2024-10-25 14:50:38 INFO  procesos:110 - Iteracion  : 242  respuesta :  ok
+2024-10-25 14:51:09 INFO  procesos:110 - Iteracion  : 243  respuesta :  ok
+2024-10-25 14:51:39 INFO  procesos:110 - Iteracion  : 244  respuesta :  ok
+2024-10-25 14:52:11 INFO  procesos:110 - Iteracion  : 245  respuesta :  ok
+2024-10-25 14:52:43 INFO  procesos:110 - Iteracion  : 246  respuesta :  ok
+2024-10-25 14:53:16 INFO  procesos:110 - Iteracion  : 247  respuesta :  ok
+2024-10-25 14:53:49 INFO  procesos:110 - Iteracion  : 248  respuesta :  ok
+2024-10-25 14:54:21 INFO  procesos:110 - Iteracion  : 249  respuesta :  ok
+2024-10-25 14:54:54 INFO  procesos:110 - Iteracion  : 250  respuesta :  ok
+2024-10-25 14:55:27 INFO  procesos:110 - Iteracion  : 251  respuesta :  ok
+2024-10-25 14:56:00 INFO  procesos:110 - Iteracion  : 252  respuesta :  ok
+2024-10-25 14:56:33 INFO  procesos:110 - Iteracion  : 253  respuesta :  ok
+2024-10-25 14:57:06 INFO  procesos:110 - Iteracion  : 254  respuesta :  ok
+2024-10-25 14:57:39 INFO  procesos:110 - Iteracion  : 255  respuesta :  ok
+2024-10-25 14:58:12 INFO  procesos:110 - Iteracion  : 256  respuesta :  ok
+2024-10-25 14:58:45 INFO  procesos:110 - Iteracion  : 257  respuesta :  ok
+2024-10-25 14:59:18 INFO  procesos:110 - Iteracion  : 258  respuesta :  ok
+2024-10-25 14:59:50 INFO  procesos:110 - Iteracion  : 259  respuesta :  ok
+2024-10-25 15:00:23 INFO  procesos:110 - Iteracion  : 260  respuesta :  ok
+2024-10-25 15:00:56 INFO  procesos:110 - Iteracion  : 261  respuesta :  ok
+2024-10-25 15:01:28 INFO  procesos:110 - Iteracion  : 262  respuesta :  ok
+2024-10-25 15:02:01 INFO  procesos:110 - Iteracion  : 263  respuesta :  ok
+2024-10-25 15:02:34 INFO  procesos:110 - Iteracion  : 264  respuesta :  ok
+2024-10-25 15:03:07 INFO  procesos:110 - Iteracion  : 265  respuesta :  ok
+2024-10-25 15:03:39 INFO  procesos:110 - Iteracion  : 266  respuesta :  ok
+2024-10-25 15:04:12 INFO  procesos:110 - Iteracion  : 267  respuesta :  ok
+2024-10-25 15:04:43 INFO  procesos:110 - Iteracion  : 268  respuesta :  ok
+2024-10-25 15:05:13 INFO  procesos:110 - Iteracion  : 269  respuesta :  ok
+2024-10-25 15:05:44 INFO  procesos:110 - Iteracion  : 270  respuesta :  ok
+2024-10-25 15:06:15 INFO  procesos:110 - Iteracion  : 271  respuesta :  ok
+2024-10-25 15:06:45 INFO  procesos:110 - Iteracion  : 272  respuesta :  ok
+2024-10-25 15:07:16 INFO  procesos:110 - Iteracion  : 273  respuesta :  ok
+2024-10-25 15:07:47 INFO  procesos:110 - Iteracion  : 274  respuesta :  ok
+2024-10-25 15:08:18 INFO  procesos:110 - Iteracion  : 275  respuesta :  ok
+2024-10-25 15:08:49 INFO  procesos:110 - Iteracion  : 276  respuesta :  ok
+2024-10-25 15:09:19 INFO  procesos:110 - Iteracion  : 277  respuesta :  ok
+2024-10-25 15:09:50 INFO  procesos:110 - Iteracion  : 278  respuesta :  ok
+2024-10-25 15:10:21 INFO  procesos:110 - Iteracion  : 279  respuesta :  ok
+2024-10-25 15:10:52 INFO  procesos:110 - Iteracion  : 280  respuesta :  ok
+2024-10-25 15:11:23 INFO  procesos:110 - Iteracion  : 281  respuesta :  ok
+2024-10-25 15:11:54 INFO  procesos:110 - Iteracion  : 282  respuesta :  ok
+2024-10-25 15:12:24 INFO  procesos:110 - Iteracion  : 283  respuesta :  ok
+2024-10-25 15:12:55 INFO  procesos:110 - Iteracion  : 284  respuesta :  ok
+2024-10-25 15:13:26 INFO  procesos:110 - Iteracion  : 285  respuesta :  ok
+2024-10-25 15:13:57 INFO  procesos:110 - Iteracion  : 286  respuesta :  ok
+2024-10-25 15:14:28 INFO  procesos:110 - Iteracion  : 287  respuesta :  ok
+2024-10-25 15:14:59 INFO  procesos:110 - Iteracion  : 288  respuesta :  ok
+2024-10-25 15:15:30 INFO  procesos:110 - Iteracion  : 289  respuesta :  ok
+2024-10-25 15:16:01 INFO  procesos:110 - Iteracion  : 290  respuesta :  ok
+2024-10-25 15:16:32 INFO  procesos:110 - Iteracion  : 291  respuesta :  ok
+2024-10-25 15:17:03 INFO  procesos:110 - Iteracion  : 292  respuesta :  ok
+2024-10-25 15:17:34 INFO  procesos:110 - Iteracion  : 293  respuesta :  ok
+2024-10-25 15:18:05 INFO  procesos:110 - Iteracion  : 294  respuesta :  ok
+2024-10-25 15:18:36 INFO  procesos:110 - Iteracion  : 295  respuesta :  ok
+2024-10-25 15:19:06 INFO  procesos:110 - Iteracion  : 296  respuesta :  ok
+2024-10-25 15:19:37 INFO  procesos:110 - Iteracion  : 297  respuesta :  ok
+2024-10-25 15:20:08 INFO  procesos:110 - Iteracion  : 298  respuesta :  ok
+2024-10-25 15:20:38 INFO  procesos:110 - Iteracion  : 299  respuesta :  ok
+2024-10-25 15:21:09 INFO  procesos:110 - Iteracion  : 300  respuesta :  ok
+2024-10-25 15:21:39 INFO  procesos:110 - Iteracion  : 301  respuesta :  ok
+2024-10-25 15:22:10 INFO  procesos:110 - Iteracion  : 302  respuesta :  ok
+2024-10-25 15:22:41 INFO  procesos:110 - Iteracion  : 303  respuesta :  ok
+2024-10-25 15:23:11 INFO  procesos:110 - Iteracion  : 304  respuesta :  ok
+2024-10-25 15:23:42 INFO  procesos:110 - Iteracion  : 305  respuesta :  ok
+2024-10-25 15:24:12 INFO  procesos:110 - Iteracion  : 306  respuesta :  ok
+2024-10-25 15:24:43 INFO  procesos:110 - Iteracion  : 307  respuesta :  ok
+2024-10-25 15:25:14 INFO  procesos:110 - Iteracion  : 308  respuesta :  ok
+2024-10-25 15:25:45 INFO  procesos:110 - Iteracion  : 309  respuesta :  ok
+2024-10-25 15:26:15 INFO  procesos:110 - Iteracion  : 310  respuesta :  ok
+2024-10-25 15:26:46 INFO  procesos:110 - Iteracion  : 311  respuesta :  ok
+2024-10-25 15:27:17 INFO  procesos:110 - Iteracion  : 312  respuesta :  ok
+2024-10-25 15:27:47 INFO  procesos:110 - Iteracion  : 313  respuesta :  ok
+2024-10-25 15:28:17 INFO  procesos:110 - Iteracion  : 314  respuesta :  ok
+2024-10-25 15:28:48 INFO  procesos:110 - Iteracion  : 315  respuesta :  ok
+2024-10-25 15:29:19 INFO  procesos:110 - Iteracion  : 316  respuesta :  ok
+2024-10-25 15:29:49 INFO  procesos:110 - Iteracion  : 317  respuesta :  ok
+2024-10-25 15:30:20 INFO  procesos:110 - Iteracion  : 318  respuesta :  ok
+2024-10-25 15:30:50 INFO  procesos:110 - Iteracion  : 319  respuesta :  ok
+2024-10-25 15:31:21 INFO  procesos:110 - Iteracion  : 320  respuesta :  ok
+2024-10-25 15:31:52 INFO  procesos:110 - Iteracion  : 321  respuesta :  ok
+2024-10-25 15:32:22 INFO  procesos:110 - Iteracion  : 322  respuesta :  ok
+2024-10-25 15:32:53 INFO  procesos:110 - Iteracion  : 323  respuesta :  ok
+2024-10-25 15:33:24 INFO  procesos:110 - Iteracion  : 324  respuesta :  ok
+2024-10-25 15:33:55 INFO  procesos:110 - Iteracion  : 325  respuesta :  ok
+2024-10-25 15:34:25 INFO  procesos:110 - Iteracion  : 326  respuesta :  ok
+2024-10-25 15:34:56 INFO  procesos:110 - Iteracion  : 327  respuesta :  ok
+2024-10-25 15:35:26 INFO  procesos:110 - Iteracion  : 328  respuesta :  ok
+2024-10-25 15:35:57 INFO  procesos:110 - Iteracion  : 329  respuesta :  ok
+2024-10-25 15:36:28 INFO  procesos:110 - Iteracion  : 330  respuesta :  ok
+2024-10-25 15:36:59 INFO  procesos:110 - Iteracion  : 331  respuesta :  ok
+2024-10-25 15:37:30 INFO  procesos:110 - Iteracion  : 332  respuesta :  ok
+2024-10-25 15:38:00 INFO  procesos:110 - Iteracion  : 333  respuesta :  ok
+2024-10-25 15:38:31 INFO  procesos:110 - Iteracion  : 334  respuesta :  ok
+2024-10-25 15:39:02 INFO  procesos:110 - Iteracion  : 335  respuesta :  ok
+2024-10-25 15:39:33 INFO  procesos:110 - Iteracion  : 336  respuesta :  ok
+2024-10-25 15:40:03 INFO  procesos:110 - Iteracion  : 337  respuesta :  ok
+2024-10-25 15:40:34 INFO  procesos:110 - Iteracion  : 338  respuesta :  ok
+2024-10-25 15:41:04 INFO  procesos:110 - Iteracion  : 339  respuesta :  ok
+2024-10-25 15:41:35 INFO  procesos:110 - Iteracion  : 340  respuesta :  ok
+2024-10-25 15:42:06 INFO  procesos:110 - Iteracion  : 341  respuesta :  ok
+2024-10-25 15:42:36 INFO  procesos:110 - Iteracion  : 342  respuesta :  ok
+2024-10-25 15:43:07 INFO  procesos:110 - Iteracion  : 343  respuesta :  ok
+2024-10-25 15:43:38 INFO  procesos:110 - Iteracion  : 344  respuesta :  ok
+2024-10-25 15:44:08 INFO  procesos:110 - Iteracion  : 345  respuesta :  ok
+2024-10-25 15:44:39 INFO  procesos:110 - Iteracion  : 346  respuesta :  ok
+2024-10-25 15:45:10 INFO  procesos:110 - Iteracion  : 347  respuesta :  ok
+2024-10-25 15:45:40 INFO  procesos:110 - Iteracion  : 348  respuesta :  ok
+2024-10-25 15:46:23 INFO  procesos:110 - Iteracion  : 349  respuesta :  ok
+2024-10-25 15:47:05 INFO  procesos:110 - Iteracion  : 350  respuesta :  ok
+2024-10-25 15:47:47 INFO  procesos:110 - Iteracion  : 351  respuesta :  ok
+2024-10-25 15:48:28 INFO  procesos:110 - Iteracion  : 352  respuesta :  ok
+2024-10-25 15:49:10 INFO  procesos:110 - Iteracion  : 353  respuesta :  ok
+2024-10-25 15:49:52 INFO  procesos:110 - Iteracion  : 354  respuesta :  ok
+2024-10-25 15:50:33 INFO  procesos:110 - Iteracion  : 355  respuesta :  ok
+2024-10-25 15:51:15 INFO  procesos:110 - Iteracion  : 356  respuesta :  ok
+2024-10-28 18:53:07 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-28 18:57:00 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-28 18:57:24 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-28 18:57:53 INFO  procesos:110 - Iteracion  : 1  respuesta :  ok
+2024-10-28 18:58:23 INFO  procesos:110 - Iteracion  : 2  respuesta :  ok
+2024-10-28 19:10:51 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-28 19:11:20 INFO  procesos:110 - Iteracion  : 1  respuesta :  ok
+2024-10-28 19:11:50 INFO  procesos:110 - Iteracion  : 2  respuesta :  ok
+2024-10-28 19:12:20 INFO  procesos:110 - Iteracion  : 3  respuesta :  ok
+2024-10-28 19:12:49 INFO  procesos:110 - Iteracion  : 4  respuesta :  ok
+2024-10-28 19:13:18 INFO  procesos:110 - Iteracion  : 5  respuesta :  ok
+2024-10-28 19:13:47 INFO  procesos:110 - Iteracion  : 6  respuesta :  ok
+2024-10-28 19:14:16 INFO  procesos:110 - Iteracion  : 7  respuesta :  ok
+2024-10-28 19:14:45 INFO  procesos:110 - Iteracion  : 8  respuesta :  ok
+2024-10-28 19:15:14 INFO  procesos:110 - Iteracion  : 9  respuesta :  ok
+2024-10-28 19:15:43 INFO  procesos:110 - Iteracion  : 10  respuesta :  ok
+2024-10-28 19:16:12 INFO  procesos:110 - Iteracion  : 11  respuesta :  ok
+2024-10-28 19:16:41 INFO  procesos:110 - Iteracion  : 12  respuesta :  ok
+2024-10-28 19:17:10 INFO  procesos:110 - Iteracion  : 13  respuesta :  ok
+2024-10-28 19:17:39 INFO  procesos:110 - Iteracion  : 14  respuesta :  ok
+2024-10-28 19:18:08 INFO  procesos:110 - Iteracion  : 15  respuesta :  ok
+2024-10-28 19:18:37 INFO  procesos:110 - Iteracion  : 16  respuesta :  ok
+2024-10-28 19:19:06 INFO  procesos:110 - Iteracion  : 17  respuesta :  ok
+2024-10-28 19:19:35 INFO  procesos:110 - Iteracion  : 18  respuesta :  ok
+2024-10-28 19:20:04 INFO  procesos:110 - Iteracion  : 19  respuesta :  ok
+2024-10-28 19:20:34 INFO  procesos:110 - Iteracion  : 20  respuesta :  ok
+2024-10-28 19:21:03 INFO  procesos:110 - Iteracion  : 21  respuesta :  ok
+2024-10-28 19:21:32 INFO  procesos:110 - Iteracion  : 22  respuesta :  ok
+2024-10-28 19:22:01 INFO  procesos:110 - Iteracion  : 23  respuesta :  ok
+2024-10-28 19:22:30 INFO  procesos:110 - Iteracion  : 24  respuesta :  ok
+2024-10-28 19:22:59 INFO  procesos:110 - Iteracion  : 25  respuesta :  ok
+2024-10-28 19:23:29 INFO  procesos:110 - Iteracion  : 26  respuesta :  ok
+2024-10-28 19:23:58 INFO  procesos:110 - Iteracion  : 27  respuesta :  ok
+2024-10-28 19:24:27 INFO  procesos:110 - Iteracion  : 28  respuesta :  ok
+2024-10-28 19:24:57 INFO  procesos:110 - Iteracion  : 29  respuesta :  ok
+2024-10-28 19:25:26 INFO  procesos:110 - Iteracion  : 30  respuesta :  ok
+2024-10-28 19:25:55 INFO  procesos:110 - Iteracion  : 31  respuesta :  ok
+2024-10-28 19:26:24 INFO  procesos:110 - Iteracion  : 32  respuesta :  ok
+2024-10-28 19:26:53 INFO  procesos:110 - Iteracion  : 33  respuesta :  ok
+2024-10-28 19:27:22 INFO  procesos:110 - Iteracion  : 34  respuesta :  ok
+2024-10-28 19:27:51 INFO  procesos:110 - Iteracion  : 35  respuesta :  ok
+2024-10-28 19:28:20 INFO  procesos:110 - Iteracion  : 36  respuesta :  ok
+2024-10-28 19:28:49 INFO  procesos:110 - Iteracion  : 37  respuesta :  ok
+2024-10-28 19:29:19 INFO  procesos:110 - Iteracion  : 38  respuesta :  ok
+2024-10-28 19:29:48 INFO  procesos:110 - Iteracion  : 39  respuesta :  ok
+2024-10-28 19:30:17 INFO  procesos:110 - Iteracion  : 40  respuesta :  ok
+2024-10-28 19:30:47 INFO  procesos:110 - Iteracion  : 41  respuesta :  ok
+2024-10-28 19:31:16 INFO  procesos:110 - Iteracion  : 42  respuesta :  ok
+2024-10-28 19:31:45 INFO  procesos:110 - Iteracion  : 43  respuesta :  ok
+2024-10-28 19:32:14 INFO  procesos:110 - Iteracion  : 44  respuesta :  ok
+2024-10-28 19:32:44 INFO  procesos:110 - Iteracion  : 45  respuesta :  ok
+2024-10-28 19:33:13 INFO  procesos:110 - Iteracion  : 46  respuesta :  ok
+2024-10-28 19:33:41 INFO  procesos:110 - Iteracion  : 47  respuesta :  ok
+2024-10-28 19:34:11 INFO  procesos:110 - Iteracion  : 48  respuesta :  ok
+2024-10-28 19:34:40 INFO  procesos:110 - Iteracion  : 49  respuesta :  ok
+2024-10-28 19:35:09 INFO  procesos:110 - Iteracion  : 50  respuesta :  ok
+2024-10-28 19:35:38 INFO  procesos:110 - Iteracion  : 51  respuesta :  ok
+2024-10-28 19:36:07 INFO  procesos:110 - Iteracion  : 52  respuesta :  ok
+2024-10-28 19:36:36 INFO  procesos:110 - Iteracion  : 53  respuesta :  ok
+2024-10-28 19:37:05 INFO  procesos:110 - Iteracion  : 54  respuesta :  ok
+2024-10-28 19:37:34 INFO  procesos:110 - Iteracion  : 55  respuesta :  ok
+2024-10-28 19:38:04 INFO  procesos:110 - Iteracion  : 56  respuesta :  ok
+2024-10-28 19:38:34 INFO  procesos:110 - Iteracion  : 57  respuesta :  ok
+2024-10-28 19:39:06 INFO  procesos:110 - Iteracion  : 58  respuesta :  ok
+2024-10-28 19:39:35 INFO  procesos:110 - Iteracion  : 59  respuesta :  ok
+2024-10-28 19:40:04 INFO  procesos:110 - Iteracion  : 60  respuesta :  ok
+2024-10-28 19:40:33 INFO  procesos:110 - Iteracion  : 61  respuesta :  ok
+2024-10-28 19:41:03 INFO  procesos:110 - Iteracion  : 62  respuesta :  ok
+2024-10-28 19:41:32 INFO  procesos:110 - Iteracion  : 63  respuesta :  ok
+2024-10-28 19:42:01 INFO  procesos:110 - Iteracion  : 64  respuesta :  ok
+2024-10-28 19:42:30 INFO  procesos:110 - Iteracion  : 65  respuesta :  ok
+2024-10-28 19:42:59 INFO  procesos:110 - Iteracion  : 66  respuesta :  ok
+2024-10-28 19:43:31 INFO  procesos:110 - Iteracion  : 67  respuesta :  ok
+2024-10-28 19:44:02 INFO  procesos:110 - Iteracion  : 68  respuesta :  ok
+2024-10-28 19:44:31 INFO  procesos:110 - Iteracion  : 69  respuesta :  ok
+2024-10-28 19:45:00 INFO  procesos:110 - Iteracion  : 70  respuesta :  ok
+2024-10-28 19:45:29 INFO  procesos:110 - Iteracion  : 71  respuesta :  ok
+2024-10-28 19:45:58 INFO  procesos:110 - Iteracion  : 72  respuesta :  ok
+2024-10-28 19:46:30 INFO  procesos:110 - Iteracion  : 73  respuesta :  ok
+2024-10-28 19:48:01 INFO  procesos:110 - Iteracion  : 74  respuesta :  ok
+2024-10-28 19:48:01 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:02 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:12 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:22 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:23 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:23 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:23 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:33 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:43 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:53 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:48:54 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:04 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:14 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:15 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:15 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:15 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:15 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:25 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:35 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:45 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:46 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:46 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:46 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:49:56 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:06 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:16 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:27 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:37 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:47 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:48 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:50:58 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:08 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:18 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:18 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:18 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:18 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:18 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:19 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:29 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:39 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:51:49 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:00 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:10 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:20 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:30 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:30 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:30 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:30 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:30 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:31 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:41 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:52:51 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:01 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:01 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:01 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:01 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:01 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:02 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:12 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:22 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:32 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:32 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:32 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:32 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:32 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:33 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:43 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:53:53 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:03 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:04 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:14 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:54:26 INFO  procesos:110 - Iteracion  : 111  respuesta :  ok
+2024-10-28 19:55:59 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:55:59 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:55:59 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:55:59 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:09 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:19 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:19 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:19 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:19 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:19 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:20 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:30 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:40 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:56:50 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:01 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:11 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:21 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:32 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:42 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:52 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:53 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:57:53 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:03 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:13 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:23 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:24 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:34 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:44 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:58:54 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:05 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:15 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:25 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:35 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:36 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:46 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 19:59:56 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:06 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:06 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:06 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:07 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:17 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:27 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 20:00:39 INFO  procesos:110 - Iteracion  : 138  respuesta :  ok
+2024-10-28 20:01:13 INFO  procesos:110 - Iteracion  : 139  respuesta :  ok
+2024-10-28 20:01:42 INFO  procesos:110 - Iteracion  : 140  respuesta :  ok
+2024-10-28 20:02:11 INFO  procesos:110 - Iteracion  : 141  respuesta :  ok
+2024-10-28 20:02:40 INFO  procesos:110 - Iteracion  : 142  respuesta :  ok
+2024-10-28 20:03:09 INFO  procesos:110 - Iteracion  : 143  respuesta :  ok
+2024-10-28 20:03:39 INFO  procesos:110 - Iteracion  : 144  respuesta :  ok
+2024-10-28 20:04:14 INFO  procesos:110 - Iteracion  : 145  respuesta :  ok
+2024-10-28 20:04:43 INFO  procesos:110 - Iteracion  : 146  respuesta :  ok
+2024-10-28 20:05:12 INFO  procesos:110 - Iteracion  : 147  respuesta :  ok
+2024-10-28 20:05:45 INFO  procesos:110 - Iteracion  : 148  respuesta :  ok
+2024-10-28 20:06:16 INFO  procesos:110 - Iteracion  : 149  respuesta :  ok
+2024-10-28 20:06:48 INFO  procesos:110 - Iteracion  : 150  respuesta :  ok
+2024-10-28 20:07:22 INFO  procesos:110 - Iteracion  : 151  respuesta :  ok
+2024-10-28 20:07:53 INFO  procesos:110 - Iteracion  : 152  respuesta :  ok
+2024-10-28 20:08:26 INFO  procesos:110 - Iteracion  : 153  respuesta :  ok
+2024-10-28 20:08:59 INFO  procesos:110 - Iteracion  : 154  respuesta :  ok
+2024-10-28 20:09:30 INFO  procesos:110 - Iteracion  : 155  respuesta :  ok
+2024-10-28 20:10:02 INFO  procesos:110 - Iteracion  : 156  respuesta :  ok
+2024-10-28 20:10:37 INFO  procesos:110 - Iteracion  : 157  respuesta :  ok
+2024-10-28 20:11:12 INFO  procesos:110 - Iteracion  : 158  respuesta :  ok
+2024-10-28 20:11:44 INFO  procesos:110 - Iteracion  : 159  respuesta :  ok
+2024-10-28 20:12:16 INFO  procesos:110 - Iteracion  : 160  respuesta :  ok
+2024-10-28 20:12:45 INFO  procesos:110 - Iteracion  : 161  respuesta :  ok
+2024-10-28 20:13:14 INFO  procesos:110 - Iteracion  : 162  respuesta :  ok
+2024-10-28 20:13:43 INFO  procesos:110 - Iteracion  : 163  respuesta :  ok
+2024-10-28 20:14:13 INFO  procesos:110 - Iteracion  : 164  respuesta :  ok
+2024-10-28 20:14:42 INFO  procesos:110 - Iteracion  : 165  respuesta :  ok
+2024-10-28 20:15:11 INFO  procesos:110 - Iteracion  : 166  respuesta :  ok
+2024-10-28 20:15:42 INFO  procesos:110 - Iteracion  : 167  respuesta :  ok
+2024-10-28 20:16:11 INFO  procesos:110 - Iteracion  : 168  respuesta :  ok
+2024-10-28 20:16:40 INFO  procesos:110 - Iteracion  : 169  respuesta :  ok
+2024-10-28 20:17:10 INFO  procesos:110 - Iteracion  : 170  respuesta :  ok
+2024-10-28 20:17:40 INFO  procesos:110 - Iteracion  : 171  respuesta :  ok
+2024-10-28 20:18:09 INFO  procesos:110 - Iteracion  : 172  respuesta :  ok
+2024-10-28 20:18:39 INFO  procesos:110 - Iteracion  : 173  respuesta :  ok
+2024-10-28 20:19:11 INFO  procesos:110 - Iteracion  : 174  respuesta :  ok
+2024-10-28 20:19:41 INFO  procesos:110 - Iteracion  : 175  respuesta :  ok
+2024-10-28 20:20:10 INFO  procesos:110 - Iteracion  : 176  respuesta :  ok
+2024-10-28 20:20:39 INFO  procesos:110 - Iteracion  : 177  respuesta :  ok
+2024-10-28 20:21:09 INFO  procesos:110 - Iteracion  : 178  respuesta :  ok
+2024-10-28 20:21:38 INFO  procesos:110 - Iteracion  : 179  respuesta :  ok
+2024-10-28 20:22:07 INFO  procesos:110 - Iteracion  : 180  respuesta :  ok
+2024-10-28 20:22:36 INFO  procesos:110 - Iteracion  : 181  respuesta :  ok
+2024-10-28 20:23:04 INFO  procesos:110 - Iteracion  : 182  respuesta :  ok
+2024-10-28 20:23:33 INFO  procesos:110 - Iteracion  : 183  respuesta :  ok
+2024-10-28 20:24:03 INFO  procesos:110 - Iteracion  : 184  respuesta :  ok
+2024-10-28 20:24:33 INFO  procesos:110 - Iteracion  : 185  respuesta :  ok
+2024-10-28 20:25:01 INFO  procesos:110 - Iteracion  : 186  respuesta :  ok
+2024-10-28 20:25:31 INFO  procesos:110 - Iteracion  : 187  respuesta :  ok
+2024-10-28 20:26:06 INFO  procesos:110 - Iteracion  : 188  respuesta :  ok
+2024-10-28 20:26:36 INFO  procesos:110 - Iteracion  : 189  respuesta :  ok
+2024-10-28 20:27:05 INFO  procesos:110 - Iteracion  : 190  respuesta :  ok
+2024-10-28 20:27:34 INFO  procesos:110 - Iteracion  : 191  respuesta :  ok
+2024-10-28 20:28:02 INFO  procesos:110 - Iteracion  : 192  respuesta :  ok
+2024-10-28 20:28:31 INFO  procesos:110 - Iteracion  : 193  respuesta :  ok
+2024-10-28 20:29:00 INFO  procesos:110 - Iteracion  : 194  respuesta :  ok
+2024-10-28 20:29:29 INFO  procesos:110 - Iteracion  : 195  respuesta :  ok
+2024-10-28 20:29:58 INFO  procesos:110 - Iteracion  : 196  respuesta :  ok
+2024-10-28 20:30:27 INFO  procesos:110 - Iteracion  : 197  respuesta :  ok
+2024-10-28 20:30:56 INFO  procesos:110 - Iteracion  : 198  respuesta :  ok
+2024-10-28 20:31:25 INFO  procesos:110 - Iteracion  : 199  respuesta :  ok
+2024-10-28 20:31:54 INFO  procesos:110 - Iteracion  : 200  respuesta :  ok
+2024-10-28 20:32:23 INFO  procesos:110 - Iteracion  : 201  respuesta :  ok
+2024-10-28 20:32:52 INFO  procesos:110 - Iteracion  : 202  respuesta :  ok
+2024-10-28 20:33:22 INFO  procesos:110 - Iteracion  : 203  respuesta :  ok
+2024-10-28 20:33:51 INFO  procesos:110 - Iteracion  : 204  respuesta :  ok
+2024-10-28 20:34:20 INFO  procesos:110 - Iteracion  : 205  respuesta :  ok
+2024-10-28 20:34:49 INFO  procesos:110 - Iteracion  : 206  respuesta :  ok
+2024-10-28 20:35:18 INFO  procesos:110 - Iteracion  : 207  respuesta :  ok
+2024-10-28 20:35:47 INFO  procesos:110 - Iteracion  : 208  respuesta :  ok
+2024-10-28 20:36:16 INFO  procesos:110 - Iteracion  : 209  respuesta :  ok
+2024-10-28 20:36:45 INFO  procesos:110 - Iteracion  : 210  respuesta :  ok
+2024-10-28 20:37:15 INFO  procesos:110 - Iteracion  : 211  respuesta :  ok
+2024-10-28 20:37:44 INFO  procesos:110 - Iteracion  : 212  respuesta :  ok
+2024-10-28 20:38:13 INFO  procesos:110 - Iteracion  : 213  respuesta :  ok
+2024-10-28 20:38:42 INFO  procesos:110 - Iteracion  : 214  respuesta :  ok
+2024-10-28 20:39:11 INFO  procesos:110 - Iteracion  : 215  respuesta :  ok
+2024-10-28 20:39:40 INFO  procesos:110 - Iteracion  : 216  respuesta :  ok
+2024-10-28 20:40:09 INFO  procesos:110 - Iteracion  : 217  respuesta :  ok
+2024-10-28 20:40:40 INFO  procesos:110 - Iteracion  : 218  respuesta :  ok
+2024-10-28 20:41:09 INFO  procesos:110 - Iteracion  : 219  respuesta :  ok
+2024-10-28 20:41:38 INFO  procesos:110 - Iteracion  : 220  respuesta :  ok
+2024-10-28 20:42:08 INFO  procesos:110 - Iteracion  : 221  respuesta :  ok
+2024-10-28 20:42:37 INFO  procesos:110 - Iteracion  : 222  respuesta :  ok
+2024-10-28 20:43:06 INFO  procesos:110 - Iteracion  : 223  respuesta :  ok
+2024-10-28 20:43:35 INFO  procesos:110 - Iteracion  : 224  respuesta :  ok
+2024-10-28 20:44:04 INFO  procesos:110 - Iteracion  : 225  respuesta :  ok
+2024-10-28 20:44:34 INFO  procesos:110 - Iteracion  : 226  respuesta :  ok
+2024-10-28 20:45:03 INFO  procesos:110 - Iteracion  : 227  respuesta :  ok
+2024-10-28 20:45:32 INFO  procesos:110 - Iteracion  : 228  respuesta :  ok
+2024-10-28 20:46:01 INFO  procesos:110 - Iteracion  : 229  respuesta :  ok
+2024-10-28 20:46:30 INFO  procesos:110 - Iteracion  : 230  respuesta :  ok
+2024-10-28 20:46:59 INFO  procesos:110 - Iteracion  : 231  respuesta :  ok
+2024-10-28 20:47:28 INFO  procesos:110 - Iteracion  : 232  respuesta :  ok
+2024-10-28 20:47:58 INFO  procesos:110 - Iteracion  : 233  respuesta :  ok
+2024-10-28 20:48:27 INFO  procesos:110 - Iteracion  : 234  respuesta :  ok
+2024-10-28 20:48:56 INFO  procesos:110 - Iteracion  : 235  respuesta :  ok
+2024-10-28 20:49:25 INFO  procesos:110 - Iteracion  : 236  respuesta :  ok
+2024-10-28 20:49:54 INFO  procesos:110 - Iteracion  : 237  respuesta :  ok
+2024-10-28 20:50:23 INFO  procesos:110 - Iteracion  : 238  respuesta :  ok
+2024-10-28 20:50:53 INFO  procesos:110 - Iteracion  : 239  respuesta :  ok
+2024-10-28 20:51:22 INFO  procesos:110 - Iteracion  : 240  respuesta :  ok
+2024-10-28 20:51:51 INFO  procesos:110 - Iteracion  : 241  respuesta :  ok
+2024-10-28 20:52:20 INFO  procesos:110 - Iteracion  : 242  respuesta :  ok
+2024-10-28 20:52:49 INFO  procesos:110 - Iteracion  : 243  respuesta :  ok
+2024-10-28 20:53:18 INFO  procesos:110 - Iteracion  : 244  respuesta :  ok
+2024-10-28 20:53:47 INFO  procesos:110 - Iteracion  : 245  respuesta :  ok
+2024-10-28 20:54:17 INFO  procesos:110 - Iteracion  : 246  respuesta :  ok
+2024-10-28 20:54:46 INFO  procesos:110 - Iteracion  : 247  respuesta :  ok
+2024-10-28 20:55:15 INFO  procesos:110 - Iteracion  : 248  respuesta :  ok
+2024-10-28 20:55:44 INFO  procesos:110 - Iteracion  : 249  respuesta :  ok
+2024-10-28 20:56:13 INFO  procesos:110 - Iteracion  : 250  respuesta :  ok
+2024-10-28 20:56:43 INFO  procesos:110 - Iteracion  : 251  respuesta :  ok
+2024-10-28 20:57:12 INFO  procesos:110 - Iteracion  : 252  respuesta :  ok
+2024-10-28 20:57:41 INFO  procesos:110 - Iteracion  : 253  respuesta :  ok
+2024-10-28 20:58:11 INFO  procesos:110 - Iteracion  : 254  respuesta :  ok
+2024-10-28 20:58:40 INFO  procesos:110 - Iteracion  : 255  respuesta :  ok
+2024-10-28 20:59:10 INFO  procesos:110 - Iteracion  : 256  respuesta :  ok
+2024-10-28 20:59:39 INFO  procesos:110 - Iteracion  : 257  respuesta :  ok
+2024-10-28 21:00:09 INFO  procesos:110 - Iteracion  : 258  respuesta :  ok
+2024-10-28 21:00:39 INFO  procesos:110 - Iteracion  : 259  respuesta :  ok
+2024-10-28 21:01:08 INFO  procesos:110 - Iteracion  : 260  respuesta :  ok
+2024-10-28 21:01:37 INFO  procesos:110 - Iteracion  : 261  respuesta :  ok
+2024-10-28 21:02:06 INFO  procesos:110 - Iteracion  : 262  respuesta :  ok
+2024-10-28 21:02:36 INFO  procesos:110 - Iteracion  : 263  respuesta :  ok
+2024-10-28 21:03:05 INFO  procesos:110 - Iteracion  : 264  respuesta :  ok
+2024-10-28 21:03:34 INFO  procesos:110 - Iteracion  : 265  respuesta :  ok
+2024-10-28 21:04:04 INFO  procesos:110 - Iteracion  : 266  respuesta :  ok
+2024-10-28 21:04:33 INFO  procesos:110 - Iteracion  : 267  respuesta :  ok
+2024-10-28 21:05:02 INFO  procesos:110 - Iteracion  : 268  respuesta :  ok
+2024-10-28 21:05:31 INFO  procesos:110 - Iteracion  : 269  respuesta :  ok
+2024-10-28 21:06:01 INFO  procesos:110 - Iteracion  : 270  respuesta :  ok
+2024-10-28 21:06:30 INFO  procesos:110 - Iteracion  : 271  respuesta :  ok
+2024-10-28 21:07:00 INFO  procesos:110 - Iteracion  : 272  respuesta :  ok
+2024-10-28 21:07:28 INFO  procesos:110 - Iteracion  : 273  respuesta :  ok
+2024-10-28 21:07:57 INFO  procesos:110 - Iteracion  : 274  respuesta :  ok
+2024-10-28 21:08:27 INFO  procesos:110 - Iteracion  : 275  respuesta :  ok
+2024-10-28 21:08:56 INFO  procesos:110 - Iteracion  : 276  respuesta :  ok
+2024-10-28 21:09:26 INFO  procesos:110 - Iteracion  : 277  respuesta :  ok
+2024-10-28 21:09:55 INFO  procesos:110 - Iteracion  : 278  respuesta :  ok
+2024-10-28 21:10:24 INFO  procesos:110 - Iteracion  : 279  respuesta :  ok
+2024-10-28 21:10:53 INFO  procesos:110 - Iteracion  : 280  respuesta :  ok
+2024-10-28 21:11:22 INFO  procesos:110 - Iteracion  : 281  respuesta :  ok
+2024-10-28 21:11:51 INFO  procesos:110 - Iteracion  : 282  respuesta :  ok
+2024-10-28 21:12:21 INFO  procesos:110 - Iteracion  : 283  respuesta :  ok
+2024-10-28 21:12:50 INFO  procesos:110 - Iteracion  : 284  respuesta :  ok
+2024-10-28 21:13:19 INFO  procesos:110 - Iteracion  : 285  respuesta :  ok
+2024-10-28 21:13:48 INFO  procesos:110 - Iteracion  : 286  respuesta :  ok
+2024-10-28 21:14:17 INFO  procesos:110 - Iteracion  : 287  respuesta :  ok
+2024-10-28 21:14:46 INFO  procesos:110 - Iteracion  : 288  respuesta :  ok
+2024-10-28 21:15:16 INFO  procesos:110 - Iteracion  : 289  respuesta :  ok
+2024-10-28 21:15:45 INFO  procesos:110 - Iteracion  : 290  respuesta :  ok
+2024-10-28 21:16:14 INFO  procesos:110 - Iteracion  : 291  respuesta :  ok
+2024-10-28 21:16:44 INFO  procesos:110 - Iteracion  : 292  respuesta :  ok
+2024-10-28 21:17:13 INFO  procesos:110 - Iteracion  : 293  respuesta :  ok
+2024-10-28 21:17:42 INFO  procesos:110 - Iteracion  : 294  respuesta :  ok
+2024-10-28 21:18:12 INFO  procesos:110 - Iteracion  : 295  respuesta :  ok
+2024-10-28 21:18:43 INFO  procesos:110 - Iteracion  : 296  respuesta :  ok
+2024-10-28 21:19:15 INFO  procesos:110 - Iteracion  : 297  respuesta :  ok
+2024-10-28 21:19:47 INFO  procesos:110 - Iteracion  : 298  respuesta :  ok
+2024-10-28 21:20:18 INFO  procesos:110 - Iteracion  : 299  respuesta :  ok
+2024-10-28 21:20:48 INFO  procesos:110 - Iteracion  : 300  respuesta :  ok
+2024-10-28 21:21:17 INFO  procesos:110 - Iteracion  : 301  respuesta :  ok
+2024-10-28 21:21:46 INFO  procesos:110 - Iteracion  : 302  respuesta :  ok
+2024-10-28 21:22:16 INFO  procesos:110 - Iteracion  : 303  respuesta :  ok
+2024-10-28 21:22:47 INFO  procesos:110 - Iteracion  : 304  respuesta :  ok
+2024-10-28 21:23:17 INFO  procesos:110 - Iteracion  : 305  respuesta :  ok
+2024-10-28 21:23:47 INFO  procesos:110 - Iteracion  : 306  respuesta :  ok
+2024-10-28 21:24:16 INFO  procesos:110 - Iteracion  : 307  respuesta :  ok
+2024-10-28 21:24:45 INFO  procesos:110 - Iteracion  : 308  respuesta :  ok
+2024-10-28 21:25:15 INFO  procesos:110 - Iteracion  : 309  respuesta :  ok
+2024-10-28 21:25:44 INFO  procesos:110 - Iteracion  : 310  respuesta :  ok
+2024-10-28 21:26:13 INFO  procesos:110 - Iteracion  : 311  respuesta :  ok
+2024-10-28 21:26:42 INFO  procesos:110 - Iteracion  : 312  respuesta :  ok
+2024-10-28 21:27:12 INFO  procesos:110 - Iteracion  : 313  respuesta :  ok
+2024-10-28 21:27:41 INFO  procesos:110 - Iteracion  : 314  respuesta :  ok
+2024-10-28 21:28:11 INFO  procesos:110 - Iteracion  : 315  respuesta :  ok
+2024-10-28 21:28:40 INFO  procesos:110 - Iteracion  : 316  respuesta :  ok
+2024-10-28 21:29:09 INFO  procesos:110 - Iteracion  : 317  respuesta :  ok
+2024-10-28 21:29:39 INFO  procesos:110 - Iteracion  : 318  respuesta :  ok
+2024-10-28 21:30:08 INFO  procesos:110 - Iteracion  : 319  respuesta :  ok
+2024-10-28 21:30:38 INFO  procesos:110 - Iteracion  : 320  respuesta :  ok
+2024-10-28 21:31:07 INFO  procesos:110 - Iteracion  : 321  respuesta :  ok
+2024-10-28 21:31:37 INFO  procesos:110 - Iteracion  : 322  respuesta :  ok
+2024-10-28 21:32:06 INFO  procesos:110 - Iteracion  : 323  respuesta :  ok
+2024-10-28 21:32:35 INFO  procesos:110 - Iteracion  : 324  respuesta :  ok
+2024-10-28 21:33:04 INFO  procesos:110 - Iteracion  : 325  respuesta :  ok
+2024-10-28 21:33:33 INFO  procesos:110 - Iteracion  : 326  respuesta :  ok
+2024-10-28 21:34:03 INFO  procesos:110 - Iteracion  : 327  respuesta :  ok
+2024-10-28 21:34:32 INFO  procesos:110 - Iteracion  : 328  respuesta :  ok
+2024-10-28 21:35:01 INFO  procesos:110 - Iteracion  : 329  respuesta :  ok
+2024-10-28 21:35:30 INFO  procesos:110 - Iteracion  : 330  respuesta :  ok
+2024-10-28 21:36:00 INFO  procesos:110 - Iteracion  : 331  respuesta :  ok
+2024-10-28 21:36:30 INFO  procesos:110 - Iteracion  : 332  respuesta :  ok
+2024-10-28 21:36:59 INFO  procesos:110 - Iteracion  : 333  respuesta :  ok
+2024-10-28 21:37:28 INFO  procesos:110 - Iteracion  : 334  respuesta :  ok
+2024-10-28 21:37:57 INFO  procesos:110 - Iteracion  : 335  respuesta :  ok
+2024-10-28 21:38:26 INFO  procesos:110 - Iteracion  : 336  respuesta :  ok
+2024-10-28 21:38:55 INFO  procesos:110 - Iteracion  : 337  respuesta :  ok
+2024-10-28 21:39:24 INFO  procesos:110 - Iteracion  : 338  respuesta :  ok
+2024-10-28 21:39:54 INFO  procesos:110 - Iteracion  : 339  respuesta :  ok
+2024-10-28 21:40:23 INFO  procesos:110 - Iteracion  : 340  respuesta :  ok
+2024-10-28 21:40:52 INFO  procesos:110 - Iteracion  : 341  respuesta :  ok
+2024-10-28 21:41:21 INFO  procesos:110 - Iteracion  : 342  respuesta :  ok
+2024-10-28 21:41:50 INFO  procesos:110 - Iteracion  : 343  respuesta :  ok
+2024-10-28 21:42:19 INFO  procesos:110 - Iteracion  : 344  respuesta :  ok
+2024-10-28 21:42:48 INFO  procesos:110 - Iteracion  : 345  respuesta :  ok
+2024-10-28 21:43:17 INFO  procesos:110 - Iteracion  : 346  respuesta :  ok
+2024-10-28 21:43:47 INFO  procesos:110 - Iteracion  : 347  respuesta :  ok
+2024-10-28 21:44:18 INFO  procesos:110 - Iteracion  : 348  respuesta :  ok
+2024-10-28 21:44:47 INFO  procesos:110 - Iteracion  : 349  respuesta :  ok
+2024-10-28 21:45:16 INFO  procesos:110 - Iteracion  : 350  respuesta :  ok
+2024-10-28 21:45:46 INFO  procesos:110 - Iteracion  : 351  respuesta :  ok
+2024-10-28 21:46:15 INFO  procesos:110 - Iteracion  : 352  respuesta :  ok
+2024-10-28 21:46:44 INFO  procesos:110 - Iteracion  : 353  respuesta :  ok
+2024-10-28 21:47:13 INFO  procesos:110 - Iteracion  : 354  respuesta :  ok
+2024-10-28 21:47:42 INFO  procesos:110 - Iteracion  : 355  respuesta :  ok
+2024-10-28 21:48:12 INFO  procesos:110 - Iteracion  : 356  respuesta :  ok
+2024-10-28 21:48:41 INFO  procesos:110 - Iteracion  : 357  respuesta :  ok
+2024-10-28 21:49:10 INFO  procesos:110 - Iteracion  : 358  respuesta :  ok
+2024-10-28 21:49:39 INFO  procesos:110 - Iteracion  : 359  respuesta :  ok
+2024-10-28 21:50:09 INFO  procesos:110 - Iteracion  : 360  respuesta :  ok
+2024-10-28 21:50:38 INFO  procesos:110 - Iteracion  : 361  respuesta :  ok
+2024-10-28 21:51:07 INFO  procesos:110 - Iteracion  : 362  respuesta :  ok
+2024-10-28 21:51:36 INFO  procesos:110 - Iteracion  : 363  respuesta :  ok
+2024-10-28 21:52:06 INFO  procesos:110 - Iteracion  : 364  respuesta :  ok
+2024-10-28 21:52:35 INFO  procesos:110 - Iteracion  : 365  respuesta :  ok
+2024-10-28 21:53:05 INFO  procesos:110 - Iteracion  : 366  respuesta :  ok
+2024-10-28 21:53:33 INFO  procesos:110 - Iteracion  : 367  respuesta :  ok
+2024-10-28 21:54:02 INFO  procesos:110 - Iteracion  : 368  respuesta :  ok
+2024-10-28 21:54:35 INFO  procesos:110 - Iteracion  : 369  respuesta :  ok
+2024-10-28 21:55:04 INFO  procesos:110 - Iteracion  : 370  respuesta :  ok
+2024-10-28 21:55:34 INFO  procesos:110 - Iteracion  : 371  respuesta :  ok
+2024-10-28 21:56:04 INFO  procesos:110 - Iteracion  : 372  respuesta :  ok
+2024-10-28 21:56:33 INFO  procesos:110 - Iteracion  : 373  respuesta :  ok
+2024-10-28 21:57:02 INFO  procesos:110 - Iteracion  : 374  respuesta :  ok
+2024-10-28 21:57:32 INFO  procesos:110 - Iteracion  : 375  respuesta :  ok
+2024-10-28 21:58:01 INFO  procesos:110 - Iteracion  : 376  respuesta :  ok
+2024-10-28 21:58:30 INFO  procesos:110 - Iteracion  : 377  respuesta :  ok
+2024-10-28 21:58:59 INFO  procesos:110 - Iteracion  : 378  respuesta :  ok
+2024-10-28 21:59:28 INFO  procesos:110 - Iteracion  : 379  respuesta :  ok
+2024-10-28 21:59:57 INFO  procesos:110 - Iteracion  : 380  respuesta :  ok
+2024-10-28 22:00:31 INFO  procesos:110 - Iteracion  : 381  respuesta :  ok
+2024-10-28 22:01:01 INFO  procesos:110 - Iteracion  : 382  respuesta :  ok
+2024-10-28 22:01:30 INFO  procesos:110 - Iteracion  : 383  respuesta :  ok
+2024-10-28 22:01:59 INFO  procesos:110 - Iteracion  : 384  respuesta :  ok
+2024-10-28 22:02:28 INFO  procesos:110 - Iteracion  : 385  respuesta :  ok
+2024-10-28 22:02:58 INFO  procesos:110 - Iteracion  : 386  respuesta :  ok
+2024-10-28 22:03:27 INFO  procesos:110 - Iteracion  : 387  respuesta :  ok
+2024-10-28 22:03:56 INFO  procesos:110 - Iteracion  : 388  respuesta :  ok
+2024-10-28 22:04:25 INFO  procesos:110 - Iteracion  : 389  respuesta :  ok
+2024-10-28 22:04:54 INFO  procesos:110 - Iteracion  : 390  respuesta :  ok
+2024-10-28 22:05:23 INFO  procesos:110 - Iteracion  : 391  respuesta :  ok
+2024-10-28 22:05:53 INFO  procesos:110 - Iteracion  : 392  respuesta :  ok
+2024-10-28 22:06:22 INFO  procesos:110 - Iteracion  : 393  respuesta :  ok
+2024-10-28 22:06:51 INFO  procesos:110 - Iteracion  : 394  respuesta :  ok
+2024-10-28 22:07:20 INFO  procesos:110 - Iteracion  : 395  respuesta :  ok
+2024-10-28 22:07:49 INFO  procesos:110 - Iteracion  : 396  respuesta :  ok
+2024-10-28 22:08:18 INFO  procesos:110 - Iteracion  : 397  respuesta :  ok
+2024-10-28 22:08:47 INFO  procesos:110 - Iteracion  : 398  respuesta :  ok
+2024-10-28 22:09:18 INFO  procesos:110 - Iteracion  : 399  respuesta :  ok
+2024-10-28 22:09:47 INFO  procesos:110 - Iteracion  : 400  respuesta :  ok
+2024-10-28 22:10:17 INFO  procesos:110 - Iteracion  : 401  respuesta :  ok
+2024-10-28 22:10:46 INFO  procesos:110 - Iteracion  : 402  respuesta :  ok
+2024-10-28 22:11:15 INFO  procesos:110 - Iteracion  : 403  respuesta :  ok
+2024-10-28 22:11:45 INFO  procesos:110 - Iteracion  : 404  respuesta :  ok
+2024-10-28 22:12:14 INFO  procesos:110 - Iteracion  : 405  respuesta :  ok
+2024-10-28 22:12:43 INFO  procesos:110 - Iteracion  : 406  respuesta :  ok
+2024-10-28 22:13:13 INFO  procesos:110 - Iteracion  : 407  respuesta :  ok
+2024-10-28 22:13:42 INFO  procesos:110 - Iteracion  : 408  respuesta :  ok
+2024-10-28 22:14:11 INFO  procesos:110 - Iteracion  : 409  respuesta :  ok
+2024-10-28 22:14:40 INFO  procesos:110 - Iteracion  : 410  respuesta :  ok
+2024-10-28 22:15:09 INFO  procesos:110 - Iteracion  : 411  respuesta :  ok
+2024-10-28 22:15:38 INFO  procesos:110 - Iteracion  : 412  respuesta :  ok
+2024-10-28 22:16:08 INFO  procesos:110 - Iteracion  : 413  respuesta :  ok
+2024-10-28 22:16:36 INFO  procesos:110 - Iteracion  : 414  respuesta :  ok
+2024-10-28 22:17:06 INFO  procesos:110 - Iteracion  : 415  respuesta :  ok
+2024-10-28 22:17:35 INFO  procesos:110 - Iteracion  : 416  respuesta :  ok
+2024-10-28 22:18:06 INFO  procesos:110 - Iteracion  : 417  respuesta :  ok
+2024-10-28 22:18:37 INFO  procesos:110 - Iteracion  : 418  respuesta :  ok
+2024-10-28 22:19:08 INFO  procesos:110 - Iteracion  : 419  respuesta :  ok
+2024-10-28 22:19:39 INFO  procesos:110 - Iteracion  : 420  respuesta :  ok
+2024-10-28 22:20:10 INFO  procesos:110 - Iteracion  : 421  respuesta :  ok
+2024-10-28 22:37:31 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:37:50 INFO  procesos:110 - Iteracion  : 422  respuesta :  ok
+2024-10-28 22:39:45 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:45 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 22:39:56 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:563 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:12 ERROR procesos:604 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-28 23:04:25 INFO  procesos:110 - Iteracion  : 426  respuesta :  ok
+2024-10-28 23:32:49 INFO  procesos:110 - Iteracion  : 427  respuesta :  ok
+2024-10-29 00:06:42 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-29 00:23:46 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-29 00:56:28 INFO  procesos:110 - Iteracion  : 428  respuesta :  ok
+2024-10-29 01:23:54 INFO  procesos:110 - Iteracion  : 429  respuesta :  ok
+2024-10-29 01:24:27 INFO  procesos:110 - Iteracion  : 430  respuesta :  ok
+2024-10-29 01:25:00 INFO  procesos:110 - Iteracion  : 431  respuesta :  ok
+2024-10-29 01:25:32 INFO  procesos:110 - Iteracion  : 432  respuesta :  ok
+2024-10-29 01:26:05 INFO  procesos:110 - Iteracion  : 433  respuesta :  ok
+2024-10-29 01:26:38 INFO  procesos:110 - Iteracion  : 434  respuesta :  ok
+2024-10-29 01:27:11 INFO  procesos:110 - Iteracion  : 435  respuesta :  ok
+2024-10-29 01:27:44 INFO  procesos:110 - Iteracion  : 436  respuesta :  ok
+2024-10-29 01:28:17 INFO  procesos:110 - Iteracion  : 437  respuesta :  ok
+2024-10-29 01:28:49 INFO  procesos:110 - Iteracion  : 438  respuesta :  ok
+2024-10-29 01:29:22 INFO  procesos:110 - Iteracion  : 439  respuesta :  ok
+2024-10-29 01:29:55 INFO  procesos:110 - Iteracion  : 440  respuesta :  ok
+2024-10-29 01:30:27 INFO  procesos:110 - Iteracion  : 441  respuesta :  ok
+2024-10-29 01:31:00 INFO  procesos:110 - Iteracion  : 442  respuesta :  ok
+2024-10-29 01:31:33 INFO  procesos:110 - Iteracion  : 443  respuesta :  ok
+2024-10-29 01:32:05 INFO  procesos:110 - Iteracion  : 444  respuesta :  ok
+2024-10-29 01:32:38 INFO  procesos:110 - Iteracion  : 445  respuesta :  ok
+2024-10-29 01:33:10 INFO  procesos:110 - Iteracion  : 446  respuesta :  ok
+2024-10-29 01:33:45 INFO  procesos:110 - Iteracion  : 447  respuesta :  ok
+2024-10-29 01:34:20 INFO  procesos:110 - Iteracion  : 448  respuesta :  ok
+2024-10-30 17:50:18 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-30 17:50:47 INFO  procesos:110 - Iteracion  : 1  respuesta :  ok
+2024-10-30 17:51:16 INFO  procesos:110 - Iteracion  : 2  respuesta :  ok
+2024-10-30 17:51:43 INFO  procesos:110 - Iteracion  : 3  respuesta :  ok
+2024-10-30 17:52:11 INFO  procesos:110 - Iteracion  : 4  respuesta :  ok
+2024-10-30 17:52:39 INFO  procesos:110 - Iteracion  : 5  respuesta :  ok
+2024-10-30 17:53:07 INFO  procesos:110 - Iteracion  : 6  respuesta :  ok
+2024-10-30 17:53:35 INFO  procesos:110 - Iteracion  : 7  respuesta :  ok
+2024-10-30 17:54:02 INFO  procesos:110 - Iteracion  : 8  respuesta :  ok
+2024-10-30 17:54:30 INFO  procesos:110 - Iteracion  : 9  respuesta :  ok
+2024-10-30 17:54:57 INFO  procesos:110 - Iteracion  : 10  respuesta :  ok
+2024-10-30 17:55:25 INFO  procesos:110 - Iteracion  : 11  respuesta :  ok
+2024-10-30 17:55:53 INFO  procesos:110 - Iteracion  : 12  respuesta :  ok
+2024-10-30 17:56:21 INFO  procesos:110 - Iteracion  : 13  respuesta :  ok
+2024-10-30 17:56:49 INFO  procesos:110 - Iteracion  : 14  respuesta :  ok
+2024-10-30 17:57:17 INFO  procesos:110 - Iteracion  : 15  respuesta :  ok
+2024-10-30 17:57:45 INFO  procesos:110 - Iteracion  : 16  respuesta :  ok
+2024-10-30 17:58:12 INFO  procesos:110 - Iteracion  : 17  respuesta :  ok
+2024-10-30 17:58:40 INFO  procesos:110 - Iteracion  : 18  respuesta :  ok
+2024-10-30 17:59:09 INFO  procesos:110 - Iteracion  : 19  respuesta :  ok
+2024-10-30 17:59:36 INFO  procesos:110 - Iteracion  : 20  respuesta :  ok
+2024-10-30 18:00:04 INFO  procesos:110 - Iteracion  : 21  respuesta :  ok
+2024-10-30 18:00:32 INFO  procesos:110 - Iteracion  : 22  respuesta :  ok
+2024-10-30 18:01:00 INFO  procesos:110 - Iteracion  : 23  respuesta :  ok
+2024-10-30 18:01:28 INFO  procesos:110 - Iteracion  : 24  respuesta :  ok
+2024-10-30 18:01:56 INFO  procesos:110 - Iteracion  : 25  respuesta :  ok
+2024-10-30 18:02:24 INFO  procesos:110 - Iteracion  : 26  respuesta :  ok
+2024-10-30 18:02:52 INFO  procesos:110 - Iteracion  : 27  respuesta :  ok
+2024-10-30 18:03:20 INFO  procesos:110 - Iteracion  : 28  respuesta :  ok
+2024-10-30 18:03:48 INFO  procesos:110 - Iteracion  : 29  respuesta :  ok
+2024-10-30 18:04:16 INFO  procesos:110 - Iteracion  : 30  respuesta :  ok
+2024-10-30 18:04:44 INFO  procesos:110 - Iteracion  : 31  respuesta :  ok
+2024-10-30 18:05:14 INFO  procesos:110 - Iteracion  : 32  respuesta :  ok
+2024-10-30 18:05:41 INFO  procesos:110 - Iteracion  : 33  respuesta :  ok
+2024-10-30 18:06:09 INFO  procesos:110 - Iteracion  : 34  respuesta :  ok
+2024-10-30 18:06:37 INFO  procesos:110 - Iteracion  : 35  respuesta :  ok
+2024-10-30 18:07:05 INFO  procesos:110 - Iteracion  : 36  respuesta :  ok
+2024-10-30 18:07:33 INFO  procesos:110 - Iteracion  : 37  respuesta :  ok
+2024-10-30 18:08:01 INFO  procesos:110 - Iteracion  : 38  respuesta :  ok
+2024-10-30 18:08:28 INFO  procesos:110 - Iteracion  : 39  respuesta :  ok
+2024-10-30 18:08:56 INFO  procesos:110 - Iteracion  : 40  respuesta :  ok
+2024-10-30 18:09:24 INFO  procesos:110 - Iteracion  : 41  respuesta :  ok
+2024-10-30 18:09:52 INFO  procesos:110 - Iteracion  : 42  respuesta :  ok
+2024-10-30 18:10:20 INFO  procesos:110 - Iteracion  : 43  respuesta :  ok
+2024-10-30 18:10:48 INFO  procesos:110 - Iteracion  : 44  respuesta :  ok
+2024-10-30 18:11:16 INFO  procesos:110 - Iteracion  : 45  respuesta :  ok
+2024-10-30 18:11:45 INFO  procesos:110 - Iteracion  : 46  respuesta :  ok
+2024-10-30 18:12:13 INFO  procesos:110 - Iteracion  : 47  respuesta :  ok
+2024-10-30 18:12:41 INFO  procesos:110 - Iteracion  : 48  respuesta :  ok
+2024-10-30 18:13:09 INFO  procesos:110 - Iteracion  : 49  respuesta :  ok
+2024-10-30 18:13:37 INFO  procesos:110 - Iteracion  : 50  respuesta :  ok
+2024-10-30 18:14:05 INFO  procesos:110 - Iteracion  : 51  respuesta :  ok
+2024-10-30 18:14:33 INFO  procesos:110 - Iteracion  : 52  respuesta :  ok
+2024-10-30 18:15:01 INFO  procesos:110 - Iteracion  : 53  respuesta :  ok
+2024-10-30 18:15:29 INFO  procesos:110 - Iteracion  : 54  respuesta :  ok
+2024-10-30 18:15:57 INFO  procesos:110 - Iteracion  : 55  respuesta :  ok
+2024-10-30 18:16:26 INFO  procesos:110 - Iteracion  : 56  respuesta :  ok
+2024-10-30 18:16:54 INFO  procesos:110 - Iteracion  : 57  respuesta :  ok
+2024-10-30 18:17:22 INFO  procesos:110 - Iteracion  : 58  respuesta :  ok
+2024-10-30 18:17:50 INFO  procesos:110 - Iteracion  : 59  respuesta :  ok
+2024-10-30 18:18:19 INFO  procesos:110 - Iteracion  : 60  respuesta :  ok
+2024-10-30 18:18:47 INFO  procesos:110 - Iteracion  : 61  respuesta :  ok
+2024-10-30 18:19:16 INFO  procesos:110 - Iteracion  : 62  respuesta :  ok
+2024-10-30 18:19:44 INFO  procesos:110 - Iteracion  : 63  respuesta :  ok
+2024-10-30 18:20:12 INFO  procesos:110 - Iteracion  : 64  respuesta :  ok
+2024-10-30 18:20:41 INFO  procesos:110 - Iteracion  : 65  respuesta :  ok
+2024-10-30 18:21:08 INFO  procesos:110 - Iteracion  : 66  respuesta :  ok
+2024-10-30 18:21:36 INFO  procesos:110 - Iteracion  : 67  respuesta :  ok
+2024-10-30 18:22:05 INFO  procesos:110 - Iteracion  : 68  respuesta :  ok
+2024-10-30 18:22:32 INFO  procesos:110 - Iteracion  : 69  respuesta :  ok
+2024-10-30 18:23:00 INFO  procesos:110 - Iteracion  : 70  respuesta :  ok
+2024-10-30 18:23:28 INFO  procesos:110 - Iteracion  : 71  respuesta :  ok
+2024-10-30 18:23:56 INFO  procesos:110 - Iteracion  : 72  respuesta :  ok
+2024-10-30 18:24:24 INFO  procesos:110 - Iteracion  : 73  respuesta :  ok
+2024-10-30 18:24:52 INFO  procesos:110 - Iteracion  : 74  respuesta :  ok
+2024-10-30 18:25:20 INFO  procesos:110 - Iteracion  : 75  respuesta :  ok
+2024-10-30 18:25:48 INFO  procesos:110 - Iteracion  : 76  respuesta :  ok
+2024-10-30 18:26:16 INFO  procesos:110 - Iteracion  : 77  respuesta :  ok
+2024-10-30 18:26:45 INFO  procesos:110 - Iteracion  : 78  respuesta :  ok
+2024-10-30 18:27:13 INFO  procesos:110 - Iteracion  : 79  respuesta :  ok
+2024-10-30 18:27:41 INFO  procesos:110 - Iteracion  : 80  respuesta :  ok
+2024-10-30 18:28:12 INFO  procesos:110 - Iteracion  : 81  respuesta :  ok
+2024-10-30 18:28:46 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-30 18:29:55 INFO  procesos:110 - Iteracion  : 0  respuesta :  ok
+2024-10-30 18:45:09 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:09 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:19 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:30 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:40 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:45:50 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:01 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:11 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:25 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:143 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:184 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:227 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:270 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:312 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:354 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:396 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:438 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:480 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:36 ERROR procesos:522 - java.lang.Exception: El API no regreso una respuesta correcta.
+2024-10-30 18:46:49 INFO  procesos:110 - Iteracion  : 2  respuesta :  ok
+2024-10-30 18:47:57 INFO  procesos:110 - Iteracion  : 3  respuesta :  ok

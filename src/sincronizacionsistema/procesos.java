@@ -111,7 +111,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var7) {
                     logger4j.error(var7.toString());
                     this.errorLog( var7.toString() );
@@ -153,7 +153,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var25) {
                     logger4j.error(var25.toString());
                     this.errorLog( var25.toString() );
@@ -195,7 +195,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var9) {   
                     logger4j.error(var9.toString());                 
                     this.errorLog( var9.toString() );
@@ -238,7 +238,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var11) {    
                     logger4j.error(var11.toString());             
                     this.errorLog( var11.toString() );
@@ -281,7 +281,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var13) {   
                     logger4j.error(var13.toString());              
                     this.errorLog( var13.toString() );
@@ -323,7 +323,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var15) {   
                     logger4j.error(var15.toString());              
                     this.errorLog( var15.toString() );
@@ -365,7 +365,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var17) {   
                     logger4j.error(var17.toString());              
                     this.errorLog( var17.toString() );
@@ -407,7 +407,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var19) { 
                     logger4j.error(var19.toString());                
                     this.errorLog( var19.toString() );
@@ -449,7 +449,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var21) {  
                     logger4j.error(var21.toString());               
                     this.errorLog( var21.toString() );
@@ -491,7 +491,7 @@ public class procesos {
                if (!"ok".equals(resp_temp)) {
                   try {
                      this.InfoLog(resp_temp);
-                     this.info.logArea.append(resp_temp + "\n");
+                     this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
                   } catch (IOException var23) {  
                     logger4j.error(var23.toString());               
                     this.errorLog( var23.toString() );
@@ -524,7 +524,7 @@ public class procesos {
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, var27);
             }
 
-           
+/*Deshabilitado por Oscar 2024-10-30 para quitar depuracion automatica de depuracion de registros y log           
             try {
                 this.obtener_registros_restantes();
                this.info.synchronization_depuration_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -604,7 +604,7 @@ public class procesos {
                 logger4j.error(e.toString());                
                 this.errorLog( e.toString() );
                 Logger.getLogger(procesos.class.getName()).log(Level.SEVERE, (String)null, e);
-            }
+            }*/
             
             this.sincronizando = 0;
             this.info.last_sync.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -897,6 +897,7 @@ public class procesos {
        String tmp = resultado.toString();
        String[] registrosPendientes = tmp.split(",");
        if( registrosPendientes.length < 22 ){
+            this.info.logArea.append("El API no regreso una respuesta correcta." + getCurrentTime() + "\n");
            throw new Exception("El API no regreso una respuesta correcta.");
            //return resultado.toString();
        }else{

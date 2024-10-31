@@ -125,6 +125,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         depuracion_registros_todos_btn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Version Log Kiel, se quita depuracion automática 2024");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         last_sync.addActionListener(new java.awt.event.ActionListener() {
