@@ -1,1 +1,1 @@
-/Applications/XAMPP/htdocs/general_desarrollo_oscar_2024/conexion_inicial.txt
+/Applications/MAMP/htdocs/php_8/conexion_inicial.txt

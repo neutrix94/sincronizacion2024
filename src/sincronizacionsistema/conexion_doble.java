@@ -54,7 +54,7 @@ public class conexion_doble {
          for(int cont_posic = 0; cont_conex <= 1; ++cont_conex) {
             String[] parametros64 = conexiones[cont_conex].split("~");
 
-            for(int i = 0; i < parametros64.length; ++i) {
+            for(int i = 0; i < parametros64.length-1; ++i) {
                this.parametrosDecod[cont_posic] = decodifica(parametros64[i]);
                ++cont_posic;
                if (cont_posic == 4) {
@@ -67,7 +67,7 @@ public class conexion_doble {
          this.ruta_arch_jar = conexiones[3];
          br.close();
       } catch (IOException var10) {
-         System.out.println("No se encontó el archivo deconfiguración inicial del sistema!!!\n" + var10);
+         System.out.println("No se encontó el archivo de configuración inicial del sistema.\n" + var10);
       }
 
    }
@@ -79,16 +79,16 @@ public class conexion_doble {
    }
 
    public Connection conecta_local() {
-      url_local = "jdbc:mysql://" + this.parametrosDecod[0] + ":3306/" + this.parametrosDecod[2] + "?autoReconnect=false";
+      url_local = "jdbc:mysql://" + this.parametrosDecod[0] + ":3306/" + this.parametrosDecod[2] + "?autoReconnect=false";//:3306this.parametrosDecod[0]
       user_local = this.parametrosDecod[3];
-      pass_local = "";
+      pass_local = "root";
       conn_local = null;
 
       try {
          Class.forName("com.mysql.jdbc.Driver");
          conn_local = DriverManager.getConnection(url_local, user_local, pass_local);
          if (conn_local != null) {
-            System.out.println("Conectado en local!!!");
+            System.out.println("Conectado en local.");
          }
       } catch (SQLException | ClassNotFoundException var2) {
          System.out.println("Error al conectar con servidor local " + var2);
@@ -100,13 +100,13 @@ public class conexion_doble {
    public void desconectar_local() {
       conn_local = null;
       if (conn_local == null) {
-         System.out.println("Conexion local terminada!!!");
+         System.out.println("Conexion local terminada.");
       }
 
    }
 
    public Connection conecta_linea() throws SQLException, IOException {
-      url_linea = "jdbc:mysql://" + this.parametrosDecod[5] + ":3306/" + this.parametrosDecod[7] + "?autoReconnect=false";
+      url_linea = "jdbc:mysql://" + this.parametrosDecod[5] + ":3306/" + this.parametrosDecod[7] + "?autoReconnect=false";//:3306
       user_linea = this.parametrosDecod[8];
       pass_linea = this.parametrosDecod[9];
       conn_linea = null;
@@ -115,7 +115,7 @@ public class conexion_doble {
          Class.forName("com.mysql.jdbc.Driver");
          conn_linea = DriverManager.getConnection(url_linea, user_linea, pass_linea);
          if (conn_linea != null) {
-            System.out.println("Conectado en línea!!!");
+            System.out.println("Conectado en línea.");
          }
       } catch (SQLException | ClassNotFoundException var2) {
          System.out.println("Error al conectar con servidor en línea " + var2);
@@ -128,7 +128,7 @@ public class conexion_doble {
    public void desconectar_linea() {
       conn_local = null;
       if (conn_local == null) {
-         System.out.println("Conexion en linea terminada!!!");
+         System.out.println("Conexion en linea terminada.");
       }
 
    }
@@ -162,7 +162,7 @@ public class conexion_doble {
          return respuesta;
       } catch (SQLException var9) {
          this.error = var9.getMessage();
-         System.out.println("Error al contar registros!!!\n" + this.getError());
+         System.out.println("Error al contar registros.\n" + this.getError());
          return "error";
       }
    }
@@ -240,7 +240,7 @@ public class conexion_doble {
          PreparedStatement st = conexion.prepareStatement(query, 1);
          int reg_afectados = st.executeUpdate();
          if (reg_afectados == 0) {
-            throw new SQLException("Error al insertar el registro!!!");
+            throw new SQLException("Error al insertar el registro.");
          } else {
             ResultSet generatedKeys = st.getGeneratedKeys();
             if (generatedKeys.next()) {
