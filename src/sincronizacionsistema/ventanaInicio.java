@@ -1,6 +1,4 @@
-/*
-    Version 2024.2 ( Depuración de registros de saincronizacion )
-*/
+
 package sincronizacionsistema;
 
 import java.awt.Color;
@@ -35,56 +33,60 @@ import org.netbeans.lib.awtextra.AbsoluteLayout;
 import org.apache.log4j.LogManager;
 
 public class ventanaInicio extends JFrame {
-   conexion_doble conecta;
-   procesos proc;
-   private static Connection conn_local;
-   private static Connection conn_linea;
-   private int id_sucursal;
-   private int tiempo_sincronizacion;
-   private long retardo_inicio;
-   private String local_system_path;
-   public JTextField intervalo_busqueda;
-   private JButton jButton1;
-   private JLabel jLabel1;
-   private JLabel jLabel3;
-   private JScrollPane jScrollPane1;
-   public JTextArea status_sinc;
-   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(ventanaInicio.class);//implementacion de logger4j 2024-10-23
+    conexion_doble conecta;
+    procesos proc;
+    //private static Connection conn_local;
+    //private static Connection conn_linea;
+    private int id_sucursal;
+    private int tiempo_sincronizacion;
+    private long retardo_inicio;
+    private String local_system_path;
+    public JTextField intervalo_busqueda;
+    private JButton jButton1;
+    private JLabel jLabel1;
+    private JLabel jLabel3;
+    private JScrollPane jScrollPane1;
+    public JTextArea status_sinc;
+    final static org.apache.log4j.Logger logger4j = LogManager.getLogger(ventanaInicio.class);//implementacion de logger4j 2024-10-23
 
-   public ventanaInicio(String ruta_conect, long retardo, String system_path) throws SQLException, IOException, InterruptedException {
-      this.initComponents();
-      this.retardo_inicio = retardo;
-      this.setVisible(true);
-      this.setLocationRelativeTo((Component)null);
-      long start = System.currentTimeMillis();
-      Thread.sleep(this.retardo_inicio);
-      System.out.println("Sleep time in ms = " + (System.currentTimeMillis() - start));
-      this.conecta = new conexion_doble(ruta_conect);
-      this.proc = new procesos(ruta_conect, system_path);
-      String[] datos_sesion = this.proc.getDatosSucursal().split("~");
-      this.id_sucursal = Integer.parseInt(datos_sesion[0]);
-      if (this.id_sucursal == -1) {
-         JOptionPane.showMessageDialog((Component)null, "Esta sucursal no se puede sincronizar por que la BD es del sistema en línea");
-         System.exit(0);
-      }
+    public ventanaInicio(String ruta_conect, long retardo, String system_path, int store_id, int syncronization_interval, String store_name) throws SQLException, IOException, InterruptedException {
+        this.initComponents();
+        this.retardo_inicio = retardo;
+        this.setVisible(true);
+        this.setLocationRelativeTo((Component)null);
+        long start = System.currentTimeMillis();
+        Thread.sleep(this.retardo_inicio);
+//System.out.println("Sleep time in ms = " + (System.currentTimeMillis() - start));
+        //this.conecta = new conexion_doble(ruta_conect);
+        this.proc = new procesos(ruta_conect, system_path);
+//        String[] datos_sesion = this.proc.getDatosSucursal().split("~");
+        this.id_sucursal = store_id;
+        if (this.id_sucursal == -1) {
+           JOptionPane.showMessageDialog((Component)null, "Esta sucursal no se puede sincronizar por que la BD es del sistema en línea");
+           System.exit(0);
+        }
+//id_sucursal,nombre,(intervalo_sinc*1000)
+        this.intervalo_busqueda.setText("" + syncronization_interval);
+        this.intervalo_busqueda.setEnabled(false);
+        this.proc.id_sucursal = Integer.parseInt("" + this.id_sucursal);//datos_sesion[0]
+        //this.proc.tiempo_buscar = Integer.parseInt(datos_sesion[2]);
+        //this.proc.tiempo_buscar = Integer.parseInt(datos_sesion[2]);
+        
+System.out.println("Intervalo : " + syncronization_interval);
+        this.proc.tiempo_buscar = (int) (syncronization_interval*1000);//Integer.parseInt(syncronization_interval);
+        //conn_local = this.conecta.conecta_local();
+        this.oculta();
+        //this.setTitle("Sincronización de Sistema General Sucursal " + datos_sesion[1]);
+        this.setTitle("Sincronización de Sistema General Sucursal " + store_name);
+        this.setLocationRelativeTo((Component)null);
 
-      this.intervalo_busqueda.setText(datos_sesion[2]);
-      this.intervalo_busqueda.setEnabled(false);
-      this.proc.id_sucursal = Integer.parseInt(datos_sesion[0]);
-      this.proc.tiempo_buscar = Integer.parseInt(datos_sesion[2]);
-      conn_local = this.conecta.conecta_local();
-      this.oculta();
-      this.setTitle("Sincronización de Sistema General Sucursal " + datos_sesion[1]);
-      this.setLocationRelativeTo((Component)null);
-
-      try {
-         this.status_sinc.setText(this.proc.ejecutaIntervalo(retardo));
-      } catch (Exception var9) {
-        logger4j.info( var9.toString() );//aqui no se controlaba anteriormente el error
-       // this.dispose();//qctualmente revisar
-      }
-
-   }
+        try {
+           this.status_sinc.setText(this.proc.ejecutaIntervalo(retardo));
+        } catch (Exception var9) {
+          logger4j.info( var9.toString() );//aqui no se controlaba anteriormente el error
+         // this.dispose();//actualmente revisar
+        }
+    }
 
    public void oculta() {
       this.dispose();

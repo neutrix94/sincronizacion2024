@@ -6,6 +6,8 @@ package formularios;
 import sincronizacionsistema.procesos;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -16,6 +18,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.Timer;
 
 public class infoSinccronizacion extends javax.swing.JFrame {
     public String api_local_path = "";
@@ -23,6 +26,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
       initComponents();
       this.setLocationRelativeTo((Component)null);
       this.last_sync.setEditable(false);
+      startTimer();
       //this.api_local_path = local_path;
       //this.notification_sync.setEditable(false);
     }
@@ -901,7 +905,54 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_depuracion_registros_btnActionPerformed
     
-    
+    private int initialSeconds = 1 * 60; // tiempo inicial (10 minutos)
+    private int remainingSeconds = initialSeconds;
+    private void startTimer() {
+    Timer timer = new Timer(1000, new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            if (remainingSeconds > 0) {
+                remainingSeconds--;
+
+                int hrs = remainingSeconds / 3600;
+                int mins = (remainingSeconds % 3600) / 60;
+                int secs = remainingSeconds % 60;
+
+                //String tiempoFormateado = String.format("Tiempo restante: %02d:%02d:%02d", hrs, mins, secs);
+                synchronization_depuration_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                synchronization_depuration_log_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+            } else {
+                //manda a llamar servivios de depuracion
+                try {
+                    depurationProcess(true);
+                    depurationLogProcess(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(infoSinccronizacion.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                // Reiniciar el contador
+                remainingSeconds = initialSeconds;
+            }
+        }
+    });
+    timer.start();
+}
+    /*private void startTimer() {
+        int seconds = 10000;
+        Timer timer = new Timer(1000, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                timmer_seconds++;
+                //timerLabel.setText("Tiempo: " + seconds + "s");
+                int hrs = timmer_seconds / 3600;
+                int mins = (timmer_seconds % 3600) / 60;
+                int secs = timmer_seconds % 60;
+
+            // Formateamos para que siempre tenga dos dígitos
+            String tiempoFormateado = String.format("Tiempo: %02d:%02d:%02d", hrs, mins, secs);
+                synchronization_depuration_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                synchronization_depuration_log_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+            }
+        });
+        timer.start();
+    }*/
     
     private void depuracion_registros_todos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_depuracion_registros_todos_btnActionPerformed
         try {
@@ -967,7 +1018,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
     
     public String depurationProcess( Boolean is_complete ) throws MalformedURLException, IOException{
         try {
-            String urlParaVisitar = "http://localhost/" + this.api_local_path + "/rest/crones/depurar_sincronizacion";
+            String urlParaVisitar = "http://localhost/" + this.api_local_path + "/rest_v2/crones/depurar_sincronizacion";
             StringBuilder resultado = new StringBuilder();
             URL url = new URL(urlParaVisitar);
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
@@ -1003,7 +1054,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
     
     public String depurationLogProcess( Boolean is_complete ) throws MalformedURLException, IOException{
         try {
-            String urlParaVisitar = "http://localhost/" + this.api_local_path + "/rest/crones/depurar_logs";
+            String urlParaVisitar = "http://localhost/" + this.api_local_path + "/rest_v2/crones/depurar_logs";
             StringBuilder resultado = new StringBuilder();
             URL url = new URL(urlParaVisitar);
             HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
