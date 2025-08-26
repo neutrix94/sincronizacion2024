@@ -1,5 +1,5 @@
 /*
-    Version 2024.2 ( Depuración de registros de saincronizacion )
+    Version 2024.2 ( Depuración de registros de sincronizacion )
 */
 package formularios;
 
@@ -15,20 +15,24 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.Timer;
 
 public class infoSinccronizacion extends javax.swing.JFrame {
-    public String api_local_path = "";
-    public infoSinccronizacion() {
-      initComponents();
-      this.setLocationRelativeTo((Component)null);
-      this.last_sync.setEditable(false);
-      startTimer();
-      //this.api_local_path = local_path;
-      //this.notification_sync.setEditable(false);
+    public String api_local_path = "", depuration_time;
+    public int depuration_interval;
+    public infoSinccronizacion() {//String depuration_time, int depuration_interval
+        initComponents();
+        this.setLocationRelativeTo((Component)null);
+        this.last_sync.setEditable(false);
+        //startTimer();
+        //this.api_local_path = local_path;
+        //this.notification_sync.setEditable(false);
     }
 
     /**
@@ -671,7 +675,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         ultima_sincronizacion_label1.setText("Próxima depuración en :");
         getContentPane().add(ultima_sincronizacion_label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, 160, 30));
 
-        ultima_sincronizacion_label2.setText("Inicio :");
+        ultima_sincronizacion_label2.setText("Hora Base Depuración");
         getContentPane().add(ultima_sincronizacion_label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 160, 30));
 
         pack();
@@ -889,52 +893,101 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         try {
             String resp_temp = depurationProcess( false );
             if (!"ok".equals(resp_temp)) {
-                  synchronization_depuration_info.setText(resp_temp);
-                  synchronization_depuration_bar.setValue(100);
-                  synchronization_depuration_bar.setBackground(Color.red);
-                  synchronization_depuration_bar.setForeground(Color.red);
-               } else {
-                  synchronization_depuration_info.setText(resp_temp);
-                  synchronization_depuration_bar.setValue(100);
-                  synchronization_depuration_bar.setBackground(Color.green);
-                  synchronization_depuration_bar.setForeground(Color.green);
-                  //synchronization_depuration_end.setText("" + dtf.format(LocalDateTime.now()));
-               }
-        } catch (IOException ex) {
+                    synchronization_depuration_info.setText(resp_temp);
+                    synchronization_depuration_bar.setValue(100);
+                    synchronization_depuration_bar.setBackground(Color.red);
+                    synchronization_depuration_bar.setForeground(Color.red);
+                }else{
+                    synchronization_depuration_info.setText(resp_temp);
+                    synchronization_depuration_bar.setValue(100);
+                    synchronization_depuration_bar.setBackground(Color.green);
+                    synchronization_depuration_bar.setForeground(Color.green);
+                    //synchronization_depuration_end.setText("" + dtf.format(LocalDateTime.now()));
+                }
+        }catch (IOException ex){
             Logger.getLogger(infoSinccronizacion.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_depuracion_registros_btnActionPerformed
     
-    private int initialSeconds = 1 * 60; // tiempo inicial (10 minutos)
-    private int remainingSeconds = initialSeconds;
-    private void startTimer() {
-    Timer timer = new Timer(1000, new ActionListener() {
-        public void actionPerformed(ActionEvent e) {
-            if (remainingSeconds > 0) {
-                remainingSeconds--;
+    //private int initialSeconds = 1 * 60; // tiempo inicial (10 minutos)
+    //private int remainingSeconds = initialSeconds;
+    
+    public static String HORA_BASE; // hora base en formato HH:mm:ss10:05:00 = ""
+    public static int INTERVALO_MINUTOS; // cada cuántos minutos se ejecuta la acción = 30
+    private LocalTime siguienteEjecucion;
+    
+    public void startTimer() {
+        //HORA_BASE = synchronization_depuration_start.getText();
+        // Calcular siguiente ejecución desde la hora base
+        LocalTime horaBase = LocalTime.parse(HORA_BASE, DateTimeFormatter.ofPattern("HH:mm:ss"));
+        LocalTime ahora = LocalTime.now();
 
-                int hrs = remainingSeconds / 3600;
-                int mins = (remainingSeconds % 3600) / 60;
-                int secs = remainingSeconds % 60;
-
-                //String tiempoFormateado = String.format("Tiempo restante: %02d:%02d:%02d", hrs, mins, secs);
-                synchronization_depuration_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
-                synchronization_depuration_log_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
-            } else {
-                //manda a llamar servivios de depuracion
-                try {
-                    depurationProcess(true);
-                    depurationLogProcess(true);
-                } catch (IOException ex) {
-                    Logger.getLogger(infoSinccronizacion.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                // Reiniciar el contador
-                remainingSeconds = initialSeconds;
-            }
+        // Asegura que la siguiente ejecución sea posterior a la hora actual
+        siguienteEjecucion = horaBase;
+        while (siguienteEjecucion.isBefore(ahora)) {
+            siguienteEjecucion = siguienteEjecucion.plusMinutes(INTERVALO_MINUTOS);
         }
-    });
-    timer.start();
-}
+
+        // Timer que actualiza cada segundo
+        Timer timer = new Timer(1000, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                LocalTime ahora = LocalTime.now();
+                Duration restante = Duration.between(ahora, siguienteEjecucion);
+
+                if (!restante.isNegative()) {
+                    long hrs = restante.toHours();
+                    long mins = restante.toMinutes();
+                    long secs = restante.getSeconds() % 60;
+                    //label.setText(String.format("Tiempo restante: %02d:%02d", mins, secs));
+                    synchronization_depuration_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                    synchronization_depuration_log_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                }
+
+                if (!ahora.isBefore(siguienteEjecucion)) {
+                    try {//ejecuta Depuraciones
+                        depurationProcess(true);
+                        depurationLogProcess(true);
+                    } catch (IOException ex) {
+                        Logger.getLogger(infoSinccronizacion.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    siguienteEjecucion = siguienteEjecucion.plusMinutes(INTERVALO_MINUTOS);
+                }
+            }
+        });
+        timer.start();
+    }
+    
+    
+    /*private void startTimer() {
+       // synchronization_depuration_start.setText(this.depuration_time);
+       // synchronization_depuration_log_start.setText(this.depuration_time);
+        Timer timer = new Timer(1000, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (remainingSeconds > 0) {
+                    remainingSeconds--;
+
+                    int hrs = remainingSeconds / 3600;
+                    int mins = (remainingSeconds % 3600) / 60;
+                    int secs = remainingSeconds % 60;
+
+                    //String tiempoFormateado = String.format("Tiempo restante: %02d:%02d:%02d", hrs, mins, secs);
+                    synchronization_depuration_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                    synchronization_depuration_log_end.setText(String.format("%02d:%02d:%02d", hrs, mins, secs));
+                } else {
+                    //manda a llamar servivios de depuracion
+                    try {
+                        depurationProcess(true);
+                        depurationLogProcess(true);
+                    } catch (IOException ex) {
+                        Logger.getLogger(infoSinccronizacion.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    // Reiniciar el contador
+                    remainingSeconds = initialSeconds;
+                }
+            }
+        });
+        timer.start();
+    }*/
     /*private void startTimer() {
         int seconds = 10000;
         Timer timer = new Timer(1000, new ActionListener() {

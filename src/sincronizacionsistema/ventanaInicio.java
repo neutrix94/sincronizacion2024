@@ -12,11 +12,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -27,13 +25,11 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.UIManager.LookAndFeelInfo;
-import org.apache.log4j.LogManager;
 import org.netbeans.lib.awtextra.AbsoluteConstraints;
 import org.netbeans.lib.awtextra.AbsoluteLayout;
 import org.apache.log4j.LogManager;
 
 public class ventanaInicio extends JFrame {
-    conexion_doble conecta;
     procesos proc;
     //private static Connection conn_local;
     //private static Connection conn_linea;
@@ -49,7 +45,7 @@ public class ventanaInicio extends JFrame {
     public JTextArea status_sinc;
     final static org.apache.log4j.Logger logger4j = LogManager.getLogger(ventanaInicio.class);//implementacion de logger4j 2024-10-23
 
-    public ventanaInicio(String ruta_conect, long retardo, String system_path, int store_id, int syncronization_interval, String store_name) throws SQLException, IOException, InterruptedException {
+    public ventanaInicio(String ruta_conect, long retardo, String system_path, int store_id, int syncronization_interval, String store_name, String depuration_time, int depuration_interval) throws SQLException, IOException, InterruptedException {
         this.initComponents();
         this.retardo_inicio = retardo;
         this.setVisible(true);
@@ -58,7 +54,7 @@ public class ventanaInicio extends JFrame {
         Thread.sleep(this.retardo_inicio);
 //System.out.println("Sleep time in ms = " + (System.currentTimeMillis() - start));
         //this.conecta = new conexion_doble(ruta_conect);
-        this.proc = new procesos(ruta_conect, system_path);
+        this.proc = new procesos(ruta_conect, system_path, depuration_time, depuration_interval);
 //        String[] datos_sesion = this.proc.getDatosSucursal().split("~");
         this.id_sucursal = store_id;
         if (this.id_sucursal == -1) {
@@ -72,7 +68,7 @@ public class ventanaInicio extends JFrame {
         //this.proc.tiempo_buscar = Integer.parseInt(datos_sesion[2]);
         //this.proc.tiempo_buscar = Integer.parseInt(datos_sesion[2]);
         
-System.out.println("Intervalo : " + syncronization_interval);
+//System.out.println("Intervalo : " + syncronization_interval);
         this.proc.tiempo_buscar = (int) (syncronization_interval*1000);//Integer.parseInt(syncronization_interval);
         //conn_local = this.conecta.conecta_local();
         this.oculta();
@@ -91,7 +87,7 @@ System.out.println("Intervalo : " + syncronization_interval);
    public void oculta() {
       this.dispose();
       this.jButton1.setVisible(false);
-      System.out.println("Ya ocultó");
+//System.out.println("Ya ocultó");
    }
 
    private void initComponents() {

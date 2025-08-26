@@ -1,6 +1,4 @@
-/*
-    Version 2024.2 ( Depuración de registros de saincronizacion )
-*/
+
 package sincronizacionsistema;
 
 import sincronizacion.main;
@@ -16,8 +14,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.sql.SQLException;
-//import java.util.Base64;
-//import java.util.Base64.Decoder;
 import javax.swing.JOptionPane;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -26,7 +22,7 @@ public class carga_inicial {
     public static int puerto_sinc;
 
     public static void leer_ruta() throws FileNotFoundException, InterruptedException, SQLException {
-System.out.println("Entra en leer_ruta");
+//System.out.println("Entra en leer_ruta");
         String linea = "";
         File archivo = new File("synchronization_config.txt");
         FileReader fr = new FileReader(archivo);
@@ -34,31 +30,30 @@ System.out.println("Entra en leer_ruta");
         File comprueba_ruta;
         try {
            linea = br.readLine();
-           if (linea == null) {
-              archivo.delete();
-              main.main((String[])null);
-           }
-
-           comprueba_ruta = new File(linea);
-           if (!comprueba_ruta.exists()) {
-              JOptionPane.showMessageDialog((Component)null, "No se encontro el archivo de configuracion con la ruta: " + main.ruta_config);
-              crea_config();
-           }
-        } catch (IOException var5) {
-           var5.printStackTrace();
+            if (linea == null){
+                archivo.delete();
+                main.main((String[])null);
+            }
+            /*comprueba_ruta = new File(linea);
+            if(!comprueba_ruta.exists()){
+                JOptionPane.showMessageDialog((Component)null, "No se encontro el archivo de configuracion con la ruta: " + main.ruta_config);
+                crea_config();
+            }*/
+        }catch(IOException var5){
+            var5.printStackTrace();
         }
 
-        comprueba_ruta = new File(linea);
+        /*comprueba_ruta = new File(linea);
         if (!comprueba_ruta.exists()) {
-           JOptionPane.showMessageDialog((Component)null, "No se en contro el archivo de configuracion con la ruta: " + main.ruta_config);
-           crea_config();
-        }
+            JOptionPane.showMessageDialog((Component)null, "No se en contro el archivo de configuracion con la ruta: " + main.ruta_config);
+            crea_config();
+        }*/
 
         main.ruta_config = linea;
     }
 
-    public static void carga_inicial(String ruta_config) throws IOException {
-System.out.println("Entra en carga_inicial");
+    public static Boolean carga_inicial(String ruta_config) throws IOException {
+//System.out.println("Entra en carga_inicial");
         /*File archivo = new File(ruta_config);
         File comprueba_ruta = new File(ruta_config);
         if (!comprueba_ruta.exists()) {
@@ -70,17 +65,24 @@ System.out.println("Entra en carga_inicial");
         //String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/" + module_endpoint;
     //System.out.println("URL : " + urlParaVisitar);
         StringBuilder resultado = new StringBuilder();
-        URL url = new URL(ruta_config);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("GET");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-        
-        String linea;
-        while((linea = rd.readLine()) != null) {
-            resultado.append(linea);
+        try{
+            URL url = new URL(ruta_config);
+            HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
+            conexion.setRequestMethod("GET");
+            BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
+
+            String linea;
+            while((linea = rd.readLine()) != null) {
+                resultado.append(linea);
+            }
+            rd.close();
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,"Ruta de API de configuracion invalida.");
+            e.printStackTrace();
+            //crea_config();
+            return false;
         }
-        System.out.println("Resultado : " + resultado);
-        rd.close();
+//System.out.println("Resultado : " + resultado);
         
 
         try {
@@ -101,52 +103,45 @@ System.out.println("Entra en carga_inicial");
             Long long_synchronization_interval = (Long) jsonObject.get("segundos_intervalo_sincronizacion");
             int synchronization_interval = long_synchronization_interval.intValue(); // Correcto
             
+            Long depuration_interval_long = (Long) jsonObject.get("minutos_intervalo_depuracion");
+            int depuration_interval = depuration_interval_long.intValue();
+            
             String local_path = (String) jsonObject.get("local_path");
-            String store_name= (String) jsonObject.get("store_name");
-
-            /*System.out.println("API Path: " + apiPath);
-            System.out.println("Store ID: " + storeId);
-            System.out.println("Store Name: " + storeName);
-            System.out.println("Puerto: " + puerto);
-            System.out.println("Hora Referencia: " + horaReferencia);*/
-            main.local_system_path = local_path;//decodifica(parametros64[1]);
-            main.retardo_inicial = minutos_retardo_inicial_sincronizacion;//Long.parseLong(arreglo[7]);            
-            main.store_id = store_id;//Long.parseLong(arreglo[7]);
+            String store_name = (String) jsonObject.get("store_name");
+            main.local_system_path = local_path;
+            main.retardo_inicial = minutos_retardo_inicial_sincronizacion;            
+            main.store_id = store_id;
             main.syncronization_interval = synchronization_interval;
             main.store_name = store_name;
+            main.depuration_time = (String) jsonObject.get("hora_referencia_depuracion");
+            main.depuration_interval = depuration_interval;
+            puerto_sinc = puerto;
 
-            puerto_sinc = puerto;//Integer.parseInt(puerto);
-
-        } catch (Exception e) {
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,"Ruta de API de configuracion invalida.");
             e.printStackTrace();
+            //crea_config();
+            return false;
         }
-        //main.local_system_path = decodifica(parametros64[1]);
-        //main.retardo_inicial = Long.parseLong(arreglo[7]);
-       //puerto_sinc = Integer.parseInt(puerto);
+        return true;
     }
 
-    /*public static String decodifica(String codificado) {
-       Decoder decod = Base64.getDecoder();
-       byte[] descodificado = decod.decode(codificado);
-       return new String(descodificado);
-    }*/
-
     public static void crea_config() {
-System.out.println("Entra en crea_config");
+//System.out.println("Entra en crea_config");
         String api_url = JOptionPane.showInputDialog("Ingresa la url del api del sistema local : ");
 
-        try {
-           String ruta_txt = "synchronization_config.txt";
-           File file = new File(ruta_txt);
-           if (!file.exists()) {
-              file.createNewFile();
-           }
+        try{
+            String ruta_txt = "synchronization_config.txt";
+            File file = new File(ruta_txt);
+            if(!file.exists()){
+                file.createNewFile();
+            }
 
-           FileWriter fw = new FileWriter(file);
-           BufferedWriter bw = new BufferedWriter(fw);
-           bw.write( api_url );
-           bw.close();
-        } catch (Exception e) {
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write( api_url );
+            bw.close();
+        }catch (Exception e){
             System.out.println("Error en crea_config : " + e);
             e.printStackTrace();
         }

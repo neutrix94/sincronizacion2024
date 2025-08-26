@@ -36,41 +36,32 @@ import org.json.simple.parser.JSONParser;
 
 
 public class procesos {
-   final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implementacion de logger4j 2024-10-23 
-   conexion_doble conecta;
-   infoSinccronizacion info = new infoSinccronizacion();
-   private Connection conexion_local;
-   private Connection conexion_linea;
-   private Connection conexion_extraer;
-   private Connection conexion_insertar;
-   public int id_sucursal;
-   public int tiempo_buscar;
-   int sincronizando = 0;
-   Timer tiempo;
-   public static String final_local_system_path;
-   String dir;
-   FileWriter archivo;
+    final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implementacion de logger4j 2024-10-23 
+    infoSinccronizacion info;//= new infoSinccronizacion();
+    public int id_sucursal;
+    public int tiempo_buscar;
+    public int depuration_interval;
+    int sincronizando = 0;
+    Timer tiempo;
+    public static String final_local_system_path;
+    public String depuration_time;
+    String dir;
+    FileWriter archivo;
 
-   public procesos(String ruta_conexion, String system_path) throws SQLException, IOException {
-      this.final_local_system_path = system_path;
-      this.conecta = new conexion_doble(ruta_conexion);
-      this.conexion_local = this.conecta.conecta_local();
-      if (this.conexion_linea == null) {
-         this.sincronizando = 0;
-         //info.api_local_path = system_path;
-         //this.info.notification_sync.setVisible(true);
-      } else {
-         this.conexion_linea = this.conecta.conecta_linea();
-         this.info.url_field.setText(this.final_local_system_path);
-         this.info.time_interval_field.setText("" + this.tiempo_buscar);
-      }
-      
-   }
-
-   public String getDatosSucursal() {
-      String sql = "SELECT id_sucursal,nombre,(intervalo_sinc*1000) FROM sys_sucursales WHERE acceso=1 LIMIT 1";
-      return this.conecta.consultar(sql, this.conexion_local, "sucursal");
-   }
+    public procesos(String ruta_conexion, String system_path, String depuration_time, int depuration_interval) throws SQLException, IOException {
+        this.final_local_system_path = system_path;
+        //this.conexion_local = this.conecta.conecta_local();
+        this. depuration_time = depuration_time;
+        this.depuration_interval = depuration_interval;
+        info = new infoSinccronizacion();//depuration_time, depuration_interval
+        
+        info.synchronization_depuration_start.setText(this.depuration_time);
+        info.synchronization_depuration_log_start.setText(this.depuration_time);
+        info.HORA_BASE = depuration_time;
+        info.INTERVALO_MINUTOS = (depuration_interval <= 0 ? 30 : depuration_interval );//depuration_interval;
+System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depuration_interval);
+        info.startTimer();
+    }
 
     public void InfoLog(String error) throws IOException {
        if (!(new File("log.txt")).exists()) {
@@ -711,7 +702,7 @@ public class procesos {
     }
 
     public String obtener_registros_restantes() throws Exception {
-       System.out.println("obtener_registros_restantes");
+//System.out.println("obtener_registros_restantes");
        String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/crones/consultar_registros_restantes";
        StringBuilder resultado = new StringBuilder();
        URL url = new URL(urlParaVisitar);
@@ -733,54 +724,54 @@ public class procesos {
             //return resultado.toString();
         }else{
 //System.out.println("Reg pendientes : " + registrosPendientes[0]);
-        this.info.synchronization_rows_upload.setText("" + registrosPendientes[0]);
-        this.info.synchronization_rows_download.setText("" + registrosPendientes[7]);
-        this.info.synchronization_sales_upload.setText("" + registrosPendientes[1]);
-        this.info.synchronization_sales_download.setText("" + registrosPendientes[8]);
-        this.info.synchronization_returns_upload.setText("" + registrosPendientes[2]);
-        this.info.synchronization_returns_download.setText("" + registrosPendientes[9]);
-        this.info.synchronization_movements_upload.setText("" + registrosPendientes[3]);
-        this.info.synchronization_movements_download.setText("" + registrosPendientes[10]);
-        this.info.synchronization_sales_validation_upload.setText("" + registrosPendientes[4]);
-        this.info.synchronization_sales_validation_download.setText("" + registrosPendientes[11]);
-        this.info.synchronization_product_provider_upload.setText("" + registrosPendientes[5]);
-        this.info.synchronization_product_provider_download.setText("" + registrosPendientes[12]);
-        this.info.synchronization_transfer_upload.setText("" + registrosPendientes[6]);
-        this.info.synchronization_transfer_download.setText("" + registrosPendientes[13]);
-        this.info.url_field.setText("" + registrosPendientes[14]);
-        this.info.synchronization_rows_number.setText("" + registrosPendientes[15]);
-        this.info.synchronization_sales_number.setText("" + registrosPendientes[16]);
-        this.info.synchronization_returns_number.setText("" + registrosPendientes[17]);
-        this.info.synchronization_movements_number.setText("" + registrosPendientes[18]);
-        this.info.synchronization_sales_validation_number.setText("" + registrosPendientes[19]);
-        this.info.synchronization_product_provider_number.setText("" + registrosPendientes[20]);
-        this.info.synchronization_transfer_number.setText("" + registrosPendientes[21]);
+            this.info.synchronization_rows_upload.setText("" + registrosPendientes[0]);
+            this.info.synchronization_rows_download.setText("" + registrosPendientes[7]);
+            this.info.synchronization_sales_upload.setText("" + registrosPendientes[1]);
+            this.info.synchronization_sales_download.setText("" + registrosPendientes[8]);
+            this.info.synchronization_returns_upload.setText("" + registrosPendientes[2]);
+            this.info.synchronization_returns_download.setText("" + registrosPendientes[9]);
+            this.info.synchronization_movements_upload.setText("" + registrosPendientes[3]);
+            this.info.synchronization_movements_download.setText("" + registrosPendientes[10]);
+            this.info.synchronization_sales_validation_upload.setText("" + registrosPendientes[4]);
+            this.info.synchronization_sales_validation_download.setText("" + registrosPendientes[11]);
+            this.info.synchronization_product_provider_upload.setText("" + registrosPendientes[5]);
+            this.info.synchronization_product_provider_download.setText("" + registrosPendientes[12]);
+            this.info.synchronization_transfer_upload.setText("" + registrosPendientes[6]);
+            this.info.synchronization_transfer_download.setText("" + registrosPendientes[13]);
+            this.info.url_field.setText("" + registrosPendientes[14]);
+            this.info.synchronization_rows_number.setText("" + registrosPendientes[15]);
+            this.info.synchronization_sales_number.setText("" + registrosPendientes[16]);
+            this.info.synchronization_returns_number.setText("" + registrosPendientes[17]);
+            this.info.synchronization_movements_number.setText("" + registrosPendientes[18]);
+            this.info.synchronization_sales_validation_number.setText("" + registrosPendientes[19]);
+            this.info.synchronization_product_provider_number.setText("" + registrosPendientes[20]);
+            this.info.synchronization_transfer_number.setText("" + registrosPendientes[21]);
        }
        return resultado.toString();
     }
    
     public void reset_progress_bar() {
-       this.info.synchronization_rows_info.setText("0%");
-       this.info.synchronization_rows_bar.setValue(0);
-       this.info.synchronization_sales_info.setText("0%");
-       this.info.synchronization_sales_bar.setValue(0);
-       this.info.synchronization_sales_bar_update.setValue(0);
-       this.info.synchronization_returns_info.setText("0%");
-       this.info.synchronization_returns_bar.setValue(0);
-       this.info.synchronization_movements_info.setText("0%");
-       this.info.synchronization_movements_bar.setValue(0);
-       this.info.synchronization_movements_bar_update.setValue(0);
-       this.info.synchronization_sales_validation_info.setText("0%");
-       this.info.synchronization_sales_validation_bar.setValue(0);
-       this.info.synchronization_product_provider_info.setText("0%");
-       this.info.synchronization_product_provider_bar.setValue(0);
-       this.info.synchronization_product_provider_bar_update.setValue(0);
-       this.info.synchronization_transfer_info.setText("0%");
-       this.info.synchronization_transfer_bar.setValue(0);
-       this.info.synchronization_depuration_info.setText("0%");
-       this.info.synchronization_depuration_bar.setValue(0);
-       this.info.synchronization_depuration_log_info.setText("0%");
-       this.info.synchronization_depuration_log_bar.setValue(0);
+        this.info.synchronization_rows_info.setText("0%");
+        this.info.synchronization_rows_bar.setValue(0);
+        this.info.synchronization_sales_info.setText("0%");
+        this.info.synchronization_sales_bar.setValue(0);
+        this.info.synchronization_sales_bar_update.setValue(0);
+        this.info.synchronization_returns_info.setText("0%");
+        this.info.synchronization_returns_bar.setValue(0);
+        this.info.synchronization_movements_info.setText("0%");
+        this.info.synchronization_movements_bar.setValue(0);
+        this.info.synchronization_movements_bar_update.setValue(0);
+        this.info.synchronization_sales_validation_info.setText("0%");
+        this.info.synchronization_sales_validation_bar.setValue(0);
+        this.info.synchronization_product_provider_info.setText("0%");
+        this.info.synchronization_product_provider_bar.setValue(0);
+        this.info.synchronization_product_provider_bar_update.setValue(0);
+        this.info.synchronization_transfer_info.setText("0%");
+        this.info.synchronization_transfer_bar.setValue(0);
+        this.info.synchronization_depuration_info.setText("0%");
+        this.info.synchronization_depuration_bar.setValue(0);
+        this.info.synchronization_depuration_log_info.setText("0%");
+        this.info.synchronization_depuration_log_bar.setValue(0);
     }
 
     public String depurationProcess( Boolean is_complete ) throws MalformedURLException, IOException{
