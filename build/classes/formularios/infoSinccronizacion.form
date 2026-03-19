@@ -1404,7 +1404,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="ultima_sincronizacion_label2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Inicio :"/>
+        <Property name="text" type="java.lang.String" value="Hora Base Depuraci&#xf3;n"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>

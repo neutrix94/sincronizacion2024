@@ -1,0 +1,1 @@
+http://localhost/desarrollo/desarrollo_centralizado_casa_2026/rest_v2/sincronizacion/obtener_configuracion_sincronizacion

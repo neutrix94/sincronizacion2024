@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/php_8/conexion_inicial.txt

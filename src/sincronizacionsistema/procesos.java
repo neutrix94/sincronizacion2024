@@ -14,7 +14,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -23,7 +22,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.Timer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -102,7 +100,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             Map<String, JSONObject> modules = sendInitialPetition();//manda consumir servicio para saber que modulos si tienen que sincronizar
             //System.out.println("Modules : " + modules);
         //registros de sincronizacion
-            if (modules.containsKey("sys_sincronizacion_registros")) {
+            if ( modules.containsKey("sys_sincronizacion_registros") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_rows_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -151,7 +149,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                 this.info.synchronization_rows_bar.setForeground(Color.blue);
             }
         //registros de sincronizacion de transferencias
-            if (modules.containsKey("sys_sincronizacion_registros_transferencias")) {
+            if ( modules.containsKey("sys_sincronizacion_registros_transferencias") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_transfer_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -199,7 +197,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de ventas
-            if (modules.containsKey("sys_sincronizacion_ventas")) {
+            if ( modules.containsKey("sys_sincronizacion_ventas") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_sales_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
@@ -248,7 +246,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de ventas
-            if (modules.containsKey("sys_sincronizacion_registros_ventas")) {
+            if ( modules.containsKey("sys_sincronizacion_registros_ventas") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                    this.info.synchronization_sales_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -297,7 +295,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de ventas
-            if (modules.containsKey("sys_sincronizacion_devoluciones")) {
+            if ( modules.containsKey("sys_sincronizacion_devoluciones") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_returns_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -346,7 +344,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
 
         //sincronizacion de movimientos almacen
-            if (modules.containsKey("sys_sincronizacion_movimientos_almacen")) {
+            if ( modules.containsKey("sys_sincronizacion_movimientos_almacen") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -395,7 +393,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
             
         //sincronizacion de registros de movimientos almacen
-            if (modules.containsKey("sys_sincronizacion_registros_movimientos_almacen")) {
+            if ( modules.containsKey("sys_sincronizacion_registros_movimientos_almacen") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -443,7 +441,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de validaciones de ventas
-            if (modules.containsKey("sys_sincronizacion_validaciones_ventas")) {
+            if ( modules.containsKey("sys_sincronizacion_validaciones_ventas") ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_sales_validation_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -492,7 +490,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
             
         //sincronizacion de movimientos de almacen proveedor producto
-            if (modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto")) {
+            if ( modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto") ) {//1 == 1
                 try {
                     this.obtener_registros_restantes();
                     this.info.synchronization_product_provider_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
@@ -540,7 +538,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de movimientos de almacen proveedor producto
-            if (modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto")){
+            if ( modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto") ){//1 == 1
                 try {
                     this.obtener_registros_restantes();
                     this.info.synchronization_product_provider_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
@@ -598,7 +596,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
     }
    
     public Map<String, JSONObject> sendInitialPetition() throws Exception {
-        String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/verifica_registros_por_modulo_local";
+        String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/obtener_registros_restantes_local";
 
         StringBuilder resultado = new StringBuilder();
         URL url = new URL(urlParaVisitar);
@@ -611,12 +609,13 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             resultado.append(linea);
         }
         rd.close();
+System.out.println("Respuesta verificacion : " + resultado.toString());
 
         // Parsear JSON
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject) parser.parse(resultado.toString());
 
-        Map<String, JSONObject> modulosConPendientes = new HashMap<>();
+        /*Map<String, JSONObject> modulosConPendientes = new HashMap<>();
 
         for (Object keyObj : jsonObject.keySet()) {
             String key = (String) keyObj;
@@ -624,6 +623,19 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
             long pendingLocal = (long) modulo.get("pending_rows_local");
             long pendingServer = (long) modulo.get("pending_rows_server");
+
+            if (pendingLocal > 0 || pendingServer > 0) {
+                modulosConPendientes.put(key, modulo);
+            }
+        }*/
+        Map<String, JSONObject> modulosConPendientes = new HashMap<>();
+
+        for (Object keyObj : jsonObject.keySet()) {
+            String key = (String) keyObj;
+            JSONObject modulo = (JSONObject) jsonObject.get(key);
+
+            long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+            long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
 
             if (pendingLocal > 0 || pendingServer > 0) {
                 modulosConPendientes.put(key, modulo);
