@@ -34,12 +34,15 @@ import org.json.simple.parser.JSONParser;
 
 
 public class procesos {
+    private static final int HTTP_CONNECT_TIMEOUT_MS = 15000;
+    private static final int HTTP_READ_TIMEOUT_MS = 120000;
     final static org.apache.log4j.Logger logger4j = LogManager.getLogger(procesos.class);//implementacion de logger4j 2024-10-23 
     infoSinccronizacion info;//= new infoSinccronizacion();
     public int id_sucursal;
     public int tiempo_buscar;
     public int depuration_interval;
     int sincronizando = 0;
+    public int bloqueado = 0;
     Timer tiempo;
     public static String final_local_system_path;
     public String depuration_time;
@@ -88,6 +91,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
     //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
     int count_resp = 0;
       while(true) {
+        try {
          if (this.sincronizando == 0) {
             this.sincronizando = 1;
             info.api_local_path = this.final_local_system_path;
@@ -97,15 +101,30 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             this.reset_progress_bar();
             String resp_temp = "";
             this.obtener_registros_restantes();
-            Map<String, JSONObject> modules = sendInitialPetition();//manda consumir servicio para saber que modulos si tienen que sincronizar
+            Map<String, JSONObject> modules = sendInitialPetition(true);//manda consumir servicio para saber que modulos si tienen que sincronizar
             //System.out.println("Modules : " + modules);
         //registros de sincronizacion
-            if ( modules.containsKey("sys_sincronizacion_registros") ) {//1 == 1
+System.out.println("sys_sincronizacion_registros : " + this.bloqueado);       
+            if ( modules.containsKey("sys_sincronizacion_registros") && this.bloqueado == 0 ) {//1 == 1
+System.out.println("Entr en sys_sincronizacion_registros");
                 try {
-//this.obtener_registros_restantes();
                     this.info.synchronization_rows_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_rows_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_registros_sincronizacion");
+//System.out.println("modules : " + modules);
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_registros");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+//System.out.println("Entra en comprobacion : comprobacion_local_registros_sincronizacion");
+                        resp_temp = this.sendPetition("comprobacion_local_registros_sincronizacion");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_registros_sincronizacion");
+                        resp_temp = this.sendPetition("obtener_registros_sincronizacion");
+                    }
+                    
                     logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try {
@@ -138,6 +157,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_rows_bar.setForeground(Color.green);
                         this.info.synchronization_rows_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var35) {
                     logger4j.error(var35.toString());
                     this.errorLog( var35.toString() );
@@ -149,12 +169,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                 this.info.synchronization_rows_bar.setForeground(Color.blue);
             }
         //registros de sincronizacion de transferencias
-            if ( modules.containsKey("sys_sincronizacion_registros_transferencias") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_registros_transferencias") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_transfer_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_transfer_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_registros_sincronizacion_transferencias");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_registros_transferencias");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_registros_sincronizacion_transferencias");
+                        resp_temp = this.sendPetition("comprobacion_local_registros_sincronizacion_transferencias");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_registros_sincronizacion_transferencias");
+                        resp_temp = this.sendPetition("obtener_registros_sincronizacion_transferencias");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try{
                             this.InfoLog(resp_temp);
@@ -185,6 +219,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_transfer_bar.setForeground(Color.green);
                         this.info.synchronization_transfer_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var26) {
                     logger4j.error(var26.toString());
                     this.errorLog( var26.toString() );
@@ -197,12 +232,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de ventas
-            if ( modules.containsKey("sys_sincronizacion_ventas") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_ventas") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_sales_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
                     this.info.synchronization_sales_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_ventas");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_ventas");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_ventas");
+                        resp_temp = this.sendPetition("comprobacion_local_ventas");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_ventas");
+                        resp_temp = this.sendPetition("obtener_ventas");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try{
                            this.InfoLog(resp_temp);
@@ -234,6 +283,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_sales_bar.setForeground(Color.green);
                         this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var34) {  
                     logger4j.error(var34.toString());               
                     this.errorLog( var34.toString() );
@@ -246,13 +296,27 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de ventas
-            if ( modules.containsKey("sys_sincronizacion_registros_ventas") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_registros_ventas") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
-                   this.info.synchronization_sales_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
-                   this.info.synchronization_sales_info.setText("Sincronizando...");
-                   resp_temp = this.sendPetition("obtener_registros_sincronizacion_ventas");
-                   if (!"ok".equals(resp_temp)) {
+                    this.info.synchronization_sales_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
+                    this.info.synchronization_sales_info.setText("Sincronizando...");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_registros_ventas");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_registros_sincronizacion_ventas");
+                        resp_temp = this.sendPetition("comprobacion_local_registros_sincronizacion_ventas");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_registros_sincronizacion_ventas");
+                        resp_temp = this.sendPetition("obtener_registros_sincronizacion_ventas");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
+                    if (!"ok".equals(resp_temp)) {
                         try{
                             this.InfoLog(resp_temp);
                             this.info.logArea.append(resp_temp + getCurrentTime() + "\n");
@@ -283,6 +347,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_sales_bar_update.setForeground(Color.green);
                         this.info.synchronization_sales_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var33){     
                     logger4j.error(var33.toString());            
                     this.errorLog( var33.toString() );
@@ -295,12 +360,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de ventas
-            if ( modules.containsKey("sys_sincronizacion_devoluciones") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_devoluciones") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_returns_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_returns_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_devoluciones");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_devoluciones");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_devoluciones");
+                        resp_temp = this.sendPetition("comprobacion_local_devoluciones");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_devoluciones");
+                        resp_temp = this.sendPetition("obtener_devoluciones");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try{
                             this.InfoLog(resp_temp);
@@ -331,6 +410,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_returns_bar.setForeground(Color.green);
                         this.info.synchronization_returns_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch (Exception var32) {
                     logger4j.error(var32.toString());                 
                     this.errorLog( var32.toString() );
@@ -344,12 +424,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
 
         //sincronizacion de movimientos almacen
-            if ( modules.containsKey("sys_sincronizacion_movimientos_almacen") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_movimientos_almacen") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_movements_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_movimientos_almacen");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_movimientos_almacen");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_movimientos_almacen");
+                        resp_temp = this.sendPetition("comprobacion_local_movimientos_almacen");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_movimientos_almacen");
+                        resp_temp = this.sendPetition("obtener_movimientos_almacen");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try {
                             this.InfoLog(resp_temp);
@@ -379,7 +473,8 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_movements_bar.setBackground(Color.green);
                         this.info.synchronization_movements_bar.setForeground(Color.green);
                         this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
-                     }
+                    }
+                    this.obtener_registros_restantes();
                 } catch (Exception var31) {  
                     logger4j.error(var31.toString());               
                     this.errorLog( var31.toString() );
@@ -393,12 +488,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
             
         //sincronizacion de registros de movimientos almacen
-            if ( modules.containsKey("sys_sincronizacion_registros_movimientos_almacen") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_registros_movimientos_almacen") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_movements_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_movements_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_registros_sincronizacion_mov_almacen");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_registros_movimientos_almacen");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_registros_movimientos_almacen");
+                        resp_temp = this.sendPetition("comprobacion_local_registros_movimientos_almacen");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_registros_sincronizacion_mov_almacen");
+                        resp_temp = this.sendPetition("obtener_registros_sincronizacion_mov_almacen");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try {
                             this.InfoLog(resp_temp);
@@ -429,6 +538,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_movements_bar_update.setForeground(Color.green);
                         this.info.synchronization_movements_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var30) {            
                     logger4j.error(var30.toString());     
                     this.errorLog( var30.toString() );
@@ -441,12 +551,26 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de validaciones de ventas
-            if ( modules.containsKey("sys_sincronizacion_validaciones_ventas") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_validaciones_ventas") && this.bloqueado == 0 ) {//1 == 1
                 try {
 //this.obtener_registros_restantes();
                     this.info.synchronization_sales_validation_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_sales_validation_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_validaciones_ventas");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_validaciones_ventas");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_validaciones_ventas");
+                        resp_temp = this.sendPetition("comprobacion_local_validaciones_ventas");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_validaciones_ventas");
+                        resp_temp = this.sendPetition("obtener_validaciones_ventas");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try{
                             this.InfoLog(resp_temp);
@@ -477,6 +601,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_sales_validation_bar.setForeground(Color.green);
                         this.info.synchronization_sales_validation_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 } catch (Exception var29) {         
                     logger4j.error(var29.toString());        
                     this.errorLog( var29.toString() );
@@ -490,12 +615,25 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
 
             
         //sincronizacion de movimientos de almacen proveedor producto
-            if ( modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto") ) {//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto") && this.bloqueado == 0 ) {//1 == 1
                 try {
-                    this.obtener_registros_restantes();
                     this.info.synchronization_product_provider_start.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     this.info.synchronization_product_provider_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_movimientos_proveedor_producto");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_movimientos_proveedor_producto");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_movimientos_proveedor_producto");
+                        resp_temp = this.sendPetition("comprobacion_local_movimientos_proveedor_producto");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_movimientos_proveedor_producto");
+                        resp_temp = this.sendPetition("obtener_movimientos_proveedor_producto");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try {
                             this.InfoLog(resp_temp);
@@ -526,6 +664,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_product_provider_bar.setForeground(Color.green);
                         this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 } catch (Exception var28){             
                     logger4j.error(var28.toString());    
                     this.errorLog( var28.toString() );
@@ -538,12 +677,25 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
             }
 
         //sincronizacion de registros de movimientos de almacen proveedor producto
-            if ( modules.containsKey("sys_sincronizacion_movimientos_proveedor_producto") ){//1 == 1
+            if ( modules.containsKey("sys_sincronizacion_registros_movimientos_proveedor_producto") && this.bloqueado == 0 ){//1 == 1
                 try {
-                    this.obtener_registros_restantes();
                     this.info.synchronization_product_provider_start.setText("" + getCurrentTime());//dtf.format(LocalDateTime.now())
                     this.info.synchronization_product_provider_info.setText("Sincronizando...");
-                    resp_temp = this.sendPetition("obtener_registros_sincronizacion_mov_p_p");
+                    
+                    JSONObject modulo = (JSONObject) modules.get("sys_sincronizacion_registros_movimientos_proveedor_producto");
+                    long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                    long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                    long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                    long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                    if(pendingLocalComprobation > 0 || pendingServerComprobation > 0){
+                        System.out.println("Entra en comprobacion : comprobacion_local_resgistros_movimientos_proveedor_producto");
+                        resp_temp = this.sendPetition("comprobacion_local_resgistros_movimientos_proveedor_producto");
+                    }else if(pendingLocal > 0 || pendingServer > 0){
+                        System.out.println("Entra en sincronizacion : obtener_registros_sincronizacion_mov_p_p");
+                        resp_temp = this.sendPetition("obtener_registros_sincronizacion_mov_p_p");
+                    }
+                    
+                    logger4j.info( "Iteracion  : " + count_resp + "  respuesta :  " + resp_temp );
                     if (!"ok".equals(resp_temp)) {
                         try{
                             this.InfoLog(resp_temp);
@@ -574,6 +726,7 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
                         this.info.synchronization_product_provider_bar_update.setForeground(Color.green);
                         this.info.synchronization_product_provider_end.setText("" + getCurrentTime() );//dtf.format(LocalDateTime.now())
                     }
+                    this.obtener_registros_restantes();
                 }catch(Exception var27){   
                     logger4j.error(var27.toString());              
                     this.errorLog( var27.toString() );
@@ -590,30 +743,34 @@ System.out.println("det_time : " + depuration_time + "\ndep_interval : " + depur
          } else {
             JOptionPane.showMessageDialog((Component)null, "Aun esta sincronizando!!!");
          }
+        } catch (Exception ex) {
+            // Ningun fallo de red, HTTP o JSON debe terminar el ciclo infinito.
+            logger4j.error("Fallo en ciclo de sincronizacion; se reintentara en el siguiente intervalo", ex);
+            try {
+                this.errorLog(ex.toString());
+            } catch (IOException logError) {
+                logger4j.error("No fue posible escribir ErrorLog", logError);
+            }
+            this.info.logArea.append("Error temporal: " + ex.getMessage() + ". Se reintentara. " + getCurrentTime() + "\n");
+        } finally {
+            // Evita que una excepcion deje el proceso marcado como ocupado para siempre.
+            this.sincronizando = 0;
+        }
          count_resp ++;
          Thread.sleep((long)this.tiempo_buscar);
         }
     }
    
-    public Map<String, JSONObject> sendInitialPetition() throws Exception {
+    public Map<String, JSONObject> sendInitialPetition(boolean is_initial) throws Exception {
         String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/obtener_registros_restantes_local";
+        System.out.println("URL : http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/obtener_registros_restantes_local");
 
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
-        conexion.setRequestMethod("GET");
-
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-        String linea;
-        while ((linea = rd.readLine()) != null) {
-            resultado.append(linea);
-        }
-        rd.close();
-System.out.println("Respuesta verificacion : " + resultado.toString());
+        String resultado = executeHttpRequest(urlParaVisitar, "GET");
+//System.out.println("Respuesta verificacion : " + resultado.toString());
 
         // Parsear JSON
         JSONParser parser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) parser.parse(resultado.toString());
+        JSONObject jsonObject = (JSONObject) parser.parse(resultado);
 
         /*Map<String, JSONObject> modulosConPendientes = new HashMap<>();
 
@@ -631,91 +788,52 @@ System.out.println("Respuesta verificacion : " + resultado.toString());
         Map<String, JSONObject> modulosConPendientes = new HashMap<>();
 
         for (Object keyObj : jsonObject.keySet()) {
+//System.out.println("HERE");
             String key = (String) keyObj;
             JSONObject modulo = (JSONObject) jsonObject.get(key);
-
-            long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
-            long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
-
-            if (pendingLocal > 0 || pendingServer > 0) {
+//System.out.println(pendingLocal + " > 0 || " + pendingServer + " > 0 || " + pendingLocalComprobation + " > 0 || " + pendingServerComprobation +" > 0");
+            if ( is_initial == true && !key.equals("limites_local") && !key.equals("limites_linea")) {
+                System.out.println("KEY : " + key);
+                long pendingLocal = Long.parseLong(modulo.get("pending_rows_local").toString());
+                long pendingServer = Long.parseLong(modulo.get("pending_rows_server").toString());
+                long pendingLocalComprobation = Long.parseLong(modulo.get("pending_rows_client_comprobation").toString());
+                long pendingServerComprobation = Long.parseLong(modulo.get("pending_rows_server_comprobation").toString());
+                if((pendingLocal > 0 || pendingServer > 0 || pendingLocalComprobation > 0 || pendingServerComprobation > 0)){
+                    modulosConPendientes.put(key, modulo);
+                }
+            }else if(is_initial == false){
                 modulosConPendientes.put(key, modulo);
             }
         }
-
+        
+        this.info.last_petition_time.setText("" + getCurrentTime() );
         return modulosConPendientes;
     }
    
     public String sendPetition(String module_endpoint) throws Exception {
         String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/" + module_endpoint;
     //System.out.println("URL : " + urlParaVisitar);
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("GET");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-        
-        String linea;
-        while((linea = rd.readLine()) != null) {
-            resultado.append(linea);
-        }
-        rd.close();
-        return resultado.toString();
+        return executeHttpRequest(urlParaVisitar, "GET");
     }
 
     public String sincroniza_archivos() throws Exception {
         String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/print/";
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("GET");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-
-        String linea;
-        while((linea = rd.readLine()) != null) {
-            resultado.append(linea);
-        }
-
-        rd.close();
-        return resultado.toString();
+        return executeHttpRequest(urlParaVisitar, "GET");
     }
 
-   public String sincroniza_archivos_() throws Exception {
-      String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/print/";
-      StringBuilder resultado = new StringBuilder();
-      URL url = new URL(urlParaVisitar);
-      HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-      conexion.setRequestMethod("GET");
-      BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-
-      String linea;
-      while((linea = rd.readLine()) != null) {
-         resultado.append(linea);
-      }
-
-      rd.close();
-      return resultado.toString();
-   }
+    public String sincroniza_archivos_() throws Exception {
+        String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/print/";
+        return executeHttpRequest(urlParaVisitar, "GET");
+    }
 
     public String verficacion_dominio() throws Exception {
         String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/sincronizacion/netPay/domain_test";
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("GET");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-
-        String linea;
-        while((linea = rd.readLine()) != null) {
-            resultado.append(linea);
-        }
-
-        rd.close();
-        return resultado.toString();
+        return executeHttpRequest(urlParaVisitar, "GET");
     }
 
     public String obtener_registros_restantes() throws Exception {
 //System.out.println("obtener_registros_restantes");
-       String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/crones/consultar_registros_restantes";
+       /*String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/crones/consultar_registros_restantes";
        StringBuilder resultado = new StringBuilder();
        URL url = new URL(urlParaVisitar);
        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
@@ -729,37 +847,64 @@ System.out.println("Respuesta verificacion : " + resultado.toString());
 
         rd.close();
         String tmp = resultado.toString();
-        String[] registrosPendientes = tmp.split(",");
-        if( registrosPendientes.length < 22 ){
+        String[] registrosPendientes = tmp.split(",");*/
+        Map<String, JSONObject> modules = sendInitialPetition(false);//manda consumir servicio para saber que modulos si tienen que sincronizar
+        /*if( registrosPendientes.length < 22 ){
             this.info.logArea.append("El API no regreso una respuesta correcta." + getCurrentTime() + "\n");
             throw new Exception("El API no regreso una respuesta correcta.");
             //return resultado.toString();
-        }else{
+        }else{*/
 //System.out.println("Reg pendientes : " + registrosPendientes[0]);
-            this.info.synchronization_rows_upload.setText("" + registrosPendientes[0]);
-            this.info.synchronization_rows_download.setText("" + registrosPendientes[7]);
-            this.info.synchronization_sales_upload.setText("" + registrosPendientes[1]);
-            this.info.synchronization_sales_download.setText("" + registrosPendientes[8]);
-            this.info.synchronization_returns_upload.setText("" + registrosPendientes[2]);
-            this.info.synchronization_returns_download.setText("" + registrosPendientes[9]);
-            this.info.synchronization_movements_upload.setText("" + registrosPendientes[3]);
-            this.info.synchronization_movements_download.setText("" + registrosPendientes[10]);
-            this.info.synchronization_sales_validation_upload.setText("" + registrosPendientes[4]);
-            this.info.synchronization_sales_validation_download.setText("" + registrosPendientes[11]);
-            this.info.synchronization_product_provider_upload.setText("" + registrosPendientes[5]);
-            this.info.synchronization_product_provider_download.setText("" + registrosPendientes[12]);
-            this.info.synchronization_transfer_upload.setText("" + registrosPendientes[6]);
-            this.info.synchronization_transfer_download.setText("" + registrosPendientes[13]);
-            this.info.url_field.setText("" + registrosPendientes[14]);
-            this.info.synchronization_rows_number.setText("" + registrosPendientes[15]);
-            this.info.synchronization_sales_number.setText("" + registrosPendientes[16]);
-            this.info.synchronization_returns_number.setText("" + registrosPendientes[17]);
-            this.info.synchronization_movements_number.setText("" + registrosPendientes[18]);
-            this.info.synchronization_sales_validation_number.setText("" + registrosPendientes[19]);
-            this.info.synchronization_product_provider_number.setText("" + registrosPendientes[20]);
-            this.info.synchronization_transfer_number.setText("" + registrosPendientes[21]);
-       }
-       return resultado.toString();
+            //String example = modules.get("sys_sincronizacion_registros").get("pending_rows_local").toString();
+            this.info.synchronization_rows_upload.setText(modules.get("sys_sincronizacion_registros").get("pending_rows_local").toString());
+            this.info.synchronization_rows_upload_comprobation.setText(modules.get("sys_sincronizacion_registros").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_rows_download.setText(modules.get("sys_sincronizacion_registros").get("pending_rows_server").toString());
+            this.info.synchronization_rows_download_comprobation.setText(modules.get("sys_sincronizacion_registros").get("pending_rows_server_comprobation").toString());
+            
+            this.info.synchronization_transfer_upload.setText(modules.get("sys_sincronizacion_registros_transferencias").get("pending_rows_local").toString());
+            this.info.synchronization_transfer_upload_comprobation.setText(modules.get("sys_sincronizacion_registros_transferencias").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_transfer_download.setText(modules.get("sys_sincronizacion_registros_transferencias").get("pending_rows_server").toString());
+            this.info.synchronization_transfer_download_comprobation.setText(modules.get("sys_sincronizacion_registros_transferencias").get("pending_rows_server_comprobation").toString());
+            
+            this.info.synchronization_sales_upload.setText(modules.get("sys_sincronizacion_ventas").get("pending_rows_local").toString() + " | " + modules.get("sys_sincronizacion_registros_ventas").get("pending_rows_local").toString());
+            this.info.synchronization_sales_upload_comprobation.setText(modules.get("sys_sincronizacion_ventas").get("pending_rows_client_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_ventas").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_sales_download.setText(modules.get("sys_sincronizacion_ventas").get("pending_rows_server").toString() + " | " + modules.get("sys_sincronizacion_registros_ventas").get("pending_rows_server").toString());
+            this.info.synchronization_sales_download_comprobation.setText(modules.get("sys_sincronizacion_ventas").get("pending_rows_server_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_ventas").get("pending_rows_server_comprobation").toString());
+            
+            
+            this.info.synchronization_returns_upload.setText(modules.get("sys_sincronizacion_devoluciones").get("pending_rows_local").toString());
+            this.info.synchronization_returns_upload_comprobation.setText(modules.get("sys_sincronizacion_devoluciones").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_returns_download.setText(modules.get("sys_sincronizacion_devoluciones").get("pending_rows_server").toString());
+            this.info.synchronization_returns_download_comprobation.setText(modules.get("sys_sincronizacion_devoluciones").get("pending_rows_server_comprobation").toString());
+            
+            this.info.synchronization_movements_upload.setText(modules.get("sys_sincronizacion_movimientos_almacen").get("pending_rows_local").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_almacen").get("pending_rows_local").toString());
+            this.info.synchronization_movements_upload_comprobation.setText(modules.get("sys_sincronizacion_movimientos_almacen").get("pending_rows_client_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_almacen").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_movements_download.setText(modules.get("sys_sincronizacion_movimientos_almacen").get("pending_rows_server").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_almacen").get("pending_rows_server").toString());
+            this.info.synchronization_movements_download_comprobation.setText(modules.get("sys_sincronizacion_movimientos_almacen").get("pending_rows_server_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_almacen").get("pending_rows_server_comprobation").toString());
+            
+            this.info.synchronization_sales_validation_upload.setText(modules.get("sys_sincronizacion_validaciones_ventas").get("pending_rows_local").toString());
+            this.info.synchronization_sales_validation_upload_comprobation.setText(modules.get("sys_sincronizacion_validaciones_ventas").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_sales_validation_download.setText(modules.get("sys_sincronizacion_validaciones_ventas").get("pending_rows_server").toString());
+            this.info.synchronization_sales_validation_download_comprobation.setText(modules.get("sys_sincronizacion_validaciones_ventas").get("pending_rows_server_comprobation").toString());
+            
+            this.info.synchronization_product_provider_upload.setText(modules.get("sys_sincronizacion_movimientos_proveedor_producto").get("pending_rows_local").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_proveedor_producto").get("pending_rows_local").toString());
+            this.info.synchronization_product_provider_upload_comprobation.setText(modules.get("sys_sincronizacion_movimientos_proveedor_producto").get("pending_rows_client_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_proveedor_producto").get("pending_rows_client_comprobation").toString());
+            this.info.synchronization_product_provider_download.setText(modules.get("sys_sincronizacion_movimientos_proveedor_producto").get("pending_rows_server").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_proveedor_producto").get("pending_rows_server").toString());
+            this.info.synchronization_product_provider_download_comprobation.setText(modules.get("sys_sincronizacion_movimientos_proveedor_producto").get("pending_rows_server_comprobation").toString() + " | " + modules.get("sys_sincronizacion_registros_movimientos_proveedor_producto").get("pending_rows_server_comprobation").toString());
+            
+            this.info.url_field.setText(modules.get("limites_local").get("url_api").toString());
+            
+            this.bloqueado = Integer.parseInt(modules.get("limites_linea").get("bloqueo_apis_linea").toString());
+            
+            this.info.synchronization_rows_number.setText("↑" + modules.get("limites_local").get("sys_sincronizacion_registros").toString() + " ↓" + modules.get("limites_linea").get("sys_sincronizacion_registros").toString());     
+            this.info.synchronization_sales_number.setText("↑" + modules.get("limites_local").get("ec_pedidos").toString() + " ↓" + modules.get("limites_linea").get("ec_pedidos").toString());            
+            this.info.synchronization_returns_number.setText("↑" + modules.get("limites_local").get("ec_devolucion").toString() + " ↓" + modules.get("limites_linea").get("ec_devolucion").toString());
+            this.info.synchronization_movements_number.setText("↑" + modules.get("limites_local").get("ec_movimiento_almacen").toString() + " ↓" + modules.get("limites_linea").get("ec_movimiento_almacen").toString());
+            this.info.synchronization_sales_validation_number.setText("↑" + modules.get("limites_local").get("ec_pedidos_validacion_usuarios").toString() + " ↓" + modules.get("limites_linea").get("ec_pedidos_validacion_usuarios").toString());
+            this.info.synchronization_product_provider_number.setText("↑" + modules.get("limites_local").get("ec_movimiento_detalle_proveedor_producto").toString() + " ↓" + modules.get("limites_linea").get("ec_movimiento_detalle_proveedor_producto").toString());
+            this.info.synchronization_transfer_number.setText("↑" + modules.get("limites_local").get("ec_transferencias").toString() + " ↓" + modules.get("limites_linea").get("ec_transferencias").toString());/**/
+       //}
+       return "";//resultado.toString();
     }
    
     public void reset_progress_bar() {
@@ -791,39 +936,48 @@ System.out.println("Respuesta verificacion : " + resultado.toString());
         if( is_complete ){
             urlParaVisitar += "?is_complete=1";
         }
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("POST");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-
-        String linea;
-        while((linea = rd.readLine()) != null) {
-           resultado.append(linea);
-        }
-
-        rd.close();
-        return resultado.toString();
+        return executeHttpRequest(urlParaVisitar, "POST");
     }
     public String depurationLogProcess( Boolean is_complete ) throws MalformedURLException, IOException{
         String urlParaVisitar = "http://localhost/" + this.final_local_system_path + "/rest_v2/crones/depurar_logs";
         if( is_complete ){
             urlParaVisitar += "?is_complete=1";
         }
-        StringBuilder resultado = new StringBuilder();
-        URL url = new URL(urlParaVisitar);
-        HttpURLConnection conexion = (HttpURLConnection)url.openConnection();
-        conexion.setRequestMethod("POST");
-        BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
-
-        String linea;
-        while((linea = rd.readLine()) != null) {
-           resultado.append(linea);
-        }
-
-        rd.close();
-        return resultado.toString();
+        return executeHttpRequest(urlParaVisitar, "POST");
    }
+
+    /**
+     * Ejecuta una peticion sin permitir esperas infinitas y libera siempre la conexion.
+     */
+    private String executeHttpRequest(String urlParaVisitar, String method) throws IOException {
+        HttpURLConnection conexion = null;
+        try {
+            conexion = (HttpURLConnection) new URL(urlParaVisitar).openConnection();
+            conexion.setRequestMethod(method);
+            conexion.setConnectTimeout(HTTP_CONNECT_TIMEOUT_MS);
+            conexion.setReadTimeout(HTTP_READ_TIMEOUT_MS);
+            conexion.setUseCaches(false);
+            conexion.setRequestProperty("Connection", "close");
+
+            int status = conexion.getResponseCode();
+            if (status < 200 || status >= 300) {
+                throw new IOException("HTTP " + status + " al consultar " + urlParaVisitar);
+            }
+
+            StringBuilder resultado = new StringBuilder();
+            try (BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream(), "UTF-8"))) {
+                String linea;
+                while ((linea = rd.readLine()) != null) {
+                    resultado.append(linea);
+                }
+            }
+            return resultado.toString();
+        } finally {
+            if (conexion != null) {
+                conexion.disconnect();
+            }
+        }
+    }
     
     public String getCurrentTime(){
         LocalDateTime localDateTime = LocalDateTime.now();
