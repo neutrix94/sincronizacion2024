@@ -586,7 +586,7 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         getContentPane().add(time_interval_field, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 370, 230, 30));
 
         ultima_sincronizacion_label.setText("Última sincronización exitosa : ");
-        getContentPane().add(ultima_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 220, 30));
+        getContentPane().add(ultima_sincronizacion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, 180, 30));
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Hora inicio");
@@ -844,18 +844,20 @@ public class infoSinccronizacion extends javax.swing.JFrame {
         });
         getContentPane().add(synchronization_product_provider_download_comprobation, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 320, 80, 30));
 
+        ultima_peticion_label.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         ultima_peticion_label.setText("Última petición : ");
-        getContentPane().add(ultima_peticion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 220, 30));
+        getContentPane().add(ultima_peticion_label, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 180, 50));
 
         last_petition_time.setEditable(false);
         last_petition_time.setBackground(new java.awt.Color(255, 255, 255));
+        last_petition_time.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         last_petition_time.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         last_petition_time.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 last_petition_timeActionPerformed(evt);
             }
         });
-        getContentPane().add(last_petition_time, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, 190, 30));
+        getContentPane().add(last_petition_time, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 260, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

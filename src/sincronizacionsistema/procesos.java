@@ -752,6 +752,9 @@ System.out.println("Entr en sys_sincronizacion_registros");
                 logger4j.error("No fue posible escribir ErrorLog", logError);
             }
             this.info.logArea.append("Error temporal: " + ex.getMessage() + ". Se reintentara. " + getCurrentTime() + "\n");
+            this.info.last_petition_time.setBackground(new Color(255, 0, 0));            
+            this.info.last_petition_time.setForeground(Color.WHITE);   
+        this.info.ultima_peticion_label.setForeground(new Color(255, 0, 0));
         } finally {
             // Evita que una excepcion deje el proceso marcado como ocupado para siempre.
             this.sincronizando = 0;
@@ -807,6 +810,10 @@ System.out.println("Entr en sys_sincronizacion_registros");
         }
         
         this.info.last_petition_time.setText("" + getCurrentTime() );
+        this.info.last_petition_time.setBackground(new Color(255, 255, 255));            
+        this.info.last_petition_time.setForeground(new Color(0, 100, 0));        
+        this.info.ultima_peticion_label.setForeground(new Color(0, 100, 0));
+
         return modulosConPendientes;
     }
    
